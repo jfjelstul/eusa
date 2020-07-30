@@ -111,14 +111,6 @@ aid$aid_instrument[aid$aid_instrument == "direct grant/ interest rate subsidy"] 
 aid$aid_instrument[aid$aid_instrument == "loan/ repayable advances"] <- "loan/repayable advances"
 
 ##################################################
-# firm size
-##################################################
-
-# firm size
-# aid$small_firms <- as.numeric(stringr::str_detect(aid$beneficiary_type, "Small and medium-sized entreprises"))
-# aid$large_firms <- 1 - aid$small_firms
-
-##################################################
 # format dates
 ##################################################
 
@@ -271,9 +263,9 @@ nace <- dplyr::select(nace, -text)
 # merge
 aid <- dplyr::left_join(aid, nace, by = "NACE_description")
 
-#################################################
+##################################################
 # organize
-#################################################
+##################################################
 
 # arrange
 aid <- dplyr::arrange(aid, date, case_number, member_state)
