@@ -35,7 +35,7 @@ names(aid) <- c(
 )
 
 # select variables
-aid <- dplyr::select(aid, case_number, reference_number, national_id, date, publication_date, member_state, authority, beneficiary_name, beneficiary_type, subsector, region, aid_instrument, objectives, amount, currency)
+aid <- dplyr::select(aid, case_number, reference_number, date, publication_date, member_state, authority, beneficiary_name, beneficiary_type, subsector, region, aid_instrument, objectives, amount, currency)
 
 # clean amount
 aid$amount <- stringr::str_replace(aid$amount, "<|>", "")
@@ -48,34 +48,53 @@ aid$euros <- as.numeric(stringr::str_detect(aid$amount, "EUR"))
 # is the amount an estimate?
 aid$estimate <- as.numeric(stringr::str_detect(aid$amount, "-"))
 
-table(aid$amount[aid$estimate == 1])
+# table(aid$amount[aid$estimate == 1])
 
 # recode estimates
-dat$amount[dat$amount == "60001 - 500000 EUR"] <- 500000 / 2
-dat$amount[dat$amount == "0 - 500000 EUR"] <- 500000 / 2
+aid$amount[aid$amount == "1000000 - 2000000"] <- (1000000 + 2000000) / 2
+aid$amount[aid$amount == "10000000 - 30000000"] <- (10000000 + 30000000) / 2
+aid$amount[aid$amount == "1000001 - 2000000"] <- (1000000 + 2000000) / 2
+aid$amount[aid$amount == "2000000 - 5000000"] <- (2000000 + 5000000) / 2
+aid$amount[aid$amount == "2000001 - 5000000"] <- (2000000 + 5000000) / 2
+aid$amount[aid$amount == "30000 - 200000"] <- (30000 + 200000) / 2
+aid$amount[aid$amount == "500000 - 1000000"] <- (500000 + 1000000) / 2
+aid$amount[aid$amount == "5000000 - 10000000"] <- (5000000 + 10000000) / 2
+aid$amount[aid$amount == "500001 - 1000000"] <- (500000 + 1000000) / 2
+aid$amount[aid$amount == "60000 - 500000"] <- (60000 + 500000) / 2
+aid$amount <- as.numeric(aid$amount)
+aid$amount <- round(aid$amount)
 
-dat$amount[dat$amount == "500001 - 1000000"] <- (500000 + 1000000) / 2
-dat$amount[dat$amount == "1000001 - 2000000"] <- (1000000 + 2000000) / 2
-dat$amount[dat$amount == "2000001 - 5000000"] <- (2000000 + 5000000) / 2
-dat$amount[dat$amount == "5000001 - 10000000"] <- (5000000 + 10000000) / 2
-dat$amount[dat$amount == "10000001 - 30000000"] <- (10000000 + 30000000) / 2
-dat$amount <- as.numeric(dat$amount)
-
-# cut-offs
-dat$small_award <- as.numeric(dat$amount < 10000)
-dat$below_threshold <- as.numeric(dat$amount < 500000)
+# cut-off
+aid$below_threshold <- as.numeric(aid$amount < 500000)
 
 # clean aid instrument
-dat$aid_instrument[str_detect(dat$aid_instrument, "Other|Commission decision")] <- "Other"
+aid$aid_instrument <- stringr::str_to_lower(aid$aid_instrument)
+aid$aid_instrument[stringr::str_detect(aid$aid_instrument, "other|stateaidfinancingtype")] <- "other"
+aid$aid_instrument[stringr::str_detect(aid$aid_instrument, "guarantee")] <- "guarantee"
+aid$aid_instrument[aid$aid_instrument == "direct grant/ interest rate subsidy"] <- "direct grant/interest rate subsidy"
+aid$aid_instrument[aid$aid_instrument == "loan/ repayable advances"] <- "loan/repayable advances"
+
+table(aid$aid_instrument)
 
 # firm size
-dat$SMEs <- as.numeric(str_detect(dat$beneficiary_type, "Small and medium-sized entreprises"))
+aid$small_firms <- as.numeric(stringr::str_detect(aid$beneficiary_type, "Small and medium-sized entreprises"))
+aid$large_firms <- 1 - aid$small_firms
 
 #################################################
 # fix dates
 #################################################
 
-dat$date <- as.Date(dat$date, format = "%d/%m/%Y")
+# convert to date
+aid$date <- lubridate::dmy(aid$date)
+
+# change format
+aid$date <- lubridate::ymd(aid$date)
+
+# convert to date
+aid$publication_date <- lubridate::dmy(aid$publication_date)
+
+# change format
+aid$publication_date <- lubridate::ymd(aid$publication_date)
 
 #################################################
 # currency conversion
@@ -86,8 +105,11 @@ dat$date <- as.Date(dat$date, format = "%d/%m/%Y")
 # Czech Republic (CZK, koruna)
 # Denmark (DKK, krone)
 # Hungary (HUF, forint)
+# Lithuania (LTL, litas)
 # Sweden (SEK, krona)
-# United Kingdom (GBP, pound sterling)
+# United Kingdom (GBP, pound)
+
+table(aid$currency)
 
 # list of non-Eurozone member states
 list <- c("Bulgaria", "Croatia", "Czech Republic", "Denmark", "Hungary", "Sweden", "United Kingdom")
