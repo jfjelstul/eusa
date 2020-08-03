@@ -61,12 +61,12 @@
 #' the case in chronological order, separated by a semi-colon. Possible values
 #' include: \itemize{
 #' \item{\code{Article 4(2) of Council Regulation (EC) No
-#' 659/1999: decision does not constitute aid}. During its preliminary
+#' 659/1999: decision does not constitute aid} — During its preliminary
 #' investigation, Commission decided that the state aid measure notified by the
 #' member state does not constitute state aid under Article 107 of the Treaty on
 #' the Functioning of the European Union (TFEU).}
 #' \item{\code{Article 4(3) of Council
-#' Regulation (EC) No 659/1999: decision not to raise objections}. During its
+#' Regulation (EC) No 659/1999: decision not to raise objections} — During its
 #' preliminary investigation, Commission decided not to raise objections to the
 #' state aid measure notified by the member state because the measure is
 #' compatible with the rules of the single market, consistent with Article 107
@@ -88,16 +88,16 @@
 #' Article 107 TFEU.} \item{\code{no objection} — During its preliminary
 #' investigation, the Commisison decided that it had no objection to the state
 #' aid measure because the measure is compatible with the rules of the single
-#' market, consistent with Article 107 TFEU.} \item{\code{positive decision} —
+#' market, as defined in Article 107 TFEU.} \item{\code{positive decision} —
 #' After a formal investigation, the Commission decided that the state aid
-#' measure is compatible with the rules of the single market, consistent with
+#' measure is compatible with the rules of the single market, as defined in
 #' Article 107 TFEU.} \item{\code{negative decision} — After a formal
 #' investigation, the Commission decided that the state aid measure is not
-#' compatible with the rules of the single market, consistent with Article 107
+#' compatible with the rules of the single market, as defined in Article 107
 #' TFEU.} \item{\code{conditional decision} — After a formal investigation, the
-#' Commission decided to approvate the state aid measure subject to conditions
+#' Commission decided to approve the state aid measure subject to conditions
 #' to make the measure compatible with the rules of the single market,
-#' consistent with Article 107 TFEU.} \item{\code{notification withdrawn} — The
+#' as defined in Article 107 TFEU.} \item{\code{notification withdrawn} — The
 #' member state that notified the state aid measure withdrew its notification,
 #' either during the Commission's preliminary investigation or during a formal
 #' investigation.} \item{\code{missing record} — The
@@ -105,51 +105,127 @@
 #' cases managed by DG Competition does not record the Commission making any
 #' decisions after initiating the formal investigation.} }}
 #'
-#' \item{\code{outcome_preliminary}}{String.}
+#' \item{\code{outcome_phase_1}}{String. The outcome of phase 1 of the state aid
+#' procedure (the preliminary examination).}
 #'
-#' \item{\code{outcome_formal}}{String.}
+#' \item{\code{outcome_phase_2}}{String. The outcome of phase 2 of the state aid
+#' procedure (the formal investigation). Coded \code{not applicable} if the
+#' Commission did not initiate a formal investigation under Article 7 of Council
+#' Regulation (EC) No 659/1999.}
 #'
-#' \item{\code{exempt}}{Numeric.}
+#' \item{\code{exempt}}{Numeric. A dummy variable indicating whether the state
+#' aid measure is exempt from the Article 108(3) notification requirement under
+#' Article 108(4) TFEU.}
 #'
-#' \item{\code{preliminary_investigation}}{Numeric.}
+#' \item{\code{preliminary_examination}}{Numeric. A dummy variable indicating
+#' whether the Commission initiated a preliminary examination under Article
+#' 108(2) TFEU.}
 #'
-#' \item{\code{formal_investigation}}{Numeric.}
+#' \item{\code{formal_investigation}}{Numeric. A dummy variable indicating
+#' whether the Commission initiated a formal investigation under Article 7 of
+#' Council Regulation (EC) No 659/1999.}
 #'
-#' \item{\code{no_objection}}{Numeric.}
+#' \item{\code{no_objection}}{Numeric. A dummy variable indicating whether the
+#' Commission decided not to raise an objection under Article 4(3) of Council
+#' Regulation (EC) No 659/1999.}
 #'
-#' \item{\code{not_aid}}{Numeric.}
+#' \item{\code{not_aid}}{Numeric. A dummy variable indicating whether the
+#' Commission decided that the measure does not constitute aid under Article 107
+#' TFEU, either after the preliminary examination under Article 4(2) of Council
+#' Regulation (EC) No 659/1999, or after a formal investigation under Article
+#' 7(2) of Council Regulation (EC) No 659/1999.}
 #'
-#' \item{\code{positive}}{Numeric.}
+#' \item{\code{positive}}{Numeric. A dummy variable indicating whether the
+#' Commission decided that the measure is compatible with the rules of the
+#' single market, as defined in Article 107 TFEU.}
 #'
-#' \item{\code{negative}}{Numeric.}
+#' \item{\code{negative}}{Numeric. A dummy variable indicating whether the
+#' Commission decided that the measure is not compatible with the rules of the
+#' single market, as defined in Article 107 TFEU.}
 #'
-#' \item{\code{conditional}}{Numeric.}
+#' \item{\code{conditional}}{Numeric. A dummy variable indicating whether the
+#' Commission decided to approve the state aid measure subject to conditions to
+#' make the measure compatible with the rules of the single market, as defined
+#' in Article 107 TFEU.}
 #'
-#' \item{\code{withdrawal}}{Numeric.}
+#' \item{\code{withdrawal}}{Numeric. A dummy variable indicating whether the
+#' member state withdrew the notification, either before the formal investigaton
+#' procedure, under Article 8(1) of Council Regulation (EC) No 659/1999, or
+#' after the formal investigation procedure, under Article 8(2) of Council
+#' Regulation (EC) No 659/1999.}
 #'
-#' \item{\code{referral}}{Numeric.}
+#' \item{\code{referral}}{Numeric. A dummy variable indicating whether the
+#' Commission referred the case to the Court of Justice for non-compliance with
+#' a decision under Article 23(1) of Councl Regulation (EC) No 659/1999, for
+#' non-implementation of a Commission decision under Article 108(2) (ex Article
+#' 88(2)) of the Treaty on the Functioning of the European Union (TFEU), for
+#' non-compliance with a Court judgment under Article 260(2) (ex Article 228(2))
+#' of the Treaty on the Functioning of the European Union (TFEU), or for
+#' non-compliance with an injunction under Article 12 of Council Regulation (EC)
+#' No 659/1999.}
 #'
-#' \item{\code{recovery}}{Numeric.}
+#' \item{\code{recovery}}{Numeric. A dummy variable indicating whether the
+#' Commission decided that the measure is not compatible with the rules of the
+#' single market, as defined in Article 107 TFEU, and decided that the member
+#' state must take all necessary measures to recover the aid from the
+#' beneficiary.}
 #'
-#' \item{\code{start_date}}{String.}
+#' \item{\code{start_date}}{String. The start date of the state aid measure in
+#' the format \code{YYYY-MM-DD}. Coded \code{NA} if not applicable.}
 #'
-#' \item{\code{end_date}}{String.}
+#' \item{\code{start_date}}{String. The end date of the state aid measure
+#' in the format \code{YYYY-MM-DD}. Coded \code{NA} if not applicable.}
 #'
-#' \item{\code{aid_instruments}}{String.}
+#' \item{\code{aid_instruments}}{String. A list of instruments used by the state
+#' aid measure, separated by a comma. Coded \code{NA} if no specific instruments
+#' are reported. Possible values include:
+#' \itemize{
+#' \item{\code{debt write-off} — Definition.}
+#' \item{\code{direct grant} — Definition.}
+#' \item{\code{direct grant/interest rate subsidy} — Definition.}
+#' \item{\code{fiscal measure} — Definition.}
+#' \item{\code{guarantee} — Definition.}
+#' \item{\code{interest subsidy} — Definition.}
+#' \item{\code{loan/repayable advances} — Definition.}
+#' \item{\code{other forms of equity intervention} — Definition.}
+#' \item{\code{other forms of tax advantage} — Definition.}
+#' \item{\code{provision of risk capital} — Definition.}
+#' \item{\code{provision of risk finance} — Definition.}
+#' \item{\code{reduction of social security contributions} — Definition.}
+#' \item{\code{reimbursable grant} — Definition.}
+#' \item{\code{repayable advances} — Definition.}
+#' \item{\code{soft loan} — Definition.}
+#' \item{\code{subsidised services} — Definition.}
+#' \item{\code{tax advantage or tax exemption} — Definition.}
+#' \item{\code{tax allowance} — Definition.}
+#' \item{\code{tax base reduction} — Definition.}
+#' \item{\code{tax deferment} — Definition.}
+#' \item{\code{tax rate reduction} — Definition.}
+#' }}
 #'
-#' \item{\code{count_aid_instruments}}{Numeric.}
+#' \item{\code{count_aid_instruments}}{Numeric. The number of instruments used
+#' by the state aid measure.}
 #'
-#' \item{\code{NACE_codes}}{String.}
+#' \item{\code{NACE_codes}}{String. A list of NACE codes associated with the
+#' state aid measure, separated by a comma. Coded \code{NA} if no specific NACE
+#' codes are reported.}
 #'
-#' \item{\code{count_NACE_codes}}{Numeric.}
+#' \item{\code{count_NACE_codes}}{Numeric. The number of NACE codes associated
+#' with the state aid measure.}
 #'
-#' \item{\code{OJ_citations}}{String.}
+#' \item{\code{OJ_citations}}{String. A list of citations in the Official
+#' Journal (OJ) for decisions associated with the case, separated by a comma.}
 #'
-#' \item{\code{count_OJ_citations}}{Numeric.}
+#' \item{\code{count_OJ_citations}}{Numeric. The number of Official Journal (OJ)
+#' citations for decisions associated with the case. Coded \code{NA} if there
+#' are no citations.}
 #'
-#' \item{\code{related_cases}}{String.}
+#' \item{\code{related_cases}}{String. A list of case numbers for related cases,
+#' according to the Commission, separated by a comma. Coded \code{NA} if the
+#' Commission does not identify any related cases.}
 #'
-#' \item{\code{count_related_cases}}{Numeric.}
+#' \item{\code{count_related_cases}}{Numeric. The number of related cases,
+#' according to the Commission.}
 #'
 #' }
 #'
