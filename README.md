@@ -19,7 +19,7 @@ See examples and read the documentation on the [package site](https://jfjelstul.
 
 If you use data from this package in a project or paper, please use the following citation:
 
-> Joshua C. Fjelstul (2020). euaid: The European Union State Aid (EUSA) Database. R package version 0.0.0.9000. https://github.com/jfjelstul/euaid
+> Joshua C. Fjelstul (2020). euaid: The European Union State Aid (EUSA) Database. R package version 1.0.0. https://github.com/jfjelstul/euaid
 
 The bibtex entry for the article is:
 
@@ -28,7 +28,7 @@ The bibtex entry for the article is:
     title = {euaid: The European Union State Aid (EUSA) Database},
     author = {Joshua C. Fjelstul},
     year = {2020},
-    note = {R package version 0.0.0.9000},
+    note = {R package version 1.0.0},
     url = {https://github.com/jfjelstul/euaid},
   }
 ```
