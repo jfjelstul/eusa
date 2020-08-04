@@ -1,0 +1,102 @@
+---
+title: "EU State Aid Cases"
+author: "Joshua C. Fjelstul, Ph.D."
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{state-aid-cases}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This article provides an overview of EU state aid cases to help users understand the ```cases``` and ```decisions``` datasets in the ```euaid``` package.
+
+The ```cases``` dataset includes all state aid cases that the Commission has opened in response to member states notifying state aid measures, and the unit of observation is a case. The ```decisions``` dataset includes all decision made in all state aid cases, and the unit of observation is a decision. 
+
+## What is State Aid?
+
+The Commission defines state aid as "an advantage in any form whatsoever conferred on a selective basis to undertakings by national public authorities". ^[https://ec.europa.eu/competition/state_aid/overview/index_en.html] State aid has four key features: there has to be an intervention in the economy by an EU member state, that intervention has to give the firm that receives the aid an advantage over other firms, the intervention has to distort competition, and the intervention has to affect intra-EU trade (trade between member states). 
+
+[Article 107](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A12008E107) of the Treaty on the Functioning of the European Union (TFEU) generally prohibits state aid, but allows some exemptions. [Article 108 TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) allows the Commission to decide if state aid is compatible with the rules of the EU's single market.
+
+## Legal Framework
+
+There are a number of treaty articles, Council regulations, and Commission regulations that govern the use of state aid in the EU. 
+
+### Treaty Articles
+
+Articles 107, 108, and 109 TFEU are the three treaty articles that are directly related to state aid. 
+
+[Article 107(1) TFEU](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A12008E107) generally prohibits state aid: 
+
+> Save as otherwise provided in the Treaties, any aid granted by a Member State or through State resources in any form whatsoever which distorts or threatens to distort competition by favouring certain undertakings or the production of certain goods shall, in so far as it affects trade between Member States, be incompatible with the internal market.
+
+[Article 107(2)](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A12008E107) allows state aid that has a social character, that is in response to natural disasters, or that is related to the reunification of Germany. [Article 107(3)](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A12008E107) allows state aid that promotes economic development, enables projects that are of "common European interest" or addresses a serious disturbance to a member state economy, facilitates economic activities in areas where aid does not adversely affect trade, or promotes culture and heritage conservation.
+
+[Article 108(1)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) TFEU allows the Commission to monitor state aid granted by member states. [Article 108(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) TFEU creates an institutional procedure that the Commission can use to reject state aid that is not compatible with the rules of the single market, according to [Article 107 TFEU](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A12008E107). [Article 108(3)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) requires member states to notify the Commission of all state aid measures and to wait to implement measures until the Commission have approved them under the procedure created in [Article 108(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108). [Article 108(4)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) allows the Commission to adopt regulations relating to certain categories of state aid that, according to any Council regulations passed under Article 109 TFEU, are exempt from the [Article 108(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) procedure.
+
+Article 109 TFEU allows the Council to enact regulations for the application of Articles 107 and 108 and to determine when member states are exempt from reporting state aid measures to the Commission under Article 108(3).
+
+### The Commission State Aid Procedure
+
+[Council Regulation (EC) No 659/1999](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596499128738&uri=CELEX:31999R0659) of 22 March 1999 defines the state aid approval procedure created by [Article 108(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108). This regulation was amended by [Council Regulation (EU) No 734/2013](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596499550881&uri=CELEX:32013R0734) of 22 July 2013 and then repealed and replaced by [Council Regulation (EU) 2015/1589](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32015R1589) of 13 July 2015. 
+
+Article 108(3) TFEU requires member states to notify state aid measures to the Commission. Once a member state has notified a state aid measure, the Commission opens a state aid case and determines whether or not the measure is compatible with the rules of the single market, as defined by Article 207 TFEU. 
+
+If the measure is exempt from the Article 108(3) notification requriement under Article 108(4) TFEU, which is either because the measure falls under a general block-exemption (see below) or because the aid is *de minimis*, then member state reports certain information about the measure to the Commission and it goes into the Commission's database of state aid cases. 
+
+If the measure is not exempt, the Commission will initiate a preliminary examination under Article 4 of Council Regulation (EC) No 659/1999, which is now Article 4 of Council Regulation (EU) 2015/1589. The Commission then has two months to evaluate the measure. The Commission can decide that the measure does not constitute state aid (paragraph 2), to not raise objections to the measure because it is compatible with the rules of the single market (paragraph 3), or to initiate a formal investigation (paragraph 4). The Commission can also decide to extend the two-month preliminary examination phase (paragraph 4). 
+
+Article 7 of Council Regulation (EC) No 659/1999, which is now Article 9 of Council Regulation (EU) 2015/1589, outlines the decisions the Commission can make after a formal investigation. The Commission can decide that the measure does not constitute state aid (paragraph 2), it can decide that the measure is compatible with the rules of the single market and approve the measure (a "positive decision") (paragraph 3), it can approve the measure subject to conditions that make the measure compatible with the rules of the single market (a "conditional decision") (paragrph 4), or it can decide that the measure is not compatible with the rules of the single market and not approve the measure (a "negative decision") (paragraph 5).
+
+Article 14(1) of Council Regulation (EC) No 659/1999, which is now Article 16(1) of Council Regulation (EU) 2015/1589, allows the Commission to remedy situations where the member state has already awarded unlawful aid. If the Commission decides that the measure is not compatible with the single market, and the member state has already awarded aid to firms, it can issue a negative decision with recovery, which requires the member state to take all necessary measures to recover the aid from beneficiaries. 
+
+The member state that notified the state aid measure can withdraw the notification at any time during a preliminary examination, under Article 10(1) of Council Regulation (EU) 2015/1589, formerly Article 8(1) of Council Regulation (EC) No 659/1999, or during a formal investigation, under Article 10(2) of Council Regulation (EU) 2015/1589, formerly Article 8(2) of Council Regulation (EC) No 659/1999.
+
+The Commission can also revoke any decision it has made as part of a preliminary examination or a formal investigation, under Article 11 of Council Regulation (EU) 2015/1589, formerly Article 9 of Council Regulation (EC) No 659/1999, if the information provided by a member state that the Commission used in making the decision was incorrect. 
+
+If the Commission needs more information to make a decision, and a member state does not respond to a Commission request or provides incomplete information, the Commission can issue an information injunction to require the member state to provide the information under Article 12(3) of Council Regulation (EU) 2015/1589, formerly Article 10(3) of Council Regulation (EC) No 659/1999. 
+
+In situations where a member state has already adopted a measure that the Commission suspects is not compatible with the rules of the single market, the Commission can issue a suspention injunction under Article 13(1) of Council Regulation (EU) 2015/1589, formerly Article 11(1) of Council Regulation (EC) No 659/1999, to require the member state to suspend the measure until the Commission can reach a decision.
+
+If the Commission beliefs that a state aid measure is not compatible with the single market, it can also issue a recommendation under Article 22 of Council Regulation (EU) 2015/1589, formerly Article 18 of Council Regulation (EC) No 659/1999, proposing alternative measures that would be compatible with the single market. 
+There are a number of situations in which the Commission can refer a state aid case to the Court of Justice. 
+If a member state does not comply with an injunction, the Commission can refer the case to the Court of Justice for a ruling under Article 14 of Council Regulation (EU) 2015/1589, formerly Article 12 of Council Regulation (EC) No 659/1999. 
+
+### Enabling Regulations
+
+Council Regulation (EC) No 994/98 of 7 May 1998 (enabling regulation) 
+
+* Council Regulation (EC) No 994/98 was amended by Council Regulation (EU) No 733/2013 of 22 July 2012
+
+* Council Regulation (EC) No 994/98 was repealed and replaced by Council Regulation (EU) 2015/1588 of 13 July 2015
+
+Commission Regulation (EU) No 1407/2013 of 18 December 2013 (de minimis aid)
+
+* Commission Regulation (EU) No 1407/2013 was amended by Commission Regulation (EU) 2020/972 of 2 July 2020
+
+### Block Exemption Regulations
+
+The Council has enacted a number of regulations that exempt certain categories of state aid from the Article 108(3) TFEU notification procedure. 
+
+Commission Regulation (EC) No 800/2008 of 6 August 2008 identifies categories of aid that are compatible with the common market, as defined by Article 107 TFEU. 
+
+* Commission Regulation (EC) No 800/2008 was amended by Commission Regulation (EU) No 1224/2013 of 29 November 2013
+
+* Commission Regulation (EC) No 800/2008 was repealed and replaced by Commission Regulation (EU) No 651/2014 of 17 June 2014
+
+* Commission Regulation (EU) No 651/2014 was amended by Commission Regulation (EU) 2017/1084 of 14 June 2017
+
+* Commission Regulation (EU) No 651/2014 was amended by Commission Regulation (EU) 2020/972 of 2 July 2020
+
+### Transparency Regulations
+
+In addition to updating the GBER, Commission Regulation (EU) No 651/2014 of 17 June 2014 creates new transparency requirements that are part of the Commission's State Aid Modernisation (SAM) programe.
+
+

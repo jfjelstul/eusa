@@ -1,0 +1,51 @@
+---
+title: "EU State Aid Awards"
+author: "Joshua C. Fjelstul, Ph.D."
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{state-aid-awards}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This article provides an overview of state aid awards in the EU to help users understand the ```awards``` dataset in the ```euaid``` package.
+
+## Introduction
+
+In 2014, the EU adopted the State Aid Modernisation (SAM) programme to increase transparency in EU state aid regulation. The goal of the programme is to provide information about all state aid awards granted by EU member states that could distort competition and intra-EU trade to promote accountability. 
+
+As the Commission explains, "Competitors of aid recipients and other interested parties will be able to see which companies have recieved state aid, how much and for what purpose." The Commission argues that this will help create a "level playing field between companies and between Member States."
+
+As of 1 July 2016, EU member states must publically report all individual aid awards above 500,000 euros. Member states have six months to report awards once they are made.
+
+Under Article 9 and Annex III of the GBER, member states must provide information about block exempted schemes and ad hoc measures, the full text of all aid measures, and the identity of the beneficiary and size of the award for all awards aboce 500,000 euros.
+
+Prior to the SAM programme, the Commission reported information on beneficiaries of state aid related to state aid cases under Article 108(2) of the Treary on the Functioning of the European Union (TFEU). Member states were not required to report information on beneficiaries of state aid that was awarded under block-exempted schemes. 
+
+## What is State Aid?
+
+The Commission defines state aid as "an advantage in any form whatsoever conferred on a selective basis to undertakings by national public authorities". ^[https://ec.europa.eu/competition/state_aid/overview/index_en.html] State aid has four key features: there has to be an intervention in the economy by an EU member state, that intervention has to give the firm that receives the aid an advantage over other firms, the intervention has to distort competition, and the intervention has to affect intra-EU trade (trade between member states). 
+
+[Article 107](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A12008E107) of the Treaty on the Functioning of the European Union (TFEU) generally prohibits state aid, but allows some exemptions. [Article 108 TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1596494907047&uri=CELEX:12008E108) allows the Commission to decide if state aid is compatible with the rules of the EU's single market.
+
+## Legal Framework
+
+The Commission adopted the State Aid Modernisation (SAM) programme in COM/2012/209. This programme included the introduction of new transparency rules that require member states to report information about state aid awards. 
+
+State aid transparency requirements in the EU are outlined in Commission Regulation (EU) No 651/2014 of 17 June 2014 (GBER), as amended by Commission Regulation (EU) No 2017/1084 of 14 June 2017 and Commission Regulation (EU) 2020/972 of 2 July 2020. Commission Regulation (EU) No 1388/2014 (FIBER) and Commission Regulation (EU) No 702/2014 (ABER) introduce similar requirements for state aid in fisheries, agricultural, and forestry sectors. 
+
+Under Article 9(1) of Commission Regulation (EU) No 651/2014, member states must report certain information about state aid awards. Under Article 9(1)(a), they must report a list of information defined in Annex II. Under Article 9(1)(b), they must report the full text of all state aid measures. And under Article 9(1)(c), they must report a list of information defined in Annex III on each award above EUR 500,000. This includes the identity of the beneficiary, the aid instrument (e.g., grant, interest rate subsidy, guarantee, etc.), the objective of the aid, and the granting authority (the national, regional, or local government agency that granted the aid), among other things. 
+
+Under Article 11 of Commission Regulation (EU) No 651/2014, member states must also report all information specified in Annex II to the Commission (similar to the information they must report under Article 9), along with a link to the text of the state aid measure. Article 9 requries the Commission to publish this information on its website. 
+
+According to Article 9(2), for schemes that involve tax advantages and for schemes involving risk finance aid or regional urban development aid (defined in Articles 16 and 21, respectively), member states can report the amount of the award as a range, as reporting the exact amount could reveal private financial information about the firm to competitors. 
+
+
+
