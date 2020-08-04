@@ -643,7 +643,7 @@
 #' are from Yahoo Finance.}
 #'
 #' \item{\code{adjusted_amount}}{Numeric. The amount of the award in euros. Coded
-#' \coded{NA}. This is the raw value of the award in the currency of the member
+#' \code{NA}. This is the raw value of the award in the currency of the member
 #' state that granted the award times the exchange rate (the value of one unit
 #' of that currency in euros). Unlike the raw amount, this variable is directly
 #' comparable across observations.}
