@@ -1,4 +1,4 @@
-# euaid
+# The euaid R Package
 
 This package provides easy access to data and documentation from the European Union State Aid (EUSA) Database by Joshua C. Fjelstul, Ph.D.
 
