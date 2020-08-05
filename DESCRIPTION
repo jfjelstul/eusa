@@ -1,20 +1,21 @@
 Package: euaid
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Title: The European Union State Aid (EUSA) Database
+Version: 1.0.0
+Authors@R:
+    person(given = "Joshua C.",
+           family = "Fjelstul",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "joshfjelstul@gmail.com",
+           comment = c(ORCID = "0000-0002-9494-260X"))
+Description: This package provides easy access to data and documentation from the European Union State Aid (EUSA) Database by Joshua C. Fjelstul, Ph.D.
+URL: https://github.com/jfjelstul/euaid
+Date: 2020-08-04
+License: GPL3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
-Suggests: 
+Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
