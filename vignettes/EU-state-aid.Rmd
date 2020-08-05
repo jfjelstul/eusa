@@ -1,5 +1,5 @@
 ---
-title: "EU State Aid Cases"
+title: "EU State Aid Data"
 author: "Joshua C. Fjelstul, Ph.D."
 output: rmarkdown::html_vignette
 vignette: >
@@ -15,9 +15,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-This article provides an overview of EU state aid cases to help users understand the ```cases``` and ```decisions``` datasets in the ```euaid``` package.
+This article provides an overview of EU state aid cases to help users understand the `cases`, `decisions`, and `awards` datasets in the `euaid` package.
 
-The ```cases``` dataset includes all state aid cases that the Commission has opened in response to member states notifying state aid measures, and the unit of observation is a case. The ```decisions``` dataset includes all decisions made in all state aid cases, and the unit of observation is a decision. 
+The `cases` dataset includes all state aid cases that the Commission has opened in response to member states notifying state aid measures under [Article 108(3) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) from 2000 through 2020. The unit of observation is a case. The source of the raw data is the Commission's [state aid cases database](https://ec.europa.eu/competition/elojade/isef/).
+
+The `decisions` dataset includes all decisions made in all state aid cases under [Article 108(2) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) and [Council Regulation (EU) 2015/1589](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32015R1589) over the same period. The unit of observation is a decision. Again, the source of the raw data is the Commission's [state aid cases database](https://ec.europa.eu/competition/elojade/isef/).
+
+The `awards` dataset includs all awards granted by member states as part of authorized state aid measures from 2016 through 2020. These awards are reported under transparency requirements introduced by the Commission's [State Aid Modernisation (SAM) programme](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52012DC0209) and [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651). The unit of observation is an individual award. The source of the raw data is the Commission's [state aid transparency database](https://webgate.ec.europa.eu/competition/transparency/public?lang=en).
 
 ## What is State Aid?
 
@@ -27,7 +31,7 @@ The Commission defines state aid as "an advantage in any form whatsoever conferr
 
 ## Treaty Articles
 
-There are three articles of the Treaty on the Function of the European Union (TFEU) that related directly to state aid. [Article 107(1)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E107) generally prohibits state aid: 
+There are three articles of the Treaty on the Function of the European Union (TFEU) that relate directly to state aid. [Article 107(1)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E107) generally prohibits state aid: 
 
 > Save as otherwise provided in the Treaties, any aid granted by a Member State or through State resources in any form whatsoever which distorts or threatens to distort competition by favouring certain undertakings or the production of certain goods shall, in so far as it affects trade between Member States, be incompatible with the internal market.
 
@@ -79,34 +83,30 @@ In addition, if a member state does not comply with an injunction (an informatio
 
 If a member state does not comply with the ruling of the Court in a state aid case, [Article 28(2) of Council Regulation (EU) 2015/1589](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32015R1589), formerly [Article 23(2) of Council Regulation (EC) No 659/1999](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31999R0659), allows the Commission to refer the case back to the Court under the standard [Article 260 TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E260) procedure. 
 
-## Enabling Regulations
+## Exemptions
 
-Council Regulation (EC) No 994/98 of 7 May 1998 (enabling regulation) 
+[Article 109 TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E109) allows the Council to pass regulations that exempt categories of state aid from the [Article 108(3) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) notification requirement. [Article 108(4)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) allows the Commission to pass regulations to implement those Council regulations The Council has delegated some of this authority to the Commission. [Council Regulation (EC) No 994/98](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31998R0994) of 7 May 1998 (the "enabling regulation") delegates to the Commission the authority to exempt categories of state aid from the [Article 108(3)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) notification requirement, called block exemptions, as well as to exempt *de minimis* aid. 
 
-* Council Regulation (EC) No 994/98 was amended by Council Regulation (EU) No 733/2013 of 22 July 2012
+This regulation was amended by [Council Regulation (EU) No 733/2013](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0733) of 22 July 2012 and then repealed and replaced by [Council Regulation (EU) 2015/1588](https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32015R1588) of 13 July 2015. This regulation was then amended by [Council Regulation (EU) 2018/1911](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1911) of 26 November 2018.^[The current consolidated version is available at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02015R1588-20181227.]
 
-* Council Regulation (EC) No 994/98 was repealed and replaced by Council Regulation (EU) 2015/1588 of 13 July 2015
+### Block Exemptions
 
-Commission Regulation (EU) No 1407/2013 of 18 December 2013 (de minimis aid)
+[Commission Regulation (EC) No 800/2008](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R0800) of 6 August 2008, called the General Block Exemption Regulation (GBER), identifies categories of aid that are compatible with the common market, called block exemptions, which are exempt from the [Article 108(3) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) notification requirement. This regulation was amended by [Commission Regulation (EU) No 1224/2013](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1224) of 29 November 2013 and then repealed and replaced by [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651) of 17 June 2014 (the "new GBER"). 
 
-* Commission Regulation (EU) No 1407/2013 was amended by Commission Regulation (EU) 2020/972 of 2 July 2020
+[Commission Regulation (EU) 2017/1084](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1084) of 14 June 2017 amended [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651) and created block exemptions for state aid related to port and airport intrastructure, among other minor changes. [Commission Regulation (EU) 2020/972](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0972) of 2 July 2020 extended [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651), which would have expired in 2020, and made minor changes.^[The current consolidated version is available at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02014R0651-20200727.]
 
-## Block Exemptions
+### De Minimis Aid
 
-The Council has enacted a number of regulations that exempt certain categories of state aid from the Article 108(3) TFEU notification procedure. 
+In addition to block grant exemptions, [Commission Regulation (EU) No 1407/2013](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1407) of 18 December 2013 creates an exemption for *de minimis* aid. Generally, state aid is *de minimis* if the amount is less than EUR 200,000 per firm over a three year period. This regulation is part of the Commission's State Aid Modernisation (SAM) programme, launched on 8 May 2012.^[https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52012DC0209] This regulation, which would have expired in 2020, was extended by [Commission Regulation (EU) 2020/972](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0972) of 2 July 2020.^[The current consolidated version is available at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02013R1407-20200727.]
 
-Commission Regulation (EC) No 800/2008 of 6 August 2008 identifies categories of aid that are compatible with the common market, as defined by Article 107 TFEU. 
+## Transparency
 
-* Commission Regulation (EC) No 800/2008 was amended by Commission Regulation (EU) No 1224/2013 of 29 November 2013
+On 8 May 2012, the Commission launched the State Aid Modernisation (SAM) programme, adopted in [COM/2012/209](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52012DC0209). This programme included the introduction of new transparency rules, which were incorporated into [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651) (the "new GBER"), that require member states to publically report information about state aid awards that are exempt from notification under the [Article 108(3) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) notification requriement. 
 
-* Commission Regulation (EC) No 800/2008 was repealed and replaced by Commission Regulation (EU) No 651/2014 of 17 June 2014
+[Commission Regulation (EU) No 1388/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R1388) of 16 December 2014 (FIBER) and [Commission Regulation (EU) No 702/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0702) of 25 June 2014 (ABER) introduce similar requirements for state aid in fisheries, agricultural, and forestry sectors. State aid in these sectors is overseen by DG Maritime Affairs and Fisheries and DG Agriculture and Rural Development, as opposed to DG Competition.
 
-* Commission Regulation (EU) No 651/2014 was amended by Commission Regulation (EU) 2017/1084 of 14 June 2017
+Under Article 9(1) of [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651), member states must report certain information about state aid awards. Under Article 9(1)(a), they must report a list of information defined in Annex II. Under Article 9(1)(b), they must report the full text of all state aid measures. And under Article 9(1)(c), they must report a list of information defined in Annex III on each award above EUR 500,000. This includes the identity of the beneficiary, the aid instrument (e.g., grant, interest rate subsidy, guarantee, etc.), the objective of the aid, and the granting authority (the national, regional, or local government agency that granted the aid), among other things. 
 
-* Commission Regulation (EU) No 651/2014 was amended by Commission Regulation (EU) 2020/972 of 2 July 2020
+Under Article 11 of [Commission Regulation (EU) No 651/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0651), member states must also report all information specified in Annex II to the Commission (similar to the information they must report under Article 9), along with a link to the text of the state aid measure. Article 9 requries the Commission to publish this information on its website. 
 
-## Transparency Requirements
-
-In addition to updating the GBER, Commission Regulation (EU) No 651/2014 of 17 June 2014 creates new transparency requirements that are part of the Commission's State Aid Modernisation (SAM) programe.
-
-
+According to Article 9(2), for schemes that involve tax advantages and for schemes involving risk finance aid or regional urban development aid (defined in Articles 16 and 21, respectively), member states can report the amount of the award as a range, as reporting the exact amount could reveal private financial information about the firm to competitors. 
