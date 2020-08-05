@@ -7,7 +7,7 @@
 load("data-raw/awards_raw.RData")
 
 # select variables
-awards <- dplyr::select(awards_raw, case_number, reference_number, date, publication_date, member_state, authority, beneficiary_name, beneficiary_type, NACE_description, region, aid_instrument, objectives, raw_amount, currency)
+awards <- dplyr::select(awards_raw, case_number, reference_number, notification_date, publication_date, member_state, authority, beneficiary_name, beneficiary_type, NACE_description, region, aid_instrument, objectives, raw_amount, currency)
 
 ##################################################
 # clean NACE description
@@ -22,6 +22,8 @@ awards$NACE_description <- stringr::str_to_lower(awards$NACE_description)
 
 # convert to lower case
 awards$beneficiary_type <- stringr::str_to_lower(awards$beneficiary_type)
+awards$beneficiary_type[awards$beneficiary_type == "small and medium-sized entreprises"] <- "small or medium-sized entreprise (SME)"
+awards$beneficiary_type[awards$beneficiary_type == "only large enterprises"] <- "large enterprise"
 
 ##################################################
 # clean member state
@@ -83,10 +85,10 @@ awards$aid_instrument[awards$aid_instrument == "loan/ repayable advances"] <- "l
 ##################################################
 
 # convert to date
-awards$date <- lubridate::dmy(awards$date)
+awards$notification_date <- lubridate::dmy(awards$notification_date)
 
 # change format
-awards$date <- lubridate::ymd(awards$date)
+awards$notification_date <- lubridate::ymd(awards$notification_date)
 
 # convert to date
 awards$publication_date <- lubridate::dmy(awards$publication_date)
@@ -156,7 +158,7 @@ for(i in 1:nrow(awards)) {
     next
   } else {
     member_state <- awards$member_state[i]
-    date <- awards$date[i]
+    date <- awards$notification_date[i]
     x <- abs(as.numeric(rates$date - date))
     index <- which(x == min(x))
     index <- index[rates$member_state[index] == member_state]
@@ -172,6 +174,21 @@ awards$adjusted_amount <- round(awards$adjusted_amount / 1000) * 1000
 
 # cut-off
 awards$voluntary <- as.numeric(awards$adjusted_amount < 500000)
+
+##################################################
+# currency
+##################################################
+
+# recode
+awards$currency[awards$currency == "EUR"] <- "euro"
+awards$currency[awards$currency == "HUF"] <- "forint"
+awards$currency[awards$currency == "CZK"] <- "koruna"
+awards$currency[awards$currency == "SEK"] <- "krona"
+awards$currency[awards$currency == "DKK"] <- "krone"
+awards$currency[awards$currency == "HRK"] <- "kuna"
+awards$currency[awards$currency == "BGN"] <- "lev"
+awards$currency[awards$currency == "GBP"] <- "pound"
+awards$currency[awards$currency == "LTL"] <- "euro"
 
 ##################################################
 # NACE codes
@@ -246,7 +263,7 @@ write.csv(nace, "data/nace.csv", row.names = FALSE)
 ##################################################
 
 # arrange
-awards <- dplyr::arrange(awards, date, case_number, member_state)
+awards <- dplyr::arrange(awards, notification_date, case_number, member_state)
 
 # key ID
 awards$key_ID <- 1:nrow(awards)
@@ -255,7 +272,7 @@ awards$key_ID <- 1:nrow(awards)
 awards <- dplyr::select(
   awards,
   key_ID, case_number, reference_number,
-  date, publication_date,
+  notification_date, publication_date,
   member_state, authority, region,
   beneficiary_name, beneficiary_type,
   NACE_sector, NACE_code, NACE_description,

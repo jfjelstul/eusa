@@ -35,7 +35,7 @@ names(awards_raw) <- c(
   "beneficiary_name", "beneficiary_name_english", "beneficiary_type",
   "region", "NACE_description", "aid_instrument", "aid_instrument_english",
   "objectives", "objectives_english", "nominal", "raw_amount",
-  "currency", "date", "authority", "authority_english", "publication_date"
+  "currency", "notification_date", "authority", "authority_english", "publication_date"
 )
 
 ##################################################

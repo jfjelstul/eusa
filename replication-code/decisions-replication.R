@@ -3,8 +3,11 @@
 # euaid R package
 ###########################################################################
 
+# define pipe function
+`%>%` <- magrittr::`%>%`
+
 # load data
-load("data-raw/cases.RData")
+load("data/cases.RData")
 
 ##################################################
 # separate rows

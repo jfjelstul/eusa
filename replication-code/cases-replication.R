@@ -22,21 +22,22 @@ cases$member_state[cases$member_state == "Czechia"] <- "Czech Republic"
 
 # convert to lower case
 cases$case_type <- stringr::str_to_lower(cases$case_type)
+cases$case_type[cases$case_type == "not applicable"] <- NA
 
 ##################################################
 # DG variables
 ##################################################
 
 # standardize DG names
-cases$directorate_general[cases$directorate_general == "Agriculture and Rural Development DG"] <- "Agriculture and Rural Development"
-cases$directorate_general[cases$directorate_general == "Competition DG"] <- "Competition"
-cases$directorate_general[cases$directorate_general == "Fisheries and Maritime Affairs DG"] <- "Maritime Affairs and Fisheries"
+cases$directorate_general[cases$directorate_general == "Agriculture and Rural Development DG"] <- "DG Agriculture and Rural Development"
+cases$directorate_general[cases$directorate_general == "Competition DG"] <- "DG Competition"
+cases$directorate_general[cases$directorate_general == "Fisheries and Maritime Affairs DG"] <- "DG Maritime Affairs and Fisheries"
 
 # DG code
 cases$directorate_general_code <- ""
-cases$directorate_general_code[cases$directorate_general == "Agriculture and Rural Development"] <- "AGRI"
-cases$directorate_general_code[cases$directorate_general == "Competition"] <- "COMP"
-cases$directorate_general_code[cases$directorate_general == "Maritime Affairs and Fisheries"] <- "MARE"
+cases$directorate_general_code[cases$directorate_general == "DG Agriculture and Rural Development"] <- "AGRI"
+cases$directorate_general_code[cases$directorate_general == "DG Competition"] <- "COMP"
+cases$directorate_general_code[cases$directorate_general == "DG Maritime Affairs and Fisheries"] <- "MARE"
 
 ##################################################
 # aid instrument
@@ -193,10 +194,10 @@ clean_decisions <- function(x) {
   x[x == "ec treaty - referral to the court of justice (non-compliance with court judgment)"] <- "Article 260(2) (ex Article 228(2)) of the Treaty on the Functioning of the European Union (TFEU): referral to the Court of Justice (non-compliance with a Court judgment)"
   x[x == "referral to the court of justice (non-compliance with court judgment) – ex article 228(2) ec treaty"] <- "Article 260(2) (ex Article 228(2)) of the Treaty on the Functioning of the European Union (TFEU): referral to the Court of Justice (non-compliance with a Court judgment)"
 
-  x[x == "referral to the court of justice (non-implementation of commission decision) (ex article 88(2) ec)"] <- "Article 108(2) (ex Article 88(2)) of the Treaty on the Functioning of the European Union (TFEU): referral to the Court of Justice (non-implementation of Commission decision)"
+  x[x == "referral to the court of justice (non-implementation of commission decision) (ex article 88(2) ec)"] <- "Article 108(2) of the Treaty on the Functioning of the European Union (TFEU): referral to the Court of Justice (non-compliance with a Commission decision)"
 
-  x[x == "article 23 - referral to court of justice (non-compliance with decisions)"] <- "Article 23(1) of Council Regulation (EC) No 659/1999: referral to the Court of Justice (non-compliance with a decision)"
-  x[x == "referral to court of justice (non-compliance with decisions)"] <- "Article 23(1) of Council Regulation (EC) No 659/1999: referral to the Court of Justice (non-compliance with a decision)"
+  x[x == "article 23 - referral to court of justice (non-compliance with decisions)"] <- "Article 108(2) of the Treaty on the Functioning of the European Union (TFEU): referral to the Court of Justice (non-compliance with a Commission decision)"
+  x[x == "referral to court of justice (non-compliance with decisions)"] <- "Article 108(2) of the Treaty on the Functioning of the European Union (TFEU): referral to the Court of Justice (non-compliance with a Commission decision)"
 
   # other
   x[x == "corrigendum"] <- ""
@@ -255,23 +256,24 @@ cases$referral <- as.numeric(stringr::str_detect(cases$decisions, "referral"))
 cases$recovery <- as.numeric(stringr::str_detect(cases$decisions, "negative decision with recovery"))
 
 # preliminary investigation outcome
-cases$outcome_preliminary <- "exempt from notification"
-cases$outcome_preliminary[cases$not_aid == 1 & cases$formal_investigation == 0] <- "does not constitute aid"
-cases$outcome_preliminary[cases$no_objection == 1 & cases$formal_investigation == 0] <- "no objection"
-cases$outcome_preliminary[cases$formal_investigation == 1] <- "formal investigation"
+cases$outcome_phase_1 <- "exempt from notification"
+cases$outcome_phase_1[cases$not_aid == 1 & cases$formal_investigation == 0] <- "does not constitute aid"
+cases$outcome_phase_1[cases$no_objection == 1 & cases$formal_investigation == 0] <- "no objection"
+cases$outcome_phase_1[cases$withdrawal == 1 & cases$formal_investigation == 0] <- "notification withdrawn"
+cases$outcome_phase_1[cases$formal_investigation == 1] <- "formal investigation"
 
-# table(cases$outcome_preliminary)
+# table(cases$outcome_phase_1)
 
 # formal investigation outcome
-cases$outcome_formal <- "not applicable"
-cases$outcome_formal[cases$formal_investigation == 1] <- "missing record"
-cases$outcome_formal[cases$conditional == 1 & cases$formal_investigation == 1] <- "conditional decision"
-cases$outcome_formal[cases$negative == 1 & cases$formal_investigation == 1] <- "negative decision"
-cases$outcome_formal[cases$positive == 1 & cases$formal_investigation == 1] <- "positive decision"
-cases$outcome_formal[cases$not_aid == 1 & cases$formal_investigation == 1] <- "does not constitute aid"
-cases$outcome_formal[cases$withdrawal == 1 & cases$formal_investigation == 1] <- "notification withdrawn"
+cases$outcome_phase_2 <- "not applicable"
+cases$outcome_phase_2[cases$formal_investigation == 1] <- "missing record"
+cases$outcome_phase_2[cases$conditional == 1 & cases$formal_investigation == 1] <- "conditional decision"
+cases$outcome_phase_2[cases$negative == 1 & cases$formal_investigation == 1] <- "negative decision"
+cases$outcome_phase_2[cases$positive == 1 & cases$formal_investigation == 1] <- "positive decision"
+cases$outcome_phase_2[cases$not_aid == 1 & cases$formal_investigation == 1] <- "does not constitute aid"
+cases$outcome_phase_2[cases$withdrawal == 1 & cases$formal_investigation == 1] <- "notification withdrawn"
 
-# table(cases$outcome_formal)
+# table(cases$outcome_phase_2)
 
 # overall outcome
 cases$outcome <- "missing"
@@ -535,7 +537,7 @@ cases <- dplyr::select(
   case_type,
   notification_date, decision_date,
   decisions, count_decisions,
-  outcome, outcome_preliminary, outcome_formal,
+  outcome, outcome_phase_1, outcome_phase_2,
   exempt, preliminary_investigation, formal_investigation,
   no_objection, not_aid, positive, negative, conditional, withdrawal,
   referral, recovery,
