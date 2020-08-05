@@ -22,15 +22,20 @@ the proceedures associated with the case, separated by a comma.}
 that state aid measure.}
 
 \item{\code{directorate_general}}{String. The name of the Directorate-General
-of the Commission that opened the case against the member state. Possible
-values include: \itemize{\item{Agriculture and Rural Development},
-\item{Competition}, and \item{Maritime Affairs and Fisheries}.}}
+(DG) of the Commission that opened the case against the member state.
+Possible values include: \itemize{
+\item{\code{DG Agriculture and Rural Development}}
+\item{\code{DG Competition}}
+\item{\code{DG Maritime Affairs and Fisheries}}
+}}
 
 \item{\code{directorate_general_code}}{String. The alphabetical code for the
-Directorate-General of the Commission that opened the case against the member
-state. Possible values include: \itemize{\item{\code{AGRI} (for DG
-Agriculture and Rural Development)}, \item{\code{COMP} (for DG Competition)},
-and \item{\code{MARE} (for DG Maritime Affairs and Fisheries)}.}}
+Directorate-General (DG) of the Commission that opened the case against the
+member state. Possible values include: \itemize{
+\item{\code{AGRI} (for DG Agriculture and Rural Development)}
+\item{\code{COMP} (for DG Competition)}
+\item{\code{MARE} (for DG Maritime Affairs and Fisheries)}
+}}
 
 \item{\code{case_type}}{String. The type of the case. Coded \code{NA} if no
 case type is recorded in the database. Possible values include:
@@ -136,16 +141,12 @@ defined by Article 107 TFEU.}
 \item{\code{Article 260(2) (ex Article 228(2)) of the Treaty on the
 Functioning of the European Union (TFEU): referral to the Court of Justice
 (non-compliance with a Court judgment)} — The Commission decided to refer the
-case to the Court of Justicefor non-compliance with a Court judgment.}
-\item{\code{Article 108(2) (ex Article 88(2)) of the Treaty on the
-Functioning of the European Union (TFEU): referral to the Court of Justice
-(non-implementation of a Commission decision)} — The Commission decided to
-refer the case to the Court of Justice for non-implementation of a Commission
-decision issued under Article 108(2) TFEU.}
-\item{\code{Article 23(1) of Council Regulation (EC) No 659/1999: referral to
-the Court of Justice (non-compliance with a decision)} — The Commission
-decided to refer the case to the Court of Justice for non-compliance with a
-Commission decision issued under Article 108(2) TFEU.}
+case to the Court of Justice for non-compliance with a Court judgment.}
+\item{\code{Article 108(2) of the Treaty on the Functioning of the European
+Union (TFEU): referral to the Court of Justice (non-compliance of a
+Commission decision)} — The Commission decided to refer the case to the Court
+of Justice for non-implementation of a Commission decision issued under
+Article 108(2) TFEU.}
 \item{\code{Article 12 of Council Regulation (EC) No 659/1999: referral to
 the Court of Justice (non-compliance with an injunction)} — The Commission
 decided to refer the case to the Court of Justice for non-compliance with an
@@ -156,10 +157,12 @@ injunction issued under Article 10(3) or Article 11(1) of Council Regulation
 }
 }
 \usage{
-cases
+decisions
 }
 \description{
-A dataset of all decisions in state aid cases opened by the European Commission
-against EU member states from 2000 through 2020.
+This dataset includes all decisions made in all state aid cases under Article
+108(2) TFEU and Council Regulation (EU) 2015/1589 over the same period. The
+unit of observation is a decision. The source of the raw data is the
+Commission's state aid cases database.
 }
 \keyword{datasets}

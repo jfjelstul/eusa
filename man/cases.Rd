@@ -21,15 +21,20 @@ the proceedures associated with the case, separated by a comma.}
 that state aid measure.}
 
 \item{\code{directorate_general}}{String. The name of the Directorate-General
-of the Commission that opened the case against the member state. Possible
-values include: \itemize{\item{Agriculture and Rural Development},
-\item{Competition}, and \item{Maritime Affairs and Fisheries}.}}
+(DG) of the Commission that opened the case against the member state.
+Possible values include: \itemize{
+\item{\code{DG Agriculture and Rural Development}}
+\item{\code{DG Competition}}
+\item{\code{DG Maritime Affairs and Fisheries}}.
+}}
 
 \item{\code{directorate_general_code}}{String. The alphabetical code for the
-Directorate-General of the Commission that opened the case against the member
-state. Possible values include: \itemize{\item{\code{AGRI} (for DG
-Agriculture and Rural Development)}, \item{\code{COMP} (for DG Competition)},
-and \item{\code{MARE} (for DG Maritime Affairs and Fisheries)}.}}
+Directorate-General (DG) of the Commission that opened the case against the
+member state. Possible values include: \itemize{
+\item{\code{AGRI} (for DG Agriculture and Rural Development)}
+\item{\code{COMP} (for DG Competition)}
+\item{\code{MARE} (for DG Maritime Affairs and Fisheries)}
+}}
 
 \item{\code{case_type}}{String. The type of the case. Coded \code{NA} if no
 case type is recorded in the database. Possible values include:
@@ -138,16 +143,12 @@ defined by Article 107 TFEU.}
 \item{\code{Article 260(2) (ex Article 228(2)) of the Treaty on the
 Functioning of the European Union (TFEU): referral to the Court of Justice
 (non-compliance with a Court judgment)} — The Commission decided to refer the
-case to the Court of Justicefor non-compliance with a Court judgment.}
-\item{\code{Article 108(2) (ex Article 88(2)) of the Treaty on the
-Functioning of the European Union (TFEU): referral to the Court of Justice
-(non-implementation of a Commission decision)} — The Commission decided to
-refer the case to the Court of Justice for non-implementation of a Commission
-decision issued under Article 108(2) TFEU.}
-\item{\code{Article 23(1) of Council Regulation (EC) No 659/1999: referral to
-the Court of Justice (non-compliance with a decision)} — The Commission
-decided to refer the case to the Court of Justice for non-compliance with a
-Commission decision issued under Article 108(2) TFEU.}
+case to the Court of Justice for non-compliance with a Court judgment.}
+\item{\code{Article 108(2) of the Treaty on the Functioning of the European
+Union (TFEU): referral to the Court of Justice (non-compliance of a
+Commission decision)} — The Commission decided to refer the case to the Court
+of Justice for non-implementation of a Commission decision issued under
+Article 108(2) TFEU.}
 \item{\code{Article 12 of Council Regulation (EC) No 659/1999: referral to
 the Court of Justice (non-compliance with an injunction)} — The Commission
 decided to refer the case to the Court of Justice for non-compliance with an
@@ -171,7 +172,7 @@ minimis.}
 examination or after a formal investigation, the Commission decided that
 the measure notified by the member state does not constitute state aid under
 Article 107 TFEU.}
-\item{\code{no objection} — After a preliminary examination, Commission
+\item{\code{no objection} — After a preliminary examination, the Commission
 decided not to raise objections to the state aid measure notified by the
 member state because the measure is compatible with the rules of the single
 market, as defined by Article 107 TFEU.}
@@ -198,12 +199,55 @@ initiating the formal investigation under Article 7 of Council Regulation
 }}
 
 \item{\code{outcome_phase_1}}{String. The outcome of the first phase of the
-state aid procedure (the preliminary examination).}
+state aid procedure (the preliminary examination). Possible values include:
+\itemize{
+\item{\code{exempt from notification} — The state aid measure notified by the
+member state is exempt from notification under Article 108(3) TFEU, either
+because the measure is exempt under the General Block Exemption Regulation
+(GBER) (Commission Regulation (EC) No 800/2008), or because the aid is de
+minimis.}
+\item{\code{does not constitute aid} — After a preliminary examination, the
+Commission decided that the measure notified by the member state does not
+constitute state aid under Article 107 TFEU.}
+\item{\code{no objection} — After a preliminary examination, the Commission
+decided not to raise objections to the state aid measure notified by the
+member state because the measure is compatible with the rules of the single
+market, as defined by Article 107 TFEU.}
+\item{\code{formal investigation} — After a preliminary examination, the
+Commission decided to initiate a formal investigation under Article 7 of
+Council Regulation (EC) No 659/1999.}
+\item{\code{notification withdrawn} — The member state that notified the
+state aid measure withdrew the notification during the preliminary
+examination.}
+}}
 
 \item{\code{outcome_phase_2}}{String. The outcome of the second phase of the
 state aid procedure (the formal investigation). Coded \code{not applicable}
 if the Commission did not initiate a formal investigation under Article 7 of
-Council Regulation (EC) No 659/1999.}
+Council Regulation (EC) No 659/1999. Possible values include: \itemize{
+\item{\code{does not constitute aid} — After a formal investigation, the
+Commission decided that the measure notified by the member state does not
+constitute state aid under Article 107 TFEU.}
+\item{\code{positive decision} — After a formal investigation, the Commission
+decided that the state aid measure notified by the member state is compatible
+with the rules of the single market, as defined by Article 107 TFEU, and
+approved the measure.}
+\item{\code{negative decision} — After a formal investigation, the Commission
+decided that the state aid measure notified by the member state is not
+compatible with the rules of the single market, as defined by Article 107
+TFEU, and did not approve the measure.}
+\item{\code{conditional decision} — After a formal investigation, the
+Commission decided to approve the state aid measure subject to conditions
+to make the measure compatible with the rules of the single market,
+as defined in Article 107 TFEU.}
+\item{\code{notification withdrawn} — The member state that notified the
+state aid measure withdrew the notification during a formal investigation.}
+\item{\code{missing record} — The Commission initiated a formal investigation
+but the database of state aid cases managed by the Directorate-General of
+Competition does not record the Commission making any decisions after
+initiating the formal investigation under Article 7 of Council Regulation
+(EC) No 659/1999.}
+}}
 
 \item{\code{exempt}}{Numeric. A dummy variable indicating whether the state
 aid measure is exempt from the Article 108(3) TFEU notification requirement
@@ -272,27 +316,27 @@ in the format \code{YYYY-MM-DD}. Coded \code{NA} if not applicable.}
 aid measure, separated by a comma. Coded \code{NA} if no specific instruments
 are reported. Possible values include:
 \itemize{
-\item{\code{debt write-off} — Definition.}
-\item{\code{direct grant} — Definition.}
-\item{\code{direct grant/interest rate subsidy} — Definition.}
-\item{\code{fiscal measure} — Definition.}
-\item{\code{guarantee} — Definition.}
-\item{\code{interest subsidy} — Definition.}
-\item{\code{loan/repayable advances} — Definition.}
-\item{\code{other forms of equity intervention} — Definition.}
-\item{\code{other forms of tax advantage} — Definition.}
-\item{\code{provision of risk capital} — Definition.}
-\item{\code{provision of risk finance} — Definition.}
-\item{\code{reduction of social security contributions} — Definition.}
-\item{\code{reimbursable grant} — Definition.}
-\item{\code{repayable advances} — Definition.}
-\item{\code{soft loan} — Definition.}
-\item{\code{subsidised services} — Definition.}
-\item{\code{tax advantage or tax exemption} — Definition.}
-\item{\code{tax allowance} — Definition.}
-\item{\code{tax base reduction} — Definition.}
-\item{\code{tax deferment} — Definition.}
-\item{\code{tax rate reduction} — Definition.}
+\item{\code{debt write-off}}
+\item{\code{direct grant}}
+\item{\code{direct grant/interest rate subsidy}}
+\item{\code{fiscal measure}}
+\item{\code{guarantee}}
+\item{\code{interest subsidy}}
+\item{\code{loan/repayable advances}}
+\item{\code{other forms of equity intervention}}
+\item{\code{other forms of tax advantage}}
+\item{\code{provision of risk capital}}
+\item{\code{provision of risk finance}}
+\item{\code{reduction of social security contributions}}
+\item{\code{reimbursable grant}}
+\item{\code{repayable advances}}
+\item{\code{soft loan}}
+\item{\code{subsidised services}}
+\item{\code{tax advantage or tax exemption}}
+\item{\code{tax allowance}}
+\item{\code{tax base reduction}}
+\item{\code{tax deferment}}
+\item{\code{tax rate reduction}}
 }}
 
 \item{\code{count_aid_instruments}}{Numeric. The number of instruments used
@@ -325,10 +369,9 @@ according to the Commission.}
 cases
 }
 \description{
-A dataset of all state aid cases opened by the European Commission against EU
-member states from 2000 through 2020 under Article 108 of the Treaty on the
-Function of the European Union (TFEU) and Council Regulation (EC) No
-659/1999, updated by Council Regulation (EU) 2015/1589. These regulations
-have a legal basis in Article 109 TFEU.
+A dataset of all state aid cases that the Commission has opened in response
+to member states notifying state aid measures under Article 108(3) TFEU from
+2000 through 2020. The unit of observation is a case. The source of the raw
+data is the Commission's state aid cases database.
 }
 \keyword{datasets}

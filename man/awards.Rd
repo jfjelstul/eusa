@@ -58,23 +58,23 @@ that received the state aid award.}
 
 \item{\code{aid_instrument}}{The policy instrument used in granting the
 award. Possible values include: \itemize{
-\item{\code{direct grant} — Definition.}
-\item{\code{direct grant/interest rate subsidy} — Definition.}
-\item{\code{guarantee} — Definition.}
-\item{\code{interest subsidy} — Definition.}
-\item{\code{loan/repayable advances} — Definition.}
-\item{\code{other} — Definition.}
-\item{\code{provision of risk capital} — Definition.}
-\item{\code{provision of risk finance} — Definition.}
-\item{\code{reduction of social security contributions} — Definition.}
-\item{\code{reimbursable grant} — Definition.}
-\item{\code{repayable advances} — Definition.}
-\item{\code{soft loan} — Definition.}
-\item{\code{subsidised services} — Definition.}
-\item{\code{tax advantage or tax exemption} — Definition.}
-\item{\code{tax allowance} — Definition.}
-\item{\code{tax base reduction} — Definition.}
-\item{\code{tax rate reduction} — Definition.}
+\item{\code{direct grant}}
+\item{\code{direct grant/interest rate subsidy}}
+\item{\code{guarantee}}
+\item{\code{interest subsidy}}
+\item{\code{loan/repayable advances}}
+\item{\code{other}}
+\item{\code{provision of risk capital}}
+\item{\code{provision of risk finance}}
+\item{\code{reduction of social security contributions}}
+\item{\code{reimbursable grant}}
+\item{\code{repayable advances}}
+\item{\code{soft loan}}
+\item{\code{subsidised services}}
+\item{\code{tax advantage or tax exemption}}
+\item{\code{tax allowance}}
+\item{\code{tax base reduction}}
+\item{\code{tax rate reduction}}
 }}
 
 \item{\code{raw_amount}}{Numeric. The amount of the award denominated in the
@@ -127,28 +127,26 @@ reported in euros, the value will be 1. The daily exchange rate quotations
 are from Yahoo Finance.}
 
 \item{\code{adjusted_amount}}{Numeric. The amount of the award in euros. Coded
-\coded{NA}. This is the raw value of the award in the currency of the member
+\code{NA}. This is the raw value of the award in the currency of the member
 state that granted the award times the exchange rate (the value of one unit
 of that currency in euros). Unlike the raw amount, this variable is directly
 comparable across observations.}
 
-\item{\code{voluntary}}{Numeric. A dummy variable indicating whether the amount
-of the state aid award is under the manditory reporting theshold.}
+\item{\code{voluntary}}{Numeric. A dummy variable indicating whether the
+amount of the state aid award is under the manditory reporting theshold of
+EUR 500,000.}
 
 }
 }
 \usage{
-cases
+awards
 }
 \description{
-A dataset of all awards granted by EU member states to firms as part of
-approved state aid schemes from 2016 through 2020. The unit of observation is
-an individual state aid award granted through a state aid scheme already
-approved by the Commission or as an ad hoc state aid measure approved by the
-Commission.
-}
-\details{
-The State Aid Modernisation programme (SAM) was adopted in 2014
-and came into force on 1 July 2016.
+This dataset includes all awards granted by member states as part of
+authorized state aid measures from 2016 through 2020. These awards are
+reported under transparency requirements introduced by the Commission's State
+Aid Modernisation (SAM) programme and Commission Regulation (EU) No 651/2014.
+The unit of observation is an individual award. The source of the raw data is
+the Commission's state aid transparency database.
 }
 \keyword{datasets}
