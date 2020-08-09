@@ -27,7 +27,7 @@ If you use data from this package in a project or paper, please use the followin
 
 > Joshua C. Fjelstul (2020). euaid: The European Union State Aid (EUSA) Database. R package version 1.0.0. https://github.com/jfjelstul/euaid
 
-The bibtex entry for the article is:
+The bibtex entry for this package is:
 
 ```
 @Manual{,
