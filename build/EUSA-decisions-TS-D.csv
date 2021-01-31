@@ -1,4 +1,4 @@
-"key_ID","year","case_type_ID","case_type","decision_type_ID","decision_type","count_cases"
+"key_ID","year","case_type_ID","case_type","decision_type_ID","decision_type","count_decisions"
 1,1988,1,"Scheme",1,"Article 108(4) of the Treaty on the Functioning of the European Union (TFEU): exempt from notification under Article 108(3)",0
 2,1988,1,"Scheme",2,"Article 4(2) of Council Regulation (EU) 2015/1589: decision does not constitute aid",0
 3,1988,1,"Scheme",3,"Article 4(3) of Council Regulation (EU) 2015/1589: decision not to raise objections",0

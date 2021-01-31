@@ -267,13 +267,13 @@
 266,2016,13,"Austria","AT",14,"administrative and support service activities","N",1,3805000
 267,2016,13,"Austria","AT",15,"public administration and defence; compulsory social security","O",0,0
 268,2016,13,"Austria","AT",16,"education","P",0,0
-269,2016,13,"Austria","AT",17,"human health and social work activities","Q",1,500000
-270,2016,13,"Austria","AT",18,"arts, entertainment and recreation","R",2,3000000
+269,2016,13,"Austria","AT",17,"human health and social work activities","Q",1,5e+05
+270,2016,13,"Austria","AT",18,"arts, entertainment and recreation","R",2,3e+06
 271,2016,13,"Austria","AT",19,"other services activities","S",1,790000
 272,2016,13,"Austria","AT",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 273,2016,13,"Austria","AT",21,"activities of extraterritorial organisations and bodies","U",0,0
 274,2016,14,"Finland","FI",1,"agriculture, forestry and fishing","A",1,750000
-275,2016,14,"Finland","FI",2,"mining and quarrying","B",1,2000000
+275,2016,14,"Finland","FI",2,"mining and quarrying","B",1,2e+06
 276,2016,14,"Finland","FI",3,"manufacturing","C",114,355582000
 277,2016,14,"Finland","FI",4,"electricity, gas, steam and air conditioning supply","D",11,36898000
 278,2016,14,"Finland","FI",5,"water supply; sewerage; waste managment and remediation activities","E",0,0
@@ -290,11 +290,11 @@
 289,2016,14,"Finland","FI",16,"education","P",1,10409000
 290,2016,14,"Finland","FI",17,"human health and social work activities","Q",3,3787000
 291,2016,14,"Finland","FI",18,"arts, entertainment and recreation","R",2,0
-292,2016,14,"Finland","FI",19,"other services activities","S",1,1000000
+292,2016,14,"Finland","FI",19,"other services activities","S",1,1e+06
 293,2016,14,"Finland","FI",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 294,2016,14,"Finland","FI",21,"activities of extraterritorial organisations and bodies","U",0,0
 295,2016,15,"Sweden","SE",1,"agriculture, forestry and fishing","A",13,4190000
-296,2016,15,"Sweden","SE",2,"mining and quarrying","B",3,9000000
+296,2016,15,"Sweden","SE",2,"mining and quarrying","B",3,9e+06
 297,2016,15,"Sweden","SE",3,"manufacturing","C",63,198645000
 298,2016,15,"Sweden","SE",4,"electricity, gas, steam and air conditioning supply","D",19,40395000
 299,2016,15,"Sweden","SE",5,"water supply; sewerage; waste managment and remediation activities","E",3,3750000
@@ -361,7 +361,7 @@
 360,2016,18,"Estonia","EE",3,"manufacturing","C",2,1284000
 361,2016,18,"Estonia","EE",4,"electricity, gas, steam and air conditioning supply","D",19,42309000
 362,2016,18,"Estonia","EE",5,"water supply; sewerage; waste managment and remediation activities","E",0,0
-363,2016,18,"Estonia","EE",6,"construction","F",1,1000000
+363,2016,18,"Estonia","EE",6,"construction","F",1,1e+06
 364,2016,18,"Estonia","EE",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",0,0
 365,2016,18,"Estonia","EE",8,"transporting and storage","H",0,0
 366,2016,18,"Estonia","EE",9,"accommodation and food service activities","I",0,0
@@ -408,7 +408,7 @@
 407,2016,20,"Latvia","LV",8,"transporting and storage","H",8,18876000
 408,2016,20,"Latvia","LV",9,"accommodation and food service activities","I",0,0
 409,2016,20,"Latvia","LV",10,"information and communication","J",0,0
-410,2016,20,"Latvia","LV",11,"financial and insurance activities","K",1,700000
+410,2016,20,"Latvia","LV",11,"financial and insurance activities","K",1,7e+05
 411,2016,20,"Latvia","LV",12,"real estate activities","L",5,4691000
 412,2016,20,"Latvia","LV",13,"professional, scientific and technical activities","M",0,0
 413,2016,20,"Latvia","LV",14,"administrative and support service activities","N",0,0
@@ -420,7 +420,7 @@
 419,2016,20,"Latvia","LV",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 420,2016,20,"Latvia","LV",21,"activities of extraterritorial organisations and bodies","U",0,0
 421,2016,21,"Lithuania","LT",1,"agriculture, forestry and fishing","A",1,94000
-422,2016,21,"Lithuania","LT",2,"mining and quarrying","B",1,900000
+422,2016,21,"Lithuania","LT",2,"mining and quarrying","B",1,9e+05
 423,2016,21,"Lithuania","LT",3,"manufacturing","C",47,32441000
 424,2016,21,"Lithuania","LT",4,"electricity, gas, steam and air conditioning supply","D",10,32147000
 425,2016,21,"Lithuania","LT",5,"water supply; sewerage; waste managment and remediation activities","E",6,4901000
@@ -491,7 +491,7 @@
 490,2016,24,"Slovakia","SK",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",0,0
 491,2016,24,"Slovakia","SK",8,"transporting and storage","H",0,0
 492,2016,24,"Slovakia","SK",9,"accommodation and food service activities","I",0,0
-493,2016,24,"Slovakia","SK",10,"information and communication","J",1,500000
+493,2016,24,"Slovakia","SK",10,"information and communication","J",1,5e+05
 494,2016,24,"Slovakia","SK",11,"financial and insurance activities","K",0,0
 495,2016,24,"Slovakia","SK",12,"real estate activities","L",0,0
 496,2016,24,"Slovakia","SK",13,"professional, scientific and technical activities","M",1,1800000
@@ -593,7 +593,7 @@
 592,2017,1,"Belgium","BE",4,"electricity, gas, steam and air conditioning supply","D",5,10692000
 593,2017,1,"Belgium","BE",5,"water supply; sewerage; waste managment and remediation activities","E",13,21388000
 594,2017,1,"Belgium","BE",6,"construction","F",2,4948000
-595,2017,1,"Belgium","BE",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",20,15000000
+595,2017,1,"Belgium","BE",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",20,1.5e+07
 596,2017,1,"Belgium","BE",8,"transporting and storage","H",20,41557000
 597,2017,1,"Belgium","BE",9,"accommodation and food service activities","I",7,15576000
 598,2017,1,"Belgium","BE",10,"information and communication","J",28,27122000
@@ -800,7 +800,7 @@
 799,2017,11,"Portugal","PT",1,"agriculture, forestry and fishing","A",2,1627000
 800,2017,11,"Portugal","PT",2,"mining and quarrying","B",8,4190000
 801,2017,11,"Portugal","PT",3,"manufacturing","C",1037,392062000
-802,2017,11,"Portugal","PT",4,"electricity, gas, steam and air conditioning supply","D",1,5000000
+802,2017,11,"Portugal","PT",4,"electricity, gas, steam and air conditioning supply","D",1,5e+06
 803,2017,11,"Portugal","PT",5,"water supply; sewerage; waste managment and remediation activities","E",10,1504000
 804,2017,11,"Portugal","PT",6,"construction","F",7,22780000
 805,2017,11,"Portugal","PT",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",20,14453000
@@ -861,7 +861,7 @@
 860,2017,13,"Austria","AT",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 861,2017,13,"Austria","AT",21,"activities of extraterritorial organisations and bodies","U",0,0
 862,2017,14,"Finland","FI",1,"agriculture, forestry and fishing","A",19,21766000
-863,2017,14,"Finland","FI",2,"mining and quarrying","B",2,11000000
+863,2017,14,"Finland","FI",2,"mining and quarrying","B",2,1.1e+07
 864,2017,14,"Finland","FI",3,"manufacturing","C",197,747127000
 865,2017,14,"Finland","FI",4,"electricity, gas, steam and air conditioning supply","D",27,134439000
 866,2017,14,"Finland","FI",5,"water supply; sewerage; waste managment and remediation activities","E",1,2238000
@@ -870,15 +870,15 @@
 869,2017,14,"Finland","FI",8,"transporting and storage","H",1,596000
 870,2017,14,"Finland","FI",9,"accommodation and food service activities","I",4,3144000
 871,2017,14,"Finland","FI",10,"information and communication","J",65,48466000
-872,2017,14,"Finland","FI",11,"financial and insurance activities","K",1,6000000
+872,2017,14,"Finland","FI",11,"financial and insurance activities","K",1,6e+06
 873,2017,14,"Finland","FI",12,"real estate activities","L",1,1896000
 874,2017,14,"Finland","FI",13,"professional, scientific and technical activities","M",13,8630000
 875,2017,14,"Finland","FI",14,"administrative and support service activities","N",1,1126000
 876,2017,14,"Finland","FI",15,"public administration and defence; compulsory social security","O",0,0
 877,2017,14,"Finland","FI",16,"education","P",0,0
-878,2017,14,"Finland","FI",17,"human health and social work activities","Q",1,500000
+878,2017,14,"Finland","FI",17,"human health and social work activities","Q",1,5e+05
 879,2017,14,"Finland","FI",18,"arts, entertainment and recreation","R",9,21995000
-880,2017,14,"Finland","FI",19,"other services activities","S",1,1000000
+880,2017,14,"Finland","FI",19,"other services activities","S",1,1e+06
 881,2017,14,"Finland","FI",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 882,2017,14,"Finland","FI",21,"activities of extraterritorial organisations and bodies","U",0,0
 883,2017,15,"Sweden","SE",1,"agriculture, forestry and fishing","A",26,12420000
@@ -959,7 +959,7 @@
 958,2017,18,"Estonia","EE",13,"professional, scientific and technical activities","M",3,4658000
 959,2017,18,"Estonia","EE",14,"administrative and support service activities","N",0,0
 960,2017,18,"Estonia","EE",15,"public administration and defence; compulsory social security","O",0,0
-961,2017,18,"Estonia","EE",16,"education","P",1,700000
+961,2017,18,"Estonia","EE",16,"education","P",1,7e+05
 962,2017,18,"Estonia","EE",17,"human health and social work activities","Q",0,0
 963,2017,18,"Estonia","EE",18,"arts, entertainment and recreation","R",20,67874000
 964,2017,18,"Estonia","EE",19,"other services activities","S",2,1753000
@@ -997,7 +997,7 @@
 996,2017,20,"Latvia","LV",9,"accommodation and food service activities","I",0,0
 997,2017,20,"Latvia","LV",10,"information and communication","J",0,0
 998,2017,20,"Latvia","LV",11,"financial and insurance activities","K",0,0
-999,2017,20,"Latvia","LV",12,"real estate activities","L",2,5000000
+999,2017,20,"Latvia","LV",12,"real estate activities","L",2,5e+06
 1000,2017,20,"Latvia","LV",13,"professional, scientific and technical activities","M",2,3215000
 1001,2017,20,"Latvia","LV",14,"administrative and support service activities","N",0,0
 1002,2017,20,"Latvia","LV",15,"public administration and defence; compulsory social security","O",1,198000
@@ -1112,7 +1112,7 @@
 1111,2017,25,"Slovenia","SI",19,"other services activities","S",0,0
 1112,2017,25,"Slovenia","SI",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 1113,2017,25,"Slovenia","SI",21,"activities of extraterritorial organisations and bodies","U",0,0
-1114,2017,26,"Bulgaria","BG",1,"agriculture, forestry and fishing","A",1,600000
+1114,2017,26,"Bulgaria","BG",1,"agriculture, forestry and fishing","A",1,6e+05
 1115,2017,26,"Bulgaria","BG",2,"mining and quarrying","B",10,8498000
 1116,2017,26,"Bulgaria","BG",3,"manufacturing","C",165,122806000
 1117,2017,26,"Bulgaria","BG",4,"electricity, gas, steam and air conditioning supply","D",0,0
@@ -1204,7 +1204,7 @@
 1203,2018,2,"France","FR",6,"construction","F",22,22287000
 1204,2018,2,"France","FR",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",32,30673000
 1205,2018,2,"France","FR",8,"transporting and storage","H",11,7308000
-1206,2018,2,"France","FR",9,"accommodation and food service activities","I",2,200000
+1206,2018,2,"France","FR",9,"accommodation and food service activities","I",2,2e+05
 1207,2018,2,"France","FR",10,"information and communication","J",302,219309000
 1208,2018,2,"France","FR",11,"financial and insurance activities","K",14,9047000
 1209,2018,2,"France","FR",12,"real estate activities","L",12,28938000
@@ -1361,7 +1361,7 @@
 1360,2018,9,"United Kingdom","UK",16,"education","P",9,14567000
 1361,2018,9,"United Kingdom","UK",17,"human health and social work activities","Q",7,12413000
 1362,2018,9,"United Kingdom","UK",18,"arts, entertainment and recreation","R",71,111445000
-1363,2018,9,"United Kingdom","UK",19,"other services activities","S",12,14000000
+1363,2018,9,"United Kingdom","UK",19,"other services activities","S",12,1.4e+07
 1364,2018,9,"United Kingdom","UK",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 1365,2018,9,"United Kingdom","UK",21,"activities of extraterritorial organisations and bodies","U",0,0
 1366,2018,10,"Greece","EL",1,"agriculture, forestry and fishing","A",9,2257000
@@ -1395,7 +1395,7 @@
 1394,2018,11,"Portugal","PT",8,"transporting and storage","H",7,24366000
 1395,2018,11,"Portugal","PT",9,"accommodation and food service activities","I",106,56540000
 1396,2018,11,"Portugal","PT",10,"information and communication","J",63,20376000
-1397,2018,11,"Portugal","PT",11,"financial and insurance activities","K",5,8000000
+1397,2018,11,"Portugal","PT",11,"financial and insurance activities","K",5,8e+06
 1398,2018,11,"Portugal","PT",12,"real estate activities","L",1,676000
 1399,2018,11,"Portugal","PT",13,"professional, scientific and technical activities","M",87,38307000
 1400,2018,11,"Portugal","PT",14,"administrative and support service activities","N",0,0
@@ -1458,7 +1458,7 @@
 1457,2018,14,"Finland","FI",8,"transporting and storage","H",2,1693000
 1458,2018,14,"Finland","FI",9,"accommodation and food service activities","I",4,3781000
 1459,2018,14,"Finland","FI",10,"information and communication","J",72,65098000
-1460,2018,14,"Finland","FI",11,"financial and insurance activities","K",1,500000
+1460,2018,14,"Finland","FI",11,"financial and insurance activities","K",1,5e+05
 1461,2018,14,"Finland","FI",12,"real estate activities","L",3,2390000
 1462,2018,14,"Finland","FI",13,"professional, scientific and technical activities","M",16,14836000
 1463,2018,14,"Finland","FI",14,"administrative and support service activities","N",2,1250000
@@ -1539,7 +1539,7 @@
 1538,2018,18,"Estonia","EE",5,"water supply; sewerage; waste managment and remediation activities","E",1,4529000
 1539,2018,18,"Estonia","EE",6,"construction","F",2,20548000
 1540,2018,18,"Estonia","EE",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",1,1999000
-1541,2018,18,"Estonia","EE",8,"transporting and storage","H",2,21000000
+1541,2018,18,"Estonia","EE",8,"transporting and storage","H",2,2.1e+07
 1542,2018,18,"Estonia","EE",9,"accommodation and food service activities","I",2,7819000
 1543,2018,18,"Estonia","EE",10,"information and communication","J",3,1443000
 1544,2018,18,"Estonia","EE",11,"financial and insurance activities","K",0,0
@@ -1568,7 +1568,7 @@
 1567,2018,19,"Hungary","HU",13,"professional, scientific and technical activities","M",118,73398000
 1568,2018,19,"Hungary","HU",14,"administrative and support service activities","N",28,21752000
 1569,2018,19,"Hungary","HU",15,"public administration and defence; compulsory social security","O",271,282956000
-1570,2018,19,"Hungary","HU",16,"education","P",1,600000
+1570,2018,19,"Hungary","HU",16,"education","P",1,6e+05
 1571,2018,19,"Hungary","HU",17,"human health and social work activities","Q",18,12849000
 1572,2018,19,"Hungary","HU",18,"arts, entertainment and recreation","R",58,82165000
 1573,2018,19,"Hungary","HU",19,"other services activities","S",24,61952000
@@ -1605,7 +1605,7 @@
 1604,2018,21,"Lithuania","LT",8,"transporting and storage","H",1,1139000
 1605,2018,21,"Lithuania","LT",9,"accommodation and food service activities","I",0,0
 1606,2018,21,"Lithuania","LT",10,"information and communication","J",14,62192000
-1607,2018,21,"Lithuania","LT",11,"financial and insurance activities","K",1,500000
+1607,2018,21,"Lithuania","LT",11,"financial and insurance activities","K",1,5e+05
 1608,2018,21,"Lithuania","LT",12,"real estate activities","L",1,625000
 1609,2018,21,"Lithuania","LT",13,"professional, scientific and technical activities","M",20,22476000
 1610,2018,21,"Lithuania","LT",14,"administrative and support service activities","N",1,1183000
@@ -2033,7 +2033,7 @@
 2032,2019,13,"Austria","AT",16,"education","P",0,0
 2033,2019,13,"Austria","AT",17,"human health and social work activities","Q",1,510000
 2034,2019,13,"Austria","AT",18,"arts, entertainment and recreation","R",3,1795000
-2035,2019,13,"Austria","AT",19,"other services activities","S",1,800000
+2035,2019,13,"Austria","AT",19,"other services activities","S",1,8e+05
 2036,2019,13,"Austria","AT",20,"activities of households as employers; undifferentiated goods - and services - producing activities of households for own use","T",0,0
 2037,2019,13,"Austria","AT",21,"activities of extraterritorial organisations and bodies","U",0,0
 2038,2019,14,"Finland","FI",1,"agriculture, forestry and fishing","A",17,31478000
@@ -2165,7 +2165,7 @@
 2164,2019,20,"Latvia","LV",1,"agriculture, forestry and fishing","A",1,571000
 2165,2019,20,"Latvia","LV",2,"mining and quarrying","B",0,0
 2166,2019,20,"Latvia","LV",3,"manufacturing","C",40,54959000
-2167,2019,20,"Latvia","LV",4,"electricity, gas, steam and air conditioning supply","D",1,2000000
+2167,2019,20,"Latvia","LV",4,"electricity, gas, steam and air conditioning supply","D",1,2e+06
 2168,2019,20,"Latvia","LV",5,"water supply; sewerage; waste managment and remediation activities","E",0,0
 2169,2019,20,"Latvia","LV",6,"construction","F",13,27674000
 2170,2019,20,"Latvia","LV",7,"wholesale and retail trade; repair of motor vehicles and motorcycles","G",0,0
@@ -2616,7 +2616,7 @@
 2615,2020,13,"Austria","AT",11,"financial and insurance activities","K",0,0
 2616,2020,13,"Austria","AT",12,"real estate activities","L",1,16000
 2617,2020,13,"Austria","AT",13,"professional, scientific and technical activities","M",43,79754000
-2618,2020,13,"Austria","AT",14,"administrative and support service activities","N",1,500000
+2618,2020,13,"Austria","AT",14,"administrative and support service activities","N",1,5e+05
 2619,2020,13,"Austria","AT",15,"public administration and defence; compulsory social security","O",0,0
 2620,2020,13,"Austria","AT",16,"education","P",0,0
 2621,2020,13,"Austria","AT",17,"human health and social work activities","Q",0,0
@@ -2634,7 +2634,7 @@
 2633,2020,14,"Finland","FI",8,"transporting and storage","H",3,1800000
 2634,2020,14,"Finland","FI",9,"accommodation and food service activities","I",4,3205000
 2635,2020,14,"Finland","FI",10,"information and communication","J",46,40491000
-2636,2020,14,"Finland","FI",11,"financial and insurance activities","K",1,20000000
+2636,2020,14,"Finland","FI",11,"financial and insurance activities","K",1,2e+07
 2637,2020,14,"Finland","FI",12,"real estate activities","L",0,0
 2638,2020,14,"Finland","FI",13,"professional, scientific and technical activities","M",19,27575000
 2639,2020,14,"Finland","FI",14,"administrative and support service activities","N",0,0
@@ -2848,7 +2848,7 @@
 2847,2020,24,"Slovakia","SK",12,"real estate activities","L",0,0
 2848,2020,24,"Slovakia","SK",13,"professional, scientific and technical activities","M",3,8978000
 2849,2020,24,"Slovakia","SK",14,"administrative and support service activities","N",0,0
-2850,2020,24,"Slovakia","SK",15,"public administration and defence; compulsory social security","O",1,1000000
+2850,2020,24,"Slovakia","SK",15,"public administration and defence; compulsory social security","O",1,1e+06
 2851,2020,24,"Slovakia","SK",16,"education","P",0,0
 2852,2020,24,"Slovakia","SK",17,"human health and social work activities","Q",0,0
 2853,2020,24,"Slovakia","SK",18,"arts, entertainment and recreation","R",0,0
