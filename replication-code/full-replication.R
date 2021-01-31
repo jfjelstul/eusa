@@ -156,40 +156,80 @@ load("data/NACE_codes.RData")
 ##################################################
 
 # cases
-write.csv(cases, "build/EUSA-cases.csv", row.names = FALSE)
-write.csv(cases_TS, "build/EUSA-cases-TS.csv", row.names = FALSE)
-write.csv(cases_TS_D, "build/EUSA-cases-TS-D.csv", row.names = FALSE)
-write.csv(cases_CSTS_MS, "build/EUSA-cases-CSTS-MS.csv", row.names = FALSE)
-write.csv(cases_CSTS_MS_D, "build/EUSA-cases-CSTS-MS-D.csv", row.names = FALSE)
-write.csv(cases_CSTS_DG, "build/EUSA-cases-CSTS-DG.csv", row.names = FALSE)
-write.csv(cases_CSTS_DG_D, "build/EUSA-cases-CSTS-DG-D.csv", row.names = FALSE)
-write.csv(cases_DDY, "build/EUSA-cases-DDY.csv", row.names = FALSE)
-write.csv(cases_DDY_D, "build/EUSA-cases-DDY-D.csv", row.names = FALSE)
-write.csv(cases_network, "build/EUSA-cases-network.csv", row.names = FALSE)
-write.csv(cases_network_D, "build/EUSA-cases-network-D.csv", row.names = FALSE)
+write.csv(cases, "build/EUSA-cases.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_TS, "build/EUSA-cases-TS.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_TS_D, "build/EUSA-cases-TS-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_CSTS_MS, "build/EUSA-cases-CSTS-MS.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_CSTS_MS_D, "build/EUSA-cases-CSTS-MS-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_CSTS_DG, "build/EUSA-cases-CSTS-DG.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_CSTS_DG_D, "build/EUSA-cases-CSTS-DG-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_DDY, "build/EUSA-cases-DDY.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_DDY_D, "build/EUSA-cases-DDY-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_network, "build/EUSA-cases-network.csv", row.names = FALSE, quote = TRUE)
+write.csv(cases_network_D, "build/EUSA-cases-network-D.csv", row.names = FALSE, quote = TRUE)
 
 # decisions
-write.csv(decisions, "build/EUSA-decisions.csv", row.names = FALSE)
-write.csv(decisions_TS, "build/EUSA-decisions-TS.csv", row.names = FALSE)
-write.csv(decisions_TS_D, "build/EUSA-decisions-TS-D.csv", row.names = FALSE)
-write.csv(decisions_CSTS_MS, "build/EUSA-decisions-CSTS-MS.csv", row.names = FALSE)
-write.csv(decisions_CSTS_MS_D, "build/EUSA-decisions-CSTS-MS-D.csv", row.names = FALSE)
-write.csv(decisions_CSTS_DG, "build/EUSA-decisions-CSTS-DG.csv", row.names = FALSE)
-write.csv(decisions_CSTS_DG_D, "build/EUSA-decisions-CSTS-DG-D.csv", row.names = FALSE)
-write.csv(decisions_DDY, "build/EUSA-decisions-DDY.csv", row.names = FALSE)
-write.csv(decisions_DDY_D, "build/EUSA-decisions-DDY-D.csv", row.names = FALSE)
-write.csv(decisions_network, "build/EUSA-decisions-network.csv", row.names = FALSE)
-write.csv(decisions_network_D, "build/EUSA-decisions-network-D.csv", row.names = FALSE)
+write.csv(decisions, "build/EUSA-decisions.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_TS, "build/EUSA-decisions-TS.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_TS_D, "build/EUSA-decisions-TS-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_CSTS_MS, "build/EUSA-decisions-CSTS-MS.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_CSTS_MS_D, "build/EUSA-decisions-CSTS-MS-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_CSTS_DG, "build/EUSA-decisions-CSTS-DG.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_CSTS_DG_D, "build/EUSA-decisions-CSTS-DG-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_DDY, "build/EUSA-decisions-DDY.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_DDY_D, "build/EUSA-decisions-DDY-D.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_network, "build/EUSA-decisions-network.csv", row.names = FALSE, quote = TRUE)
+write.csv(decisions_network_D, "build/EUSA-decisions-network-D.csv", row.names = FALSE, quote = TRUE)
 
 # awards
-write.csv(awards, "build/EUSA-awards.csv", row.names = FALSE)
-write.csv(awards_CSTS, "build/EUSA-awards-CSTS.csv", row.names = FALSE)
-write.csv(awards_CSTS_B, "build/EUSA-awards-CSTS-B.csv", row.names = FALSE)
-write.csv(awards_CSTS_I, "build/EUSA-awards-CSTS-I.csv", row.names = FALSE)
-write.csv(awards_CSTS_S, "build/EUSA-awards-CSTS-S.csv", row.names = FALSE)
+write.csv(awards, "build/EUSA-awards.csv", row.names = FALSE, quote = TRUE)
+write.csv(awards_CSTS, "build/EUSA-awards-CSTS.csv", row.names = FALSE, quote = TRUE)
+write.csv(awards_CSTS_B, "build/EUSA-awards-CSTS-B.csv", row.names = FALSE, quote = TRUE)
+write.csv(awards_CSTS_I, "build/EUSA-awards-CSTS-I.csv", row.names = FALSE, quote = TRUE)
+write.csv(awards_CSTS_S, "build/EUSA-awards-CSTS-S.csv", row.names = FALSE, quote = TRUE)
 
 # NACE codes
-write.csv(NACE_codes, "build/EUSA-NACE-codes.csv", row.names = FALSE)
+write.csv(NACE_codes, "build/EUSA-NACE-codes.csv", row.names = FALSE, quote = TRUE)
+
+##################################################
+# write database data
+##################################################
+
+# cases
+write.csv(cases, "build-database/EUSA-cases.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_TS, "build-database/EUSA-cases-TS.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_TS_D, "build-database/EUSA-cases-TS-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_CSTS_MS, "build-database/EUSA-cases-CSTS-MS.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_CSTS_MS_D, "build-database/EUSA-cases-CSTS-MS-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_CSTS_DG, "build-database/EUSA-cases-CSTS-DG.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_CSTS_DG_D, "build-database/EUSA-cases-CSTS-DG-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_DDY, "build-database/EUSA-cases-DDY.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_DDY_D, "build-database/EUSA-cases-DDY-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_network, "build-database/EUSA-cases-network.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(cases_network_D, "build-database/EUSA-cases-network-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+
+# decisions
+write.csv(decisions, "build-database/EUSA-decisions.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_TS, "build-database/EUSA-decisions-TS.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_TS_D, "build-database/EUSA-decisions-TS-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_CSTS_MS, "build-database/EUSA-decisions-CSTS-MS.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_CSTS_MS_D, "build-database/EUSA-decisions-CSTS-MS-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_CSTS_DG, "build-database/EUSA-decisions-CSTS-DG.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_CSTS_DG_D, "build-database/EUSA-decisions-CSTS-DG-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_DDY, "build-database/EUSA-decisions-DDY.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_DDY_D, "build-database/EUSA-decisions-DDY-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_network, "build-database/EUSA-decisions-network.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(decisions_network_D, "build-database/EUSA-decisions-network-D.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+
+# awards
+write.csv(awards, "build-database/EUSA-awards.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(awards_CSTS, "build-database/EUSA-awards-CSTS.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(awards_CSTS_B, "build-database/EUSA-awards-CSTS-B.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(awards_CSTS_I, "build-database/EUSA-awards-CSTS-I.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+write.csv(awards_CSTS_S, "build-database/EUSA-awards-CSTS-S.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+
+# NACE codes
+write.csv(NACE_codes, "build-database/EUSA-NACE-codes.csv", row.names = FALSE, quote = TRUE, na = "\\N")
 
 ###########################################################################
 # end R script
