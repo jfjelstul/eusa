@@ -1,0 +1,281 @@
+"key_ID","year","member_state_ID","member_state","member_state_code","beneficiary_type_ID","beneficiary_type","count_awards","total_amount_euros"
+1,2016,1,"Belgium","BE",1,"Small or medium-sized enterprise (SME)",287,435484000
+2,2016,1,"Belgium","BE",2,"Large enterprise",119,194921000
+3,2016,2,"France","FR",1,"Small or medium-sized enterprise (SME)",748,1910872000
+4,2016,2,"France","FR",2,"Large enterprise",231,482713000
+5,2016,3,"Germany","DE",1,"Small or medium-sized enterprise (SME)",2168,1736838000
+6,2016,3,"Germany","DE",2,"Large enterprise",3317,9082837000
+7,2016,4,"Italy","IT",1,"Small or medium-sized enterprise (SME)",113,42038000
+8,2016,4,"Italy","IT",2,"Large enterprise",155,85590000
+9,2016,5,"Luxembourg","LU",1,"Small or medium-sized enterprise (SME)",9,63238000
+10,2016,5,"Luxembourg","LU",2,"Large enterprise",18,26251000
+11,2016,6,"Netherlands","NL",1,"Small or medium-sized enterprise (SME)",471,3576500000
+12,2016,6,"Netherlands","NL",2,"Large enterprise",96,4960232000
+13,2016,7,"Denmark","DK",1,"Small or medium-sized enterprise (SME)",106,77637000
+14,2016,7,"Denmark","DK",2,"Large enterprise",191,450509000
+15,2016,8,"Ireland","IE",1,"Small or medium-sized enterprise (SME)",55,37603000
+16,2016,8,"Ireland","IE",2,"Large enterprise",40,336915000
+17,2016,9,"United Kingdom","UK",1,"Small or medium-sized enterprise (SME)",408,1219741000
+18,2016,9,"United Kingdom","UK",2,"Large enterprise",217,2187475000
+19,2016,10,"Greece","EL",1,"Small or medium-sized enterprise (SME)",0,0
+20,2016,10,"Greece","EL",2,"Large enterprise",27,170373000
+21,2016,11,"Portugal","PT",1,"Small or medium-sized enterprise (SME)",1266,378881000
+22,2016,11,"Portugal","PT",2,"Large enterprise",160,137206000
+23,2016,12,"Spain","ES",1,"Small or medium-sized enterprise (SME)",0,0
+24,2016,12,"Spain","ES",2,"Large enterprise",0,0
+25,2016,13,"Austria","AT",1,"Small or medium-sized enterprise (SME)",72,47687000
+26,2016,13,"Austria","AT",2,"Large enterprise",105,143470000
+27,2016,14,"Finland","FI",1,"Small or medium-sized enterprise (SME)",62,46968000
+28,2016,14,"Finland","FI",2,"Large enterprise",103,386276000
+29,2016,15,"Sweden","SE",1,"Small or medium-sized enterprise (SME)",97,126142000
+30,2016,15,"Sweden","SE",2,"Large enterprise",337,396479000
+31,2016,16,"Cyprus","CY",1,"Small or medium-sized enterprise (SME)",0,0
+32,2016,16,"Cyprus","CY",2,"Large enterprise",0,0
+33,2016,17,"Czech Republic","CZ",1,"Small or medium-sized enterprise (SME)",480,156048000
+34,2016,17,"Czech Republic","CZ",2,"Large enterprise",163,225623000
+35,2016,18,"Estonia","EE",1,"Small or medium-sized enterprise (SME)",22,32817000
+36,2016,18,"Estonia","EE",2,"Large enterprise",19,60705000
+37,2016,19,"Hungary","HU",1,"Small or medium-sized enterprise (SME)",1564,345104000
+38,2016,19,"Hungary","HU",2,"Large enterprise",497,743350000
+39,2016,20,"Latvia","LV",1,"Small or medium-sized enterprise (SME)",18,22719000
+40,2016,20,"Latvia","LV",2,"Large enterprise",6,12826000
+41,2016,21,"Lithuania","LT",1,"Small or medium-sized enterprise (SME)",113,90242000
+42,2016,21,"Lithuania","LT",2,"Large enterprise",15,79400000
+43,2016,22,"Malta","MT",1,"Small or medium-sized enterprise (SME)",16,28235000
+44,2016,22,"Malta","MT",2,"Large enterprise",4,11493000
+45,2016,23,"Poland","PL",1,"Small or medium-sized enterprise (SME)",0,0
+46,2016,23,"Poland","PL",2,"Large enterprise",0,0
+47,2016,24,"Slovakia","SK",1,"Small or medium-sized enterprise (SME)",18,23377000
+48,2016,24,"Slovakia","SK",2,"Large enterprise",5,30072000
+49,2016,25,"Slovenia","SI",1,"Small or medium-sized enterprise (SME)",17,12693000
+50,2016,25,"Slovenia","SI",2,"Large enterprise",9,6447000
+51,2016,26,"Bulgaria","BG",1,"Small or medium-sized enterprise (SME)",329,1498109000
+52,2016,26,"Bulgaria","BG",2,"Large enterprise",74,522723000
+53,2016,27,"Romania","RO",1,"Small or medium-sized enterprise (SME)",0,0
+54,2016,27,"Romania","RO",2,"Large enterprise",0,0
+55,2016,28,"Croatia","HR",1,"Small or medium-sized enterprise (SME)",21,23942000
+56,2016,28,"Croatia","HR",2,"Large enterprise",16,55129000
+57,2017,1,"Belgium","BE",1,"Small or medium-sized enterprise (SME)",428,1039351000
+58,2017,1,"Belgium","BE",2,"Large enterprise",195,309216000
+59,2017,2,"France","FR",1,"Small or medium-sized enterprise (SME)",1737,4696055000
+60,2017,2,"France","FR",2,"Large enterprise",329,626236000
+61,2017,3,"Germany","DE",1,"Small or medium-sized enterprise (SME)",2709,2429913000
+62,2017,3,"Germany","DE",2,"Large enterprise",3174,7571035000
+63,2017,4,"Italy","IT",1,"Small or medium-sized enterprise (SME)",1431,333898000
+64,2017,4,"Italy","IT",2,"Large enterprise",1223,2171988000
+65,2017,5,"Luxembourg","LU",1,"Small or medium-sized enterprise (SME)",8,70767000
+66,2017,5,"Luxembourg","LU",2,"Large enterprise",19,254486000
+67,2017,6,"Netherlands","NL",1,"Small or medium-sized enterprise (SME)",1508,5127555000
+68,2017,6,"Netherlands","NL",2,"Large enterprise",256,1862793000
+69,2017,7,"Denmark","DK",1,"Small or medium-sized enterprise (SME)",128,90165000
+70,2017,7,"Denmark","DK",2,"Large enterprise",99,171907000
+71,2017,8,"Ireland","IE",1,"Small or medium-sized enterprise (SME)",58,29871000
+72,2017,8,"Ireland","IE",2,"Large enterprise",76,164809000
+73,2017,9,"United Kingdom","UK",1,"Small or medium-sized enterprise (SME)",765,1135909000
+74,2017,9,"United Kingdom","UK",2,"Large enterprise",484,3958289000
+75,2017,10,"Greece","EL",1,"Small or medium-sized enterprise (SME)",13,37749000
+76,2017,10,"Greece","EL",2,"Large enterprise",3,7494000
+77,2017,11,"Portugal","PT",1,"Small or medium-sized enterprise (SME)",1129,363897000
+78,2017,11,"Portugal","PT",2,"Large enterprise",272,337301000
+79,2017,12,"Spain","ES",1,"Small or medium-sized enterprise (SME)",0,0
+80,2017,12,"Spain","ES",2,"Large enterprise",0,0
+81,2017,13,"Austria","AT",1,"Small or medium-sized enterprise (SME)",219,131299000
+82,2017,13,"Austria","AT",2,"Large enterprise",205,314826000
+83,2017,14,"Finland","FI",1,"Small or medium-sized enterprise (SME)",161,157694000
+84,2017,14,"Finland","FI",2,"Large enterprise",193,876126000
+85,2017,15,"Sweden","SE",1,"Small or medium-sized enterprise (SME)",278,471723000
+86,2017,15,"Sweden","SE",2,"Large enterprise",907,1557695000
+87,2017,16,"Cyprus","CY",1,"Small or medium-sized enterprise (SME)",0,0
+88,2017,16,"Cyprus","CY",2,"Large enterprise",0,0
+89,2017,17,"Czech Republic","CZ",1,"Small or medium-sized enterprise (SME)",883,650295000
+90,2017,17,"Czech Republic","CZ",2,"Large enterprise",427,765209000
+91,2017,18,"Estonia","EE",1,"Small or medium-sized enterprise (SME)",70,110381000
+92,2017,18,"Estonia","EE",2,"Large enterprise",37,113099000
+93,2017,19,"Hungary","HU",1,"Small or medium-sized enterprise (SME)",1951,843603000
+94,2017,19,"Hungary","HU",2,"Large enterprise",845,1447909000
+95,2017,20,"Latvia","LV",1,"Small or medium-sized enterprise (SME)",174,246942000
+96,2017,20,"Latvia","LV",2,"Large enterprise",43,95427000
+97,2017,21,"Lithuania","LT",1,"Small or medium-sized enterprise (SME)",133,260356000
+98,2017,21,"Lithuania","LT",2,"Large enterprise",28,318624000
+99,2017,22,"Malta","MT",1,"Small or medium-sized enterprise (SME)",40,57072000
+100,2017,22,"Malta","MT",2,"Large enterprise",4,7715000
+101,2017,23,"Poland","PL",1,"Small or medium-sized enterprise (SME)",0,0
+102,2017,23,"Poland","PL",2,"Large enterprise",0,0
+103,2017,24,"Slovakia","SK",1,"Small or medium-sized enterprise (SME)",131,203797000
+104,2017,24,"Slovakia","SK",2,"Large enterprise",33,109650000
+105,2017,25,"Slovenia","SI",1,"Small or medium-sized enterprise (SME)",11,11838000
+106,2017,25,"Slovenia","SI",2,"Large enterprise",11,38022000
+107,2017,26,"Bulgaria","BG",1,"Small or medium-sized enterprise (SME)",171,112654000
+108,2017,26,"Bulgaria","BG",2,"Large enterprise",71,65485000
+109,2017,27,"Romania","RO",1,"Small or medium-sized enterprise (SME)",0,0
+110,2017,27,"Romania","RO",2,"Large enterprise",0,0
+111,2017,28,"Croatia","HR",1,"Small or medium-sized enterprise (SME)",15,18123000
+112,2017,28,"Croatia","HR",2,"Large enterprise",22,79164000
+113,2018,1,"Belgium","BE",1,"Small or medium-sized enterprise (SME)",289,310900000
+114,2018,1,"Belgium","BE",2,"Large enterprise",198,265493000
+115,2018,2,"France","FR",1,"Small or medium-sized enterprise (SME)",1383,3421016000
+116,2018,2,"France","FR",2,"Large enterprise",324,560530000
+117,2018,3,"Germany","DE",1,"Small or medium-sized enterprise (SME)",1841,1609354000
+118,2018,3,"Germany","DE",2,"Large enterprise",2081,6910451000
+119,2018,4,"Italy","IT",1,"Small or medium-sized enterprise (SME)",4664,2056965000
+120,2018,4,"Italy","IT",2,"Large enterprise",2888,1675705000
+121,2018,5,"Luxembourg","LU",1,"Small or medium-sized enterprise (SME)",32,16969000
+122,2018,5,"Luxembourg","LU",2,"Large enterprise",17,45163000
+123,2018,6,"Netherlands","NL",1,"Small or medium-sized enterprise (SME)",2660,7341958000
+124,2018,6,"Netherlands","NL",2,"Large enterprise",418,1407388000
+125,2018,7,"Denmark","DK",1,"Small or medium-sized enterprise (SME)",202,190049000
+126,2018,7,"Denmark","DK",2,"Large enterprise",230,673653000
+127,2018,8,"Ireland","IE",1,"Small or medium-sized enterprise (SME)",42,32148000
+128,2018,8,"Ireland","IE",2,"Large enterprise",119,911895000
+129,2018,9,"United Kingdom","UK",1,"Small or medium-sized enterprise (SME)",1284,1938176000
+130,2018,9,"United Kingdom","UK",2,"Large enterprise",637,2505583000
+131,2018,10,"Greece","EL",1,"Small or medium-sized enterprise (SME)",305,416660000
+132,2018,10,"Greece","EL",2,"Large enterprise",151,776206000
+133,2018,11,"Portugal","PT",1,"Small or medium-sized enterprise (SME)",977,504002000
+134,2018,11,"Portugal","PT",2,"Large enterprise",195,205864000
+135,2018,12,"Spain","ES",1,"Small or medium-sized enterprise (SME)",0,0
+136,2018,12,"Spain","ES",2,"Large enterprise",0,0
+137,2018,13,"Austria","AT",1,"Small or medium-sized enterprise (SME)",273,173023000
+138,2018,13,"Austria","AT",2,"Large enterprise",235,320737000
+139,2018,14,"Finland","FI",1,"Small or medium-sized enterprise (SME)",187,201417000
+140,2018,14,"Finland","FI",2,"Large enterprise",193,898903000
+141,2018,15,"Sweden","SE",1,"Small or medium-sized enterprise (SME)",450,685423000
+142,2018,15,"Sweden","SE",2,"Large enterprise",778,1871487000
+143,2018,16,"Cyprus","CY",1,"Small or medium-sized enterprise (SME)",0,0
+144,2018,16,"Cyprus","CY",2,"Large enterprise",1,0
+145,2018,17,"Czech Republic","CZ",1,"Small or medium-sized enterprise (SME)",824,466176000
+146,2018,17,"Czech Republic","CZ",2,"Large enterprise",431,762677000
+147,2018,18,"Estonia","EE",1,"Small or medium-sized enterprise (SME)",81,117735000
+148,2018,18,"Estonia","EE",2,"Large enterprise",45,188284000
+149,2018,19,"Hungary","HU",1,"Small or medium-sized enterprise (SME)",1556,740584000
+150,2018,19,"Hungary","HU",2,"Large enterprise",697,1022845000
+151,2018,20,"Latvia","LV",1,"Small or medium-sized enterprise (SME)",169,189083000
+152,2018,20,"Latvia","LV",2,"Large enterprise",62,146576000
+153,2018,21,"Lithuania","LT",1,"Small or medium-sized enterprise (SME)",143,299542000
+154,2018,21,"Lithuania","LT",2,"Large enterprise",61,146017000
+155,2018,22,"Malta","MT",1,"Small or medium-sized enterprise (SME)",19,19278000
+156,2018,22,"Malta","MT",2,"Large enterprise",4,5650000
+157,2018,23,"Poland","PL",1,"Small or medium-sized enterprise (SME)",0,0
+158,2018,23,"Poland","PL",2,"Large enterprise",0,0
+159,2018,24,"Slovakia","SK",1,"Small or medium-sized enterprise (SME)",71,119150000
+160,2018,24,"Slovakia","SK",2,"Large enterprise",22,193877000
+161,2018,25,"Slovenia","SI",1,"Small or medium-sized enterprise (SME)",8,10547000
+162,2018,25,"Slovenia","SI",2,"Large enterprise",5,19027000
+163,2018,26,"Bulgaria","BG",1,"Small or medium-sized enterprise (SME)",52,23828000
+164,2018,26,"Bulgaria","BG",2,"Large enterprise",30,30417000
+165,2018,27,"Romania","RO",1,"Small or medium-sized enterprise (SME)",0,0
+166,2018,27,"Romania","RO",2,"Large enterprise",0,0
+167,2018,28,"Croatia","HR",1,"Small or medium-sized enterprise (SME)",24,13323000
+168,2018,28,"Croatia","HR",2,"Large enterprise",32,59447000
+169,2019,1,"Belgium","BE",1,"Small or medium-sized enterprise (SME)",326,374198000
+170,2019,1,"Belgium","BE",2,"Large enterprise",174,373153000
+171,2019,2,"France","FR",1,"Small or medium-sized enterprise (SME)",1275,3790132000
+172,2019,2,"France","FR",2,"Large enterprise",303,710337000
+173,2019,3,"Germany","DE",1,"Small or medium-sized enterprise (SME)",1748,1056413000
+174,2019,3,"Germany","DE",2,"Large enterprise",730,1262081000
+175,2019,4,"Italy","IT",1,"Small or medium-sized enterprise (SME)",3041,2077180000
+176,2019,4,"Italy","IT",2,"Large enterprise",1612,1217094000
+177,2019,5,"Luxembourg","LU",1,"Small or medium-sized enterprise (SME)",22,25272000
+178,2019,5,"Luxembourg","LU",2,"Large enterprise",21,45564000
+179,2019,6,"Netherlands","NL",1,"Small or medium-sized enterprise (SME)",2022,6240458000
+180,2019,6,"Netherlands","NL",2,"Large enterprise",386,1541833000
+181,2019,7,"Denmark","DK",1,"Small or medium-sized enterprise (SME)",79,77004000
+182,2019,7,"Denmark","DK",2,"Large enterprise",54,101125000
+183,2019,8,"Ireland","IE",1,"Small or medium-sized enterprise (SME)",52,37400000
+184,2019,8,"Ireland","IE",2,"Large enterprise",138,970082000
+185,2019,9,"United Kingdom","UK",1,"Small or medium-sized enterprise (SME)",966,1134188000
+186,2019,9,"United Kingdom","UK",2,"Large enterprise",549,1267885000
+187,2019,10,"Greece","EL",1,"Small or medium-sized enterprise (SME)",70,48454000
+188,2019,10,"Greece","EL",2,"Large enterprise",62,110289000
+189,2019,11,"Portugal","PT",1,"Small or medium-sized enterprise (SME)",903,394787000
+190,2019,11,"Portugal","PT",2,"Large enterprise",239,360055000
+191,2019,12,"Spain","ES",1,"Small or medium-sized enterprise (SME)",0,0
+192,2019,12,"Spain","ES",2,"Large enterprise",0,0
+193,2019,13,"Austria","AT",1,"Small or medium-sized enterprise (SME)",272,170524000
+194,2019,13,"Austria","AT",2,"Large enterprise",208,238399000
+195,2019,14,"Finland","FI",1,"Small or medium-sized enterprise (SME)",181,176257000
+196,2019,14,"Finland","FI",2,"Large enterprise",68,108915000
+197,2019,15,"Sweden","SE",1,"Small or medium-sized enterprise (SME)",228,304152000
+198,2019,15,"Sweden","SE",2,"Large enterprise",2146,236239000
+199,2019,16,"Cyprus","CY",1,"Small or medium-sized enterprise (SME)",0,0
+200,2019,16,"Cyprus","CY",2,"Large enterprise",0,0
+201,2019,17,"Czech Republic","CZ",1,"Small or medium-sized enterprise (SME)",909,488494000
+202,2019,17,"Czech Republic","CZ",2,"Large enterprise",385,671236000
+203,2019,18,"Estonia","EE",1,"Small or medium-sized enterprise (SME)",65,48678000
+204,2019,18,"Estonia","EE",2,"Large enterprise",21,53736000
+205,2019,19,"Hungary","HU",1,"Small or medium-sized enterprise (SME)",1604,320675000
+206,2019,19,"Hungary","HU",2,"Large enterprise",309,528372000
+207,2019,20,"Latvia","LV",1,"Small or medium-sized enterprise (SME)",44,70797000
+208,2019,20,"Latvia","LV",2,"Large enterprise",24,39404000
+209,2019,21,"Lithuania","LT",1,"Small or medium-sized enterprise (SME)",126,264618000
+210,2019,21,"Lithuania","LT",2,"Large enterprise",26,65687000
+211,2019,22,"Malta","MT",1,"Small or medium-sized enterprise (SME)",43,81025000
+212,2019,22,"Malta","MT",2,"Large enterprise",5,22371000
+213,2019,23,"Poland","PL",1,"Small or medium-sized enterprise (SME)",0,0
+214,2019,23,"Poland","PL",2,"Large enterprise",0,0
+215,2019,24,"Slovakia","SK",1,"Small or medium-sized enterprise (SME)",73,85776000
+216,2019,24,"Slovakia","SK",2,"Large enterprise",24,131490000
+217,2019,25,"Slovenia","SI",1,"Small or medium-sized enterprise (SME)",2,1599000
+218,2019,25,"Slovenia","SI",2,"Large enterprise",1,750000
+219,2019,26,"Bulgaria","BG",1,"Small or medium-sized enterprise (SME)",37,27750000
+220,2019,26,"Bulgaria","BG",2,"Large enterprise",30,39172000
+221,2019,27,"Romania","RO",1,"Small or medium-sized enterprise (SME)",0,0
+222,2019,27,"Romania","RO",2,"Large enterprise",0,0
+223,2019,28,"Croatia","HR",1,"Small or medium-sized enterprise (SME)",20,38878000
+224,2019,28,"Croatia","HR",2,"Large enterprise",23,15394000
+225,2020,1,"Belgium","BE",1,"Small or medium-sized enterprise (SME)",25,5018000
+226,2020,1,"Belgium","BE",2,"Large enterprise",4,1670000
+227,2020,2,"France","FR",1,"Small or medium-sized enterprise (SME)",358,671581000
+228,2020,2,"France","FR",2,"Large enterprise",89,157790000
+229,2020,3,"Germany","DE",1,"Small or medium-sized enterprise (SME)",175,179945000
+230,2020,3,"Germany","DE",2,"Large enterprise",168,312731000
+231,2020,4,"Italy","IT",1,"Small or medium-sized enterprise (SME)",254,108783000
+232,2020,4,"Italy","IT",2,"Large enterprise",197,63344000
+233,2020,5,"Luxembourg","LU",1,"Small or medium-sized enterprise (SME)",3,3764000
+234,2020,5,"Luxembourg","LU",2,"Large enterprise",3,8377000
+235,2020,6,"Netherlands","NL",1,"Small or medium-sized enterprise (SME)",35,87529000
+236,2020,6,"Netherlands","NL",2,"Large enterprise",16,99038000
+237,2020,7,"Denmark","DK",1,"Small or medium-sized enterprise (SME)",19,12221000
+238,2020,7,"Denmark","DK",2,"Large enterprise",11,10848000
+239,2020,8,"Ireland","IE",1,"Small or medium-sized enterprise (SME)",8,3364000
+240,2020,8,"Ireland","IE",2,"Large enterprise",4,2983214000
+241,2020,9,"United Kingdom","UK",1,"Small or medium-sized enterprise (SME)",1561,120513000
+242,2020,9,"United Kingdom","UK",2,"Large enterprise",103,135666000
+243,2020,10,"Greece","EL",1,"Small or medium-sized enterprise (SME)",16,37276000
+244,2020,10,"Greece","EL",2,"Large enterprise",6,4288000
+245,2020,11,"Portugal","PT",1,"Small or medium-sized enterprise (SME)",213,80168000
+246,2020,11,"Portugal","PT",2,"Large enterprise",35,8218000
+247,2020,12,"Spain","ES",1,"Small or medium-sized enterprise (SME)",0,0
+248,2020,12,"Spain","ES",2,"Large enterprise",0,0
+249,2020,13,"Austria","AT",1,"Small or medium-sized enterprise (SME)",96,85869000
+250,2020,13,"Austria","AT",2,"Large enterprise",107,192405000
+251,2020,14,"Finland","FI",1,"Small or medium-sized enterprise (SME)",108,153504000
+252,2020,14,"Finland","FI",2,"Large enterprise",48,114365000
+253,2020,15,"Sweden","SE",1,"Small or medium-sized enterprise (SME)",150,275035000
+254,2020,15,"Sweden","SE",2,"Large enterprise",1249,97522000
+255,2020,16,"Cyprus","CY",1,"Small or medium-sized enterprise (SME)",0,0
+256,2020,16,"Cyprus","CY",2,"Large enterprise",0,0
+257,2020,17,"Czech Republic","CZ",1,"Small or medium-sized enterprise (SME)",131,114498000
+258,2020,17,"Czech Republic","CZ",2,"Large enterprise",82,175405000
+259,2020,18,"Estonia","EE",1,"Small or medium-sized enterprise (SME)",181,89806000
+260,2020,18,"Estonia","EE",2,"Large enterprise",40,189832000
+261,2020,19,"Hungary","HU",1,"Small or medium-sized enterprise (SME)",258,70789000
+262,2020,19,"Hungary","HU",2,"Large enterprise",97,233103000
+263,2020,20,"Latvia","LV",1,"Small or medium-sized enterprise (SME)",352,15188000
+264,2020,20,"Latvia","LV",2,"Large enterprise",20,5703000
+265,2020,21,"Lithuania","LT",1,"Small or medium-sized enterprise (SME)",9,15602000
+266,2020,21,"Lithuania","LT",2,"Large enterprise",10,22233000
+267,2020,22,"Malta","MT",1,"Small or medium-sized enterprise (SME)",12,20758000
+268,2020,22,"Malta","MT",2,"Large enterprise",1,708000
+269,2020,23,"Poland","PL",1,"Small or medium-sized enterprise (SME)",0,0
+270,2020,23,"Poland","PL",2,"Large enterprise",0,0
+271,2020,24,"Slovakia","SK",1,"Small or medium-sized enterprise (SME)",58,73831000
+272,2020,24,"Slovakia","SK",2,"Large enterprise",11,27542000
+273,2020,25,"Slovenia","SI",1,"Small or medium-sized enterprise (SME)",0,0
+274,2020,25,"Slovenia","SI",2,"Large enterprise",0,0
+275,2020,26,"Bulgaria","BG",1,"Small or medium-sized enterprise (SME)",98,17755000
+276,2020,26,"Bulgaria","BG",2,"Large enterprise",20,13798000
+277,2020,27,"Romania","RO",1,"Small or medium-sized enterprise (SME)",0,0
+278,2020,27,"Romania","RO",2,"Large enterprise",0,0
+279,2020,28,"Croatia","HR",1,"Small or medium-sized enterprise (SME)",0,0
+280,2020,28,"Croatia","HR",2,"Large enterprise",0,0

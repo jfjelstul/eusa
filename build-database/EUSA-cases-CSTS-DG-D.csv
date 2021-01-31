@@ -1,0 +1,298 @@
+"key_ID","year","directorate_general_ID","directorate_general","directorate_general_code","case_type_ID","case_type","count_cases"
+1,1988,1,"Competition","COMP",1,"Scheme",0
+2,1988,1,"Competition","COMP",2,"Individual application",1
+3,1988,1,"Competition","COMP",3,"Ad hoc",0
+4,1988,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+5,1988,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+6,1988,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+7,1988,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+8,1988,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+9,1988,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+10,1989,1,"Competition","COMP",1,"Scheme",0
+11,1989,1,"Competition","COMP",2,"Individual application",0
+12,1989,1,"Competition","COMP",3,"Ad hoc",0
+13,1989,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+14,1989,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+15,1989,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+16,1989,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+17,1989,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+18,1989,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+19,1990,1,"Competition","COMP",1,"Scheme",0
+20,1990,1,"Competition","COMP",2,"Individual application",0
+21,1990,1,"Competition","COMP",3,"Ad hoc",0
+22,1990,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+23,1990,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+24,1990,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+25,1990,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+26,1990,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+27,1990,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+28,1991,1,"Competition","COMP",1,"Scheme",0
+29,1991,1,"Competition","COMP",2,"Individual application",0
+30,1991,1,"Competition","COMP",3,"Ad hoc",0
+31,1991,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+32,1991,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+33,1991,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+34,1991,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+35,1991,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+36,1991,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+37,1992,1,"Competition","COMP",1,"Scheme",1
+38,1992,1,"Competition","COMP",2,"Individual application",1
+39,1992,1,"Competition","COMP",3,"Ad hoc",0
+40,1992,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+41,1992,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+42,1992,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+43,1992,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+44,1992,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+45,1992,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+46,1993,1,"Competition","COMP",1,"Scheme",3
+47,1993,1,"Competition","COMP",2,"Individual application",0
+48,1993,1,"Competition","COMP",3,"Ad hoc",0
+49,1993,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+50,1993,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+51,1993,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+52,1993,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+53,1993,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+54,1993,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+55,1994,1,"Competition","COMP",1,"Scheme",0
+56,1994,1,"Competition","COMP",2,"Individual application",0
+57,1994,1,"Competition","COMP",3,"Ad hoc",2
+58,1994,2,"Agriculture and Rural Development","AGRI",1,"Scheme",2
+59,1994,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+60,1994,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+61,1994,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+62,1994,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+63,1994,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+64,1995,1,"Competition","COMP",1,"Scheme",6
+65,1995,1,"Competition","COMP",2,"Individual application",0
+66,1995,1,"Competition","COMP",3,"Ad hoc",4
+67,1995,2,"Agriculture and Rural Development","AGRI",1,"Scheme",6
+68,1995,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+69,1995,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+70,1995,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",1
+71,1995,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+72,1995,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+73,1996,1,"Competition","COMP",1,"Scheme",8
+74,1996,1,"Competition","COMP",2,"Individual application",1
+75,1996,1,"Competition","COMP",3,"Ad hoc",5
+76,1996,2,"Agriculture and Rural Development","AGRI",1,"Scheme",10
+77,1996,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+78,1996,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+79,1996,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",1
+80,1996,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+81,1996,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+82,1997,1,"Competition","COMP",1,"Scheme",19
+83,1997,1,"Competition","COMP",2,"Individual application",6
+84,1997,1,"Competition","COMP",3,"Ad hoc",26
+85,1997,2,"Agriculture and Rural Development","AGRI",1,"Scheme",15
+86,1997,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+87,1997,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+88,1997,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",9
+89,1997,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+90,1997,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+91,1998,1,"Competition","COMP",1,"Scheme",99
+92,1998,1,"Competition","COMP",2,"Individual application",19
+93,1998,1,"Competition","COMP",3,"Ad hoc",51
+94,1998,2,"Agriculture and Rural Development","AGRI",1,"Scheme",106
+95,1998,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+96,1998,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+97,1998,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",17
+98,1998,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+99,1998,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+100,1999,1,"Competition","COMP",1,"Scheme",313
+101,1999,1,"Competition","COMP",2,"Individual application",43
+102,1999,1,"Competition","COMP",3,"Ad hoc",63
+103,1999,2,"Agriculture and Rural Development","AGRI",1,"Scheme",258
+104,1999,2,"Agriculture and Rural Development","AGRI",2,"Individual application",1
+105,1999,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+106,1999,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",41
+107,1999,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+108,1999,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+109,2000,1,"Competition","COMP",1,"Scheme",318
+110,2000,1,"Competition","COMP",2,"Individual application",41
+111,2000,1,"Competition","COMP",3,"Ad hoc",58
+112,2000,2,"Agriculture and Rural Development","AGRI",1,"Scheme",234
+113,2000,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+114,2000,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+115,2000,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",70
+116,2000,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+117,2000,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+118,2001,1,"Competition","COMP",1,"Scheme",411
+119,2001,1,"Competition","COMP",2,"Individual application",30
+120,2001,1,"Competition","COMP",3,"Ad hoc",74
+121,2001,2,"Agriculture and Rural Development","AGRI",1,"Scheme",316
+122,2001,2,"Agriculture and Rural Development","AGRI",2,"Individual application",1
+123,2001,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+124,2001,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",85
+125,2001,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+126,2001,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+127,2002,1,"Competition","COMP",1,"Scheme",494
+128,2002,1,"Competition","COMP",2,"Individual application",38
+129,2002,1,"Competition","COMP",3,"Ad hoc",102
+130,2002,2,"Agriculture and Rural Development","AGRI",1,"Scheme",302
+131,2002,2,"Agriculture and Rural Development","AGRI",2,"Individual application",3
+132,2002,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+133,2002,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",69
+134,2002,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+135,2002,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+136,2003,1,"Competition","COMP",1,"Scheme",428
+137,2003,1,"Competition","COMP",2,"Individual application",28
+138,2003,1,"Competition","COMP",3,"Ad hoc",101
+139,2003,2,"Agriculture and Rural Development","AGRI",1,"Scheme",248
+140,2003,2,"Agriculture and Rural Development","AGRI",2,"Individual application",3
+141,2003,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+142,2003,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",30
+143,2003,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+144,2003,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+145,2004,1,"Competition","COMP",1,"Scheme",482
+146,2004,1,"Competition","COMP",2,"Individual application",30
+147,2004,1,"Competition","COMP",3,"Ad hoc",69
+148,2004,2,"Agriculture and Rural Development","AGRI",1,"Scheme",326
+149,2004,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+150,2004,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",1
+151,2004,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",22
+152,2004,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+153,2004,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+154,2005,1,"Competition","COMP",1,"Scheme",569
+155,2005,1,"Competition","COMP",2,"Individual application",38
+156,2005,1,"Competition","COMP",3,"Ad hoc",62
+157,2005,2,"Agriculture and Rural Development","AGRI",1,"Scheme",303
+158,2005,2,"Agriculture and Rural Development","AGRI",2,"Individual application",3
+159,2005,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",1
+160,2005,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",37
+161,2005,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+162,2005,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+163,2006,1,"Competition","COMP",1,"Scheme",510
+164,2006,1,"Competition","COMP",2,"Individual application",70
+165,2006,1,"Competition","COMP",3,"Ad hoc",171
+166,2006,2,"Agriculture and Rural Development","AGRI",1,"Scheme",334
+167,2006,2,"Agriculture and Rural Development","AGRI",2,"Individual application",31
+168,2006,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",11
+169,2006,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",41
+170,2006,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+171,2006,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+172,2007,1,"Competition","COMP",1,"Scheme",898
+173,2007,1,"Competition","COMP",2,"Individual application",46
+174,2007,1,"Competition","COMP",3,"Ad hoc",93
+175,2007,2,"Agriculture and Rural Development","AGRI",1,"Scheme",675
+176,2007,2,"Agriculture and Rural Development","AGRI",2,"Individual application",8
+177,2007,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",5
+178,2007,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",22
+179,2007,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",5
+180,2007,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+181,2008,1,"Competition","COMP",1,"Scheme",798
+182,2008,1,"Competition","COMP",2,"Individual application",76
+183,2008,1,"Competition","COMP",3,"Ad hoc",188
+184,2008,2,"Agriculture and Rural Development","AGRI",1,"Scheme",513
+185,2008,2,"Agriculture and Rural Development","AGRI",2,"Individual application",30
+186,2008,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",11
+187,2008,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",4
+188,2008,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",2
+189,2008,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+190,2009,1,"Competition","COMP",1,"Scheme",1168
+191,2009,1,"Competition","COMP",2,"Individual application",71
+192,2009,1,"Competition","COMP",3,"Ad hoc",234
+193,2009,2,"Agriculture and Rural Development","AGRI",1,"Scheme",356
+194,2009,2,"Agriculture and Rural Development","AGRI",2,"Individual application",37
+195,2009,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",1
+196,2009,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",15
+197,2009,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",1
+198,2009,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",2
+199,2010,1,"Competition","COMP",1,"Scheme",665
+200,2010,1,"Competition","COMP",2,"Individual application",42
+201,2010,1,"Competition","COMP",3,"Ad hoc",138
+202,2010,2,"Agriculture and Rural Development","AGRI",1,"Scheme",334
+203,2010,2,"Agriculture and Rural Development","AGRI",2,"Individual application",20
+204,2010,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",2
+205,2010,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",46
+206,2010,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",2
+207,2010,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
+208,2011,1,"Competition","COMP",1,"Scheme",608
+209,2011,1,"Competition","COMP",2,"Individual application",40
+210,2011,1,"Competition","COMP",3,"Ad hoc",118
+211,2011,2,"Agriculture and Rural Development","AGRI",1,"Scheme",266
+212,2011,2,"Agriculture and Rural Development","AGRI",2,"Individual application",11
+213,2011,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",9
+214,2011,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",35
+215,2011,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+216,2011,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+217,2012,1,"Competition","COMP",1,"Scheme",592
+218,2012,1,"Competition","COMP",2,"Individual application",62
+219,2012,1,"Competition","COMP",3,"Ad hoc",153
+220,2012,2,"Agriculture and Rural Development","AGRI",1,"Scheme",220
+221,2012,2,"Agriculture and Rural Development","AGRI",2,"Individual application",14
+222,2012,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",13
+223,2012,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",20
+224,2012,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",3
+225,2012,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",4
+226,2013,1,"Competition","COMP",1,"Scheme",714
+227,2013,1,"Competition","COMP",2,"Individual application",72
+228,2013,1,"Competition","COMP",3,"Ad hoc",110
+229,2013,2,"Agriculture and Rural Development","AGRI",1,"Scheme",314
+230,2013,2,"Agriculture and Rural Development","AGRI",2,"Individual application",23
+231,2013,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",4
+232,2013,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",19
+233,2013,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",2
+234,2013,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",3
+235,2014,1,"Competition","COMP",1,"Scheme",840
+236,2014,1,"Competition","COMP",2,"Individual application",73
+237,2014,1,"Competition","COMP",3,"Ad hoc",180
+238,2014,2,"Agriculture and Rural Development","AGRI",1,"Scheme",423
+239,2014,2,"Agriculture and Rural Development","AGRI",2,"Individual application",5
+240,2014,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",7
+241,2014,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",8
+242,2014,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",3
+243,2014,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+244,2015,1,"Competition","COMP",1,"Scheme",1276
+245,2015,1,"Competition","COMP",2,"Individual application",56
+246,2015,1,"Competition","COMP",3,"Ad hoc",937
+247,2015,2,"Agriculture and Rural Development","AGRI",1,"Scheme",691
+248,2015,2,"Agriculture and Rural Development","AGRI",2,"Individual application",1
+249,2015,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",18
+250,2015,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",46
+251,2015,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+252,2015,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+253,2016,1,"Competition","COMP",1,"Scheme",1065
+254,2016,1,"Competition","COMP",2,"Individual application",46
+255,2016,1,"Competition","COMP",3,"Ad hoc",810
+256,2016,2,"Agriculture and Rural Development","AGRI",1,"Scheme",499
+257,2016,2,"Agriculture and Rural Development","AGRI",2,"Individual application",3
+258,2016,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",26
+259,2016,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",21
+260,2016,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",1
+261,2016,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",3
+262,2017,1,"Competition","COMP",1,"Scheme",1158
+263,2017,1,"Competition","COMP",2,"Individual application",22
+264,2017,1,"Competition","COMP",3,"Ad hoc",618
+265,2017,2,"Agriculture and Rural Development","AGRI",1,"Scheme",353
+266,2017,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+267,2017,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",30
+268,2017,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",23
+269,2017,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+270,2017,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",3
+271,2018,1,"Competition","COMP",1,"Scheme",1197
+272,2018,1,"Competition","COMP",2,"Individual application",10
+273,2018,1,"Competition","COMP",3,"Ad hoc",820
+274,2018,2,"Agriculture and Rural Development","AGRI",1,"Scheme",291
+275,2018,2,"Agriculture and Rural Development","AGRI",2,"Individual application",1
+276,2018,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",58
+277,2018,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",23
+278,2018,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+279,2018,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+280,2019,1,"Competition","COMP",1,"Scheme",1243
+281,2019,1,"Competition","COMP",2,"Individual application",15
+282,2019,1,"Competition","COMP",3,"Ad hoc",1202
+283,2019,2,"Agriculture and Rural Development","AGRI",1,"Scheme",243
+284,2019,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+285,2019,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",39
+286,2019,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",30
+287,2019,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+288,2019,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",1
+289,2020,1,"Competition","COMP",1,"Scheme",1056
+290,2020,1,"Competition","COMP",2,"Individual application",8
+291,2020,1,"Competition","COMP",3,"Ad hoc",505
+292,2020,2,"Agriculture and Rural Development","AGRI",1,"Scheme",0
+293,2020,2,"Agriculture and Rural Development","AGRI",2,"Individual application",0
+294,2020,2,"Agriculture and Rural Development","AGRI",3,"Ad hoc",0
+295,2020,3,"Maritime Affairs and Fisheries","MARE",1,"Scheme",0
+296,2020,3,"Maritime Affairs and Fisheries","MARE",2,"Individual application",0
+297,2020,3,"Maritime Affairs and Fisheries","MARE",3,"Ad hoc",0
