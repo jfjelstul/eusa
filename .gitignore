@@ -1,6 +1,10 @@
+.DS_Store
 .Rproj.user
 euaid.Rproj
-.DS_store
 .Rhistory
 inst/doc
-primary-sources/
+server/
+extra/
+_codebook/
+_test/
+codebook/source/
