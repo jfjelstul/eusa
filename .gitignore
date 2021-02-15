@@ -2,8 +2,6 @@
 .Rproj.user
 euaid.Rproj
 .Rhistory
-inst/doc
-server/
 extra/
 _codebook/
 _test/
