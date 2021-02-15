@@ -1,16 +1,15 @@
 Package: euaid
-Title: The European Union State Aid (EUSA) Database
+Title: Access Data from the European Union State Aid (EUSA) Database
 Version: 1.0.0
-Authors@R:
-    person(given = "Joshua C.",
+Authors@R: person(given = "Joshua C.",
            family = "Fjelstul",
            role = c("aut", "cre"),
            email = "joshfjelstul@gmail.com",
            comment = c(ORCID = "0000-0002-9494-260X"))
-Description: This package provides easy access to data and documentation from the European Union State Aid (EUSA) Database by Joshua C. Fjelstul, Ph.D.
+Description: This package provides easy-to-use R functions for calling the REST API for the European Union State Aid (EUSA) Database by Joshua C. Fjelstul, Ph.D.
 URL: https://github.com/jfjelstul/euaid
-Date: 2020-08-04
-License: GPL3
+Date: 2021-02-14
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
