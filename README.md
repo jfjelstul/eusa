@@ -17,10 +17,6 @@ You can install the latest development version from GitHub:
 devtools::install_github("jfjelstul/euaid")
 ```
 
-## Documentation
-
-See examples and read the documentation on the [package site](https://jfjelstul.github.io/euaid/). 
-
 ## Citation
 
 If you use data from this package in a project or paper, please use the following citation:
@@ -33,7 +29,7 @@ The bibtex entry for this package is:
 @Manual{,
     title = {euaid: The European Union State Aid (EUSA) Database},
     author = {Joshua C. Fjelstul},
-    year = {2020},
+    year = {2021},
     note = {R package version 1.0.0},
     url = {https://github.com/jfjelstul/euaid},
   }
