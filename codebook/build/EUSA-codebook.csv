@@ -1,0 +1,314 @@
+dataset_ID,dataset,variable_ID,variable,type,description
+1,cases,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+1,cases,2,case_number,string,"A number that uniquely identifies each state aid case. Assigned by the Commission. The Commission changed the format of case numbers in 2010. Before this change, the case number indicated the type(s) of the procedure associated with the case. After this change, all case numbers have the format {SA.#####}."
+1,cases,3,procedure_numbers,string,"Numbers that uniquely identifiy each procedure associated with a case. If there are multiple procedures, the procedure numbers are listed and separated by a comma. After the Commission changed the format of case numbers in 2010, only procedure numbers indicate the types of procedures associated with a case."
+1,cases,4,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+1,cases,5,member_state,string,The name of the member state that the Commission opened the case against. 
+1,cases,6,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+1,cases,7,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+1,cases,8,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+1,cases,9,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+1,cases,10,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+1,cases,11,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+1,cases,12,procedure_types,string,"A list of the types of procedures associated with the case, separated by a comma. Procedure types are listed in the order that the Commission opened the procedures. Possible values include: {Contradictory aid}, for state aid that the Commission suspects violates the rules of the internal market, as defined by Article 107 of the Treaty of the Functioning of the European Union (TFEU); {Existing aid}, for existing state aid measures; {Notified aid}, for state aid that the member state has notified to the Commission; {Unnotified aid}, for state aid that the member state has not notified to the Commission; {General block exemption}, for state aid that is exempt from notification under the General Block Exemption Regulation (GBER); and {Special block exemption}, for state aid that is exempt from notification under a specific block exemption."
+1,cases,13,contradictory_aid,bool,"A dummy variable indicating whether the case relates to whether the Commission suspects that the state aid measure is contradictory to the rules of the single market, as defined by Article 107 of the Treaty of the Functioning of the European Union (TFEU). Coded {1} if it does and {0} if it does not."
+1,cases,14,existing_aid,bool,A dummy variable indicating whether the case relates to existing state aid measures. Coded {1} if it does and {0} if it does not.
+1,cases,15,notified_aid,bool,A dummy variable indicating whether the case relates to state aid notified by the member state. Coded {1} if it does and {0} if it does not.
+1,cases,16,unnotified_aid,bool,A dummy variable indicating whether the case relates to state aid that is not notified by the member state. Coded {1} if it does and {0} if it does not.
+1,cases,17,general_block_exemption,bool,A dummy variable indicating whether the case relates to state that is exempt from notification under the General Block Exemption Regulation (GBER). Coded {1} if it does and {0} if it does not.
+1,cases,18,specific_block_exemption,bool,A dummy variable indicating whether the case relates to state aid that is exempt from notification under a specific block exemption. Coded {1} if it does and {0} if it does not.
+1,cases,19,notification_date,date,The date the member state notified the Commission of the state aid measure in the format {YYYY-MM-DD}.  
+1,cases,20,notification_year,numeric,The year the member state notified the Commission of the state aid measure.
+1,cases,21,notification_month,numeric,The month the member state notified the Commission of the state aid measure.
+1,cases,22,notification_day,numeric,The day the member state notified the Commission of the state aid measure.
+1,cases,23,outcome_date,date,The date the Commission took its last decision in the case in the format {YYYY-MM-DD}.
+1,cases,24,outcome_year,numeric,The year the Commission took its last decision in the case.
+1,cases,25,outcome_month,numeric,The month the Commission took its last decision in the case.
+1,cases,26,outcome_day,numeric,The day the Commission took its last decision in the case.
+1,cases,27,decisions,string,"A list of all of the decisions made by the Commission in the case, separated by a semicolon."
+1,cases,28,count_decisions,numeric,The total number of decisions made by the Commission in the case. 
+1,cases,29,outcome,string,"The outcome of the case. Possible values include: {Exempt from notification}, {Does not constitute aid}, {No objection}{Positive Decision}, {Negative Decision}, {Conditional decision}. Coded {Notification withdrawn} if the member state withdrew the notification, either before the formal investigation procedure under Article 10(1) of Council Regulation (EU) 2015/1589, formerly Article 8(1) of Council Regulation (EC) No 659/1999, or during the formal investigation procedure under Article 10(2) of Council Regulation (EU) 2015/1589, formerly Article 8(2) of Council Regulation (EC) No 659/1999. "
+1,cases,30,outcome_phase_1,string,"If the Commission opened a preliminary investigation, the outcome of that phase of the procedure. Possible values include: {Does not constitute aid}, {No objection}, {Formal investigation}, and {Notification withdrawn}. Coded {Not applicable} if the Commission did not open a preliminary investigation, which is when it determines that the state aid measure is exempt from notification under Article 108(2) of the Treaty on the Functioning of the European Union (TFEU)."
+1,cases,31,outcome_phase_2,string,"If the Commission opened a formal investigation, the outcome of that phase of the procedure. Possible values include: {Conditional decision}, {Does not constitute aid}, {Negative decision}, {Notification withdrawn}, and {Positive decision}. Coded {Not applicable} if the Commission did not open a formal investigation under Article 4(4) of Council Regulation (EU) 2015/1589, formerly Article 4(4) of Council Regulation (EC) No 659/1999. Coded {Missing record} for a small number of observations where the Commission does not report data."
+1,cases,32,exempt,bool,A dummy variable indicating whether the state aid measure is exempt from notification under Article 108(2) of the Treaty on the Functioning of the European Union (TFEU).
+1,cases,33,preliminary_investigation,bool,A dummy variable indicating whether the Commission decided to open a preliminary investigation under Article 108 of the Treaty on the Functioning of the European Union (TFEU).
+1,cases,34,formal_investigation,bool,"A dummy variable indicating whether the Commission decided to open a formal investigation under Article 4(4) of Council Regulation (EU) 2015/1589, formerly Article 4(4) of Council Regulation (EC) No 659/1999."
+1,cases,35,no_objection,bool,"A dummy variable indicating whether the Commission decided not to raise an objection to the state aid measure under Article 4(3) of Council Regulation (EU) 2015/1589, formerly Article 4(3) of Council Regulation (EC) No 659/1999. "
+1,cases,36,not_aid,bool,"A dummy variable indicating whether the Commission decided that the state aid measure did not constitute state aid, according to Article 107 of the Treaty on the Functioning of the European Union (TFEU), under Article 4(2) of Council Regulation (EU) 2015/1589, formerly Article 4(2) of Council Regulation (EC) No 659/1999. "
+1,cases,37,positive,bool,"A dummy variable indicating whether, after a formal investigation, the Commission decided under article 9(3) of Council Regulation (EU) 2015/1589, formerly Article 7(3) of Council Regulation (EC) No 659/1999, to approve the state aid measure because it was compatible with the rules of the single market, as defined by Article 107 of the Treaty of the Functioning of the European Union (TFEU)."
+1,cases,38,negative,bool,"A dummy variable indicating whether, after a formal investigation, the Commission decided under article 9(5) of Council Regulation (EU) 2015/1589, formerly Article 7(5) of Council Regulation (EC) No 659/1999, to not approve the state aid measure because it was not compatible with the rules of the single market, as defined by Article 107 of the Treaty of the Functioning of the European Union (TFEU)."
+1,cases,39,conditional,bool,"A dummy variable indicating whether, after a formal investigation, the Commission decided under article 9(4) of Council Regulation (EU) 2015/1589, formerly Article 7(4) of Council Regulation (EC) No 659/1999, to approve the state aid measure subject to conditions to make the measure compatible with the rules of the single market, as defined by Article 107 of the Treaty of the Functioning of the European Union (TFEU)."
+1,cases,40,withdrawal,bool,"A dummy variable indicating whether the member state that notified the state aid measure withdrew the measure, either before the formal investigation procedure under Article 10(1) of Council Regulation (EU) 2015/1589, formerly Article 8(1) of Council Regulation (EC) No 659/1999, or during the formal investigation procedure under Article 10(2) of Council Regulation (EU) 2015/1589, formerly Article 8(2) of Council Regulation (EC) No 659/1999. "
+1,cases,41,referral,bool,"A dummy variable indicating whether, after a formal investigation, the Commission decided to refer the state aid case to the Court of Justice of the European Union (CJEU) under Article 14 of Council Regulation (EU) 2015/1589, formerly Article 12 of Council Regulation (EC) No 659/1999, for noncompliance with an injunction, under Article 108(2) of the Treaty on the Functioning of the European Union (TFEU), for noncompliance with a Commission decision, or under Article 260(2) of the Treaty on the Functioning of the European Union (TFEU), for noncompliance with a judgment of the Court."
+1,cases,42,recovery,bool,"A dummy variable indicating whether, after a formal investigation, the Commission decided under 16(1) of Council Regulation (EU) 2015/1589, formerly 14(1) of Council Regulation (EC) No 659/1999, that the member state that notified that state aid measure must take all necessary measures to recover aid from the beneficiary."
+2,cases_TS,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+2,cases_TS,2,year,numeric,The year the case was opened by the Commission.
+2,cases_TS,3,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+3,cases_TS_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+3,cases_TS_D,2,year,numeric,The year the case was opened by the Commission.
+3,cases_TS_D,3,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+3,cases_TS_D,4,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+3,cases_TS_D,5,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+4,cases_CSTS_MS,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+4,cases_CSTS_MS,2,year,numeric,The year the case was opened by the Commission.
+4,cases_CSTS_MS,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+4,cases_CSTS_MS,4,member_state,string,The name of the member state that the Commission opened the case against. 
+4,cases_CSTS_MS,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+4,cases_CSTS_MS,6,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+5,cases_CSTS_MS_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+5,cases_CSTS_MS_D,2,year,numeric,The year the case was opened by the Commission.
+5,cases_CSTS_MS_D,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+5,cases_CSTS_MS_D,4,member_state,string,The name of the member state that the Commission opened the case against. 
+5,cases_CSTS_MS_D,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+5,cases_CSTS_MS_D,6,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+5,cases_CSTS_MS_D,7,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+5,cases_CSTS_MS_D,8,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+6,cases_CSTS_DG,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+6,cases_CSTS_DG,2,year,numeric,The year the case was opened by the Commission.
+6,cases_CSTS_DG,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+6,cases_CSTS_DG,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+6,cases_CSTS_DG,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+6,cases_CSTS_DG,6,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+7,cases_CSTS_DG_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+7,cases_CSTS_DG_D,2,year,numeric,The year the case was opened by the Commission.
+7,cases_CSTS_DG_D,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+7,cases_CSTS_DG_D,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+7,cases_CSTS_DG_D,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+7,cases_CSTS_DG_D,6,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+7,cases_CSTS_DG_D,7,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+7,cases_CSTS_DG_D,8,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+8,cases_DDY,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+8,cases_DDY,2,year,numeric,The year the case was opened by the Commission.
+8,cases_DDY,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+8,cases_DDY,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+8,cases_DDY,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+8,cases_DDY,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+8,cases_DDY,7,member_state,string,The name of the member state that the Commission opened the case against. 
+8,cases_DDY,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+8,cases_DDY,9,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+9,cases_DDY_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+9,cases_DDY_D,2,year,numeric,The year the case was opened by the Commission.
+9,cases_DDY_D,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+9,cases_DDY_D,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+9,cases_DDY_D,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+9,cases_DDY_D,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+9,cases_DDY_D,7,member_state,string,The name of the member state that the Commission opened the case against. 
+9,cases_DDY_D,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+9,cases_DDY_D,9,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+9,cases_DDY_D,10,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+9,cases_DDY_D,11,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+10,cases_network,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+10,cases_network,2,year,numeric,The year the case was opened by the Commission.
+10,cases_network,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+10,cases_network,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+10,cases_network,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+10,cases_network,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+10,cases_network,7,member_state,string,The name of the member state that the Commission opened the case against. 
+10,cases_network,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+10,cases_network,9,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+11,cases_network_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+11,cases_network_D,2,year,numeric,The year the case was opened by the Commission.
+11,cases_network_D,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+11,cases_network_D,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+11,cases_network_D,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+11,cases_network_D,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+11,cases_network_D,7,member_state,string,The name of the member state that the Commission opened the case against. 
+11,cases_network_D,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+11,cases_network_D,9,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+11,cases_network_D,10,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+11,cases_network_D,11,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+12,decisions,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+12,decisions,2,case_number,string,"A number that uniquely identifies each state aid case. Assigned by the Commission. The Commission changed the format of case numbers in 2010. Before this change, the case number indicated the type(s) of the procedure associated with the case. After this change, all case numbers have the format {SA.#####}."
+12,decisions,3,procedure_numbers,string,"Numbers that uniquely identifiy each procedure associated with a case. If there are multiple procedures, the procedure numbers are listed and separated by a comma. After the Commission changed the format of case numbers in 2010, only procedure numbers indicate the types of procedures associated with a case."
+12,decisions,4,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+12,decisions,5,member_state,string,The name of the member state that the Commission opened the case against. 
+12,decisions,6,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+12,decisions,7,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+12,decisions,8,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+12,decisions,9,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+12,decisions,10,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+12,decisions,11,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+12,decisions,12,procedure_types,string,"Numbers that uniquely identified each procedure associated with a case. If there are multiple procedures, the procedure numbers are listed and separated by a comma. After the Commission changed the format of case numbers in 2010, only procedure numbers indicate the types of procedures associated with a case."
+12,decisions,13,contradictory_aid,bool,"A dummy variable indicating whether the case relates to whether the Commission suspects that the state aid measure is contradictory to the rules of the single market, as defined by Article 107 of the Treaty of the Functioning of the European Union (TFEU). Coded {1} if it does and {0} if it does not."
+12,decisions,14,existing_aid,bool,A dummy variable indicating whether the case relates to existing state aid measures. Coded {1} if it does and {0} if it does not.
+12,decisions,15,notified_aid,bool,A dummy variable indicating whether the case relates to state aid notified by the member state. Coded {1} if it does and {0} if it does not.
+12,decisions,16,unnotified_aid,bool,A dummy variable indicating whether the case relates to state aid that is not notified by the member state. Coded {1} if it does and {0} if it does not.
+12,decisions,17,general_block_exemption,bool,A dummy variable indicating whether the case relates to state that is exempt from notification under the General Block Exemption Regulation (GBER). Coded {1} if it does and {0} if it does not.
+12,decisions,18,specific_block_exemption,bool,A dummy variable indicating whether the case relates to state aid that is exempt from notification under a specific block exemption. Coded {1} if it does and {0} if it does not.
+12,decisions,19,notification_date,date,The date the member state notified the Commission of the state aid measure in the format {YYYY-MM-DD}.  
+12,decisions,20,notification_year,numeric,The year the member state notified the Commission of the state aid measure.
+12,decisions,21,notification_month,numeric,The month the member state notified the Commission of the state aid measure.
+12,decisions,22,notification_day,numeric,The day the member state notified the Commission of the state aid measure.
+12,decisions,23,outcome_date,date,The date the Commission took its last decision in the case in the format {YYYY-MM-DD}.
+12,decisions,24,outcome_year,numeric,The year the Commission took its last decision in the case.
+12,decisions,25,outcome_month,numeric,The month the Commission took its last decision in the case.
+12,decisions,26,outcome_day,numeric,The day the Commission took its last decision in the case.
+12,decisions,27,decision_number,numeric,The number of the decision within each case.
+12,decisions,28,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+12,decisions,29,decision_type,string,The type of the decision.
+12,decisions,30,phase,string,"The phase of the procedure. Coded {Exempt} for state aid that is exempt from notification, {Phase 1} for decisions made during a preliminary investigation, {Phase 2} for decisions made during a formal investigation, or {Other} for decisions that the Commission can make during either phase. "
+13,decisions_TS,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+13,decisions_TS,2,year,numeric,The year the case was opened by the Commission.
+13,decisions_TS,3,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+13,decisions_TS,4,decision_type,string,The type of the decision.
+13,decisions_TS,5,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+14,decisions_TS_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+14,decisions_TS_D,2,year,numeric,The year the case was opened by the Commission.
+14,decisions_TS_D,3,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+14,decisions_TS_D,4,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+14,decisions_TS_D,5,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+14,decisions_TS_D,6,decision_type,string,The type of the decision.
+14,decisions_TS_D,7,count_cases,numeric,A count of the number of cases opened by the Commission at this level of aggregation.
+15,decisions_CSTS_MS,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+15,decisions_CSTS_MS,2,year,numeric,The year the case was opened by the Commission.
+15,decisions_CSTS_MS,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+15,decisions_CSTS_MS,4,member_state,string,The name of the member state that the Commission opened the case against. 
+15,decisions_CSTS_MS,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+15,decisions_CSTS_MS,6,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+15,decisions_CSTS_MS,7,decision_type,string,The type of the decision.
+15,decisions_CSTS_MS,8,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+16,decisions_CSTS_MS_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+16,decisions_CSTS_MS_D,2,year,numeric,The year the case was opened by the Commission.
+16,decisions_CSTS_MS_D,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+16,decisions_CSTS_MS_D,4,member_state,string,The name of the member state that the Commission opened the case against. 
+16,decisions_CSTS_MS_D,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+16,decisions_CSTS_MS_D,6,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+16,decisions_CSTS_MS_D,7,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+16,decisions_CSTS_MS_D,8,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+16,decisions_CSTS_MS_D,9,decision_type,string,The type of the decision.
+16,decisions_CSTS_MS_D,10,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+17,decisions_CSTS_DG,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+17,decisions_CSTS_DG,2,year,numeric,The year the case was opened by the Commission.
+17,decisions_CSTS_DG,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+17,decisions_CSTS_DG,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+17,decisions_CSTS_DG,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+17,decisions_CSTS_DG,6,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+17,decisions_CSTS_DG,7,decision_type,string,The type of the decision.
+17,decisions_CSTS_DG,8,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+18,decisions_CSTS_DG_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+18,decisions_CSTS_DG_D,2,year,numeric,The year the case was opened by the Commission.
+18,decisions_CSTS_DG_D,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+18,decisions_CSTS_DG_D,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+18,decisions_CSTS_DG_D,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+18,decisions_CSTS_DG_D,6,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+18,decisions_CSTS_DG_D,7,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+18,decisions_CSTS_DG_D,8,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+18,decisions_CSTS_DG_D,9,decision_type,string,The type of the decision.
+18,decisions_CSTS_DG_D,10,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+19,decisions_DDY,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+19,decisions_DDY,2,year,numeric,The year the case was opened by the Commission.
+19,decisions_DDY,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+19,decisions_DDY,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+19,decisions_DDY,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+19,decisions_DDY,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+19,decisions_DDY,7,member_state,string,The name of the member state that the Commission opened the case against. 
+19,decisions_DDY,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+19,decisions_DDY,9,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+19,decisions_DDY,10,decision_type,string,The type of the decision.
+19,decisions_DDY,11,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+20,decisions_DDY_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+20,decisions_DDY_D,2,year,numeric,The year the case was opened by the Commission.
+20,decisions_DDY_D,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+20,decisions_DDY_D,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+20,decisions_DDY_D,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+20,decisions_DDY_D,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+20,decisions_DDY_D,7,member_state,string,The name of the member state that the Commission opened the case against. 
+20,decisions_DDY_D,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+20,decisions_DDY_D,9,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+20,decisions_DDY_D,10,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+20,decisions_DDY_D,11,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+20,decisions_DDY_D,12,decision_type,string,The type of the decision.
+20,decisions_DDY_D,13,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+21,decisions_network,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+21,decisions_network,2,year,numeric,The year the case was opened by the Commission.
+21,decisions_network,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+21,decisions_network,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+21,decisions_network,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+21,decisions_network,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+21,decisions_network,7,member_state,string,The name of the member state that the Commission opened the case against. 
+21,decisions_network,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+21,decisions_network,9,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+21,decisions_network,10,decision_type,string,The type of the decision.
+21,decisions_network,11,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+22,decisions_network_D,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+22,decisions_network_D,2,year,numeric,The year the case was opened by the Commission.
+22,decisions_network_D,3,directorate_general_ID,numeric,"An ID number that uniquely identifies each Directorate-General (DG) of the Commission. There are three DGs that can open state aid cases. The DG for Competition (COMP) is coded {1}, the DG for Agriculture and Rural Development (AGRI) is coded {2}, and the DG for Maritime Affairs and Fisheries (MARE) is coded {3}."
+22,decisions_network_D,4,directorate_general,string,The name of the Directorate-General (DG) of the Commission that opened the state aid case.
+22,decisions_network_D,5,directorate_general_code,string,A multi-letter code assigned by the Commission that uniquely identifies each Directorate-General (DG) of the Commission. 
+22,decisions_network_D,6,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+22,decisions_network_D,7,member_state,string,The name of the member state that the Commission opened the case against. 
+22,decisions_network_D,8,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+22,decisions_network_D,9,case_type_ID,numeric,"An ID number that uniquely identifies each type of state aid cases. Coded {1} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {2} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {3} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+22,decisions_network_D,10,case_type,string,"The type of the state aid case. There are three types of cases. Coded {Scheme} for cases that involve state aid measures granted through Commission-approved schemes that is not notifiable, coded {Individual application} for cases that involve state aid measures granted through Commission-approved schemes where the Commission has required that the member state notify any aid granted through the scheme, and coded {Ad hoc} for cases that involve ad hoc state aid measures that are not granted through a scheme."
+22,decisions_network_D,11,decision_type_ID,numeric,An ID number that uniquely identifies each type of decision the Commission can make in a state aid case.
+22,decisions_network_D,12,decision_type,string,The type of the decision.
+22,decisions_network_D,13,count_decisions,numeric,A count of the number of decisions issued by the Commission at this level of aggregation.
+23,awards,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+23,awards,2,case_number,string,"A number that uniquely identifies each state aid case. Assigned by the Commission. The Commission changed the format of case numbers in 2010. Before this change, the case number indicated the type(s) of the procedure associated with the case. After this change, all case numbers have the format {SA.#####}."
+23,awards,3,reference_number,string,An ID number that uniquely identifies each state aid award.
+23,awards,4,notification_date,date,The date the member state notified the Commission of the state aid measure in the format {YYYY-MM-DD}.  
+23,awards,5,notification_year,numeric,The year the member state notified the Commission of the state aid measure.
+23,awards,6,notification_month,numeric,The month the member state notified the Commission of the state aid measure.
+23,awards,7,notification_day,numeric,The day the member state notified the Commission of the state aid measure.
+23,awards,8,publication_date,date,The date that the Commission published a record of the state aid award in the format {YYYY-MM-DD}.
+23,awards,9,publication_year,numeric,The year that the Commission published a record of the state aid award.
+23,awards,10,publication_month,numeric,The month that the Commission published a record of the state aid award.
+23,awards,11,publication_day,numeric,The day that the Commission published a record of the state aid award.
+23,awards,12,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+23,awards,13,member_state,string,The name of the member state that the Commission opened the case against. 
+23,awards,14,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+23,awards,15,authority_name,string,"The name of the national, subnational, or local authority that granted the state aid award. Note that the text of this variable has not been cleaned."
+23,awards,16,region,string,The region of the member state where the beneficiary of the state aid award is located. Note that the text of this variable has not been cleaned.
+23,awards,17,beneficiary_name,string,The name of the beneficiary of the state aid award. Note that the text of this variable has not been cleaned.
+23,awards,18,beneficiary_type_ID,numeric,An ID number that uniquely identifies each type of beneficiary. Coded {1} for {Small or medium-sized enterprise (SME)} and {2} for {Large enterprise}.
+23,awards,19,beneficiary_type,string,The type of the beneficiary of the state aid award. Coded {Small or medium-sized enterprise (SME)} or {Large enterprise}. Uses the Commission’s standard definition of small and median-sized enterprises (SMEs). 
+23,awards,20,NACE_sector_ID,numeric,An ID number that uniquely identifies each NACE sector.
+23,awards,21,NACE_sector,string,The NACE sector for the state aid award.
+23,awards,22,NACE_sector_code,string,The NACE sector code for the state aid award (a single capital letter).
+23,awards,23,NACE_code,string,The NACE code for the state aid award.
+23,awards,24,NACE_description,string,A description of the NACE code for the state aid award.
+23,awards,25,aid_instrument_ID,numeric,An ID number that uniquely identifies each state aid instrument that a granting authority can use.
+23,awards,26,aid_instrument,string,The aid instrument that the granting authority used in granting the state aid award.
+23,awards,27,raw_amount,numeric,"The amount of the state aid award expressed in units of the local currency. If the value of the award is expressed as a range, this variable records the mean of the range. "
+23,awards,28,currency,string,The name of the currency in which the member state reported the amount of the state aid award.
+23,awards,29,range,bool,A dummy variable indicating whether the amount of the state aid award is expressed as a range instead of a specific value (allowed by the Commission under some circumstances to protect proprietary business data). Coded {1} if the amount is expressed as a range and {0} otherwise.
+23,awards,30,range_min,numeric,"If the value of the state aid award is expressed as a range (see {range}), the minimum value of the range expressed in units of the local currency. Coded {NA} if the value of the award is not expressed as a range."
+23,awards,31,range_max,numeric,"If the value of the state aid award is expressed as a range (see {range}), the maximum value of the range expressed in units of the local currency. Coded {NA} if the value of the award is not expressed as a range."
+23,awards,32,exchange_rate,numeric,The exchange rate for converting the local currency into euros. Coded {1} if the local currency is the euro.
+23,awards,33,amount_euros,numeric,The total estimated value of the award in euros.
+23,awards,34,voluntary,bool,A dummy variable indicating whether the state aid award was small enough that notification to the Commission is voluntary. Coded {1} if notification is voluntary and {0} otherwise.
+24,awards_CSTS,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+24,awards_CSTS,2,year,numeric,The year the case was opened by the Commission.
+24,awards_CSTS,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+24,awards_CSTS,4,member_state,string,The name of the member state that the Commission opened the case against. 
+24,awards_CSTS,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+24,awards_CSTS,6,count_awards,numeric,A count of the number of state aid awards granted by the member state at this level of aggregation.
+24,awards_CSTS,7,total_amount_awards,numeric,The total amount of awards granted at this level of aggregation in euros.
+25,awards_CSTS_B,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+25,awards_CSTS_B,2,year,numeric,The year the case was opened by the Commission.
+25,awards_CSTS_B,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+25,awards_CSTS_B,4,member_state,string,The name of the member state that the Commission opened the case against. 
+25,awards_CSTS_B,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+25,awards_CSTS_B,6,beneficiary_type_ID,numeric,An ID number that uniquely identifies each type of beneficiary. Coded {1} for {Small or medium-sized enterprise (SME)} and {2} for {Large enterprise}.
+25,awards_CSTS_B,7,beneficiary_type,string,The type of the beneficiary of the state aid award. Coded {Small or medium-sized enterprise (SME)} or {Large enterprise}. Uses the Commission’s standard definition of small and median-sized enterprises (SMEs). 
+25,awards_CSTS_B,8,count_awards,numeric,A count of the number of state aid awards granted by the member state at this level of aggregation.
+25,awards_CSTS_B,9,total_amount_awards,numeric,The total amount of awards granted at this level of aggregation in euros.
+26,awards_CSTS_I,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+26,awards_CSTS_I,2,year,numeric,The year the case was opened by the Commission.
+26,awards_CSTS_I,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+26,awards_CSTS_I,4,member_state,string,The name of the member state that the Commission opened the case against. 
+26,awards_CSTS_I,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+26,awards_CSTS_I,6,aid_instrument_ID,numeric,An ID number that uniquely identifies each state aid instrument that a granting authority can use.
+26,awards_CSTS_I,7,aid_instrument,string,The aid instrument that the granting authority used in granting the state aid award.
+26,awards_CSTS_I,8,count_awards,numeric,A count of the number of state aid awards granted by the member state at this level of aggregation.
+26,awards_CSTS_I,9,total_amount_awards,numeric,The total amount of awards granted at this level of aggregation in euros.
+27,awards_CSTS_S,1,key_ID,numeric,An ID number that uniquely identifies each observation in the dataset. 
+27,awards_CSTS_S,2,year,numeric,The year the case was opened by the Commission.
+27,awards_CSTS_S,3,member_state_ID,numeric,An ID number that uniquely identifies each member state. This ID number is assigned when member states are sorted by accession date and then alphabetically. 
+27,awards_CSTS_S,4,member_state,string,The name of the member state that the Commission opened the case against. 
+27,awards_CSTS_S,5,member_state_code,string,A two letter code assigned by the Commission that uniquely identifies each member state. 
+27,awards_CSTS_S,6,NACE_sector_ID,numeric,An ID number that uniquely identifies each NACE sector.
+27,awards_CSTS_S,7,NACE_sector,string,The NACE sector for the state aid award.
+27,awards_CSTS_S,8,NACE_sector_code,string,The NACE sector code for the state aid award (a single capital letter).
+27,awards_CSTS_S,9,count_awards,numeric,A count of the number of state aid awards granted by the member state at this level of aggregation.
+27,awards_CSTS_S,10,total_amount_awards,numeric,The total amount of awards granted at this level of aggregation in euros.

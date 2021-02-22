@@ -1,110 +1,123 @@
-API_route_ID,API_route,API_parameter_ID,API_parameter,API_parameter_type,variable,fetch_values
-1,cases,1,minYear,integer,notification_year,0
-1,cases,2,maxYear,integer,notification_year,0
-1,cases,3,memberState,integer,member_state_ID,1
-1,cases,4,directorateGeneral,integer,directorate_general_ID,1
-1,cases,5,caseNumber,string,case_number,0
-1,cases,6,caseType,integer,case_type_ID,1
-1,cases,7,exempt,bool,exempt,0
-1,cases,8,preliminaryInvestigation,bool,preliminary_investigation,0
-1,cases,9,formalInvestigation,bool,formal_investigation,0
-1,cases,10,noObjection,bool,no_objection,0
-1,cases,11,notAid,bool,no_aid,0
-1,cases,12,positive,bool,positive,0
-1,cases,13,negative,bool,negative,0
-1,cases,14,conditional,bool,conditional,0
-1,cases,15,withdrawal,bool,withdrawal,0
-1,cases,16,referral,bool,referral,0
-1,cases,17,recovery,bool,recovery,0
-1,cases,18,limit,integer,NA,0
-1,cases,19,offset,integer,NA,0
-1,cases,20,download,bool,NA,0
-2,cases/TS,1,byCaseType,bool,NA,0
-2,cases/TS,2,minYear,integer,year,0
-2,cases/TS,3,maxYear,integer,year,0
-2,cases/TS,4,caseType,integer,case_type_ID,1
-2,cases/TS,5,limit,integer,NA,0
-2,cases/TS,6,offset,integer,NA,0
-2,cases/TS,7,download,bool,NA,0
-3,cases/CSTS,1,byCaseType,bool,NA,0
-3,cases/CSTS,2,crossSection,string,NA,0
-3,cases/CSTS,3,memberState,integer,member_state_ID,1
-3,cases/CSTS,4,directorateGeneral,integer,directorate_general_ID,1
-3,cases/CSTS,5,minYear,integer,case_year,0
-3,cases/CSTS,6,maxYear,integer,case_year,0
-3,cases/CSTS,7,caseType,integer,case_type_ID,1
-3,cases/CSTS,8,limit,integer,NA,0
-3,cases/CSTS,9,offset,integer,NA,0
-3,cases/CSTS,10,download,bool,NA,0
-4,cases/DDY,1,byCaseType,bool,NA,0
-4,cases/DDY,2,minYear,integer,case_year,0
-4,cases/DDY,3,maxYear,integer,case_year,0
-4,cases/DDY,4,memberState,integer,member_state_ID,1
-4,cases/DDY,5,directorateGeneral,integer,directorate_general_ID,1
-4,cases/DDY,6,caseType,integer,case_type_ID,1
-4,cases/DDY,7,network,bool,NA,0
-4,cases/DDY,8,limit,integer,NA,0
-4,cases/DDY,9,offset,integer,NA,0
-4,cases/DDY,10,download,bool,NA,0
-5,decisions,1,minYear,integer,decision_year,0
-5,decisions,2,maxYear,integer,decision_year,0
-5,decisions,3,memberState,integer,member_state_ID,1
-5,decisions,4,directorateGeneral,integer,directorate_general_ID,1
-5,decisions,5,caseNumber,string,case_number,0
-5,decisions,6,caseType,integer,case_type_ID,1
-5,decisions,7,decisionType,integer,decision_type_ID,0
-5,decisions,8,limit,integer,NA,0
-5,decisions,9,offset,integer,NA,0
-5,decisions,10,download,bool,NA,0
-6,decisions/TS,1,byCaseType,bool,NA,0
-6,decisions/TS,2,minYear,integer,year,0
-6,decisions/TS,3,maxYear,integer,year,0
-6,decisions/TS,4,caseType,integer,case_type_ID,1
-6,decisions/TS,5,decisionType,integer,decision_type_ID,1
-6,decisions/TS,6,limit,integer,NA,0
-6,decisions/TS,7,offset,integer,NA,0
-6,decisions/TS,8,download,bool,NA,0
-7,decisions/CSTS,1,byCaseType,bool,NA,0
-7,decisions/CSTS,2,crossSection,string,NA,0
-7,decisions/CSTS,3,memberState,integer,member_state_ID,1
-7,decisions/CSTS,4,directorateGeneral,integer,directorate_general_ID,1
-7,decisions/CSTS,5,minYear,integer,case_year,0
-7,decisions/CSTS,6,maxYear,integer,case_year,0
-7,decisions/CSTS,7,caseType,integer,case_type_ID,1
-7,decisions/CSTS,8,decisionType,integer,decision_type_ID,1
-7,decisions/CSTS,9,limit,integer,NA,0
-7,decisions/CSTS,10,offset,integer,NA,0
-7,decisions/CSTS,11,download,bool,NA,0
-8,decisions/DDY,1,byCaseType,bool,NA,0
-8,decisions/DDY,2,minYear,integer,case_year,0
-8,decisions/DDY,3,maxYear,integer,case_year,0
-8,decisions/DDY,4,memberState,integer,member_state_ID,1
-8,decisions/DDY,5,directorateGeneral,integer,directorate_general_ID,1
-8,decisions/DDY,6,caseType,integer,case_type_ID,1
-8,decisions/DDY,7,decisionType,integer,decision_type_ID,1
-8,decisions/DDY,8,network,bool,NA,0
-8,decisions/DDY,9,limit,integer,NA,0
-8,decisions/DDY,10,offset,integer,NA,0
-8,decisions/DDY,11,download,bool,NA,0
-9,awards,1,minYear,integer,notification_year,0
-9,awards,2,maxYear,integer,notification_year,0
-9,awards,3,caseNumber,string,case_number,0
-9,awards,4,memberState,integer,member_state_ID,1
-9,awards,5,beneficiaryType,integer,beneficiary_type_ID,1
-9,awards,6,sector,integer,NACE_sector_ID,1
-9,awards,7,aidInstrument,integer,aid_instrument_ID,1
-9,awards,8,limit,integer,NA,0
-9,awards,9,offset,integer,NA,0
-9,awards,10,download,bool,NA,0
-10,awards/CSTS,1,minYear,integer,notification_year,0
-10,awards/CSTS,2,maxYear,integer,notification_year,0
-10,awards/CSTS,3,memberState,integer,member_state_ID,1
-10,awards/CSTS,4,byBeneficiary,bool,NA,0
-10,awards/CSTS,5,byInstrument,bool,NA,0
-10,awards/CSTS,6,bySector,bool,NA,0
-10,awards/CSTS,7,beneficiaryType,integer,beneficiary_type_ID,1
-10,awards/CSTS,8,sector,integer,NACE_sector_ID,1
-10,awards/CSTS,9,aidInstrument,integer,aid_instrument_ID,1
-10,awards/CSTS,10,limit,integer,NA,0
-10,awards/CSTS,11,offset,integer,NA,0
-10,awards/CSTS,12,download,bool,NA,0
+key_ID,API_route_ID,API_route,API_parameter_ID,API_parameter,API_parameter_type,dataset,variable,description,fetch_values
+1,1,cases,1,minYear,integer,cases,notification_year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {notification_year} is greater than or equal to the provided value.",0
+2,1,cases,2,maxYear,integer,cases,notification_year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {notification_year} is less than or equal to the provided value.",0
+3,1,cases,3,memberState,integer,cases,member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+4,1,cases,4,directorateGeneral,integer,cases,directorate_general_ID,"When a value is provided for {directorateGeneral}, the API will only return observations from the requested data table where the variable {directorate_general_ID} is equal to the provided value.",1
+5,1,cases,5,caseNumber,string,cases,case_number,"When a value is provided for {caseNumber}, the API will only return observations from the requested data table where the variable {case_number} is equal to the provided value.",0
+6,1,cases,6,caseType,integer,cases,case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+7,1,cases,7,exempt,bool,cases,exempt,"When a value is provided for {exempt}, the API will only return observations from the requested data table where the variable {exempt} is equal to the provided value.",0
+8,1,cases,8,preliminaryInvestigation,bool,cases,preliminary_investigation,"When a value is provided for {preliminaryInvestigation}, the API will only return observations from the requested data table where the variable {preliminary_investigation} is equal to the provided value.",0
+9,1,cases,9,formalInvestigation,bool,cases,formal_investigation,"When a value is provided for {formalInvestigation}, the API will only return observations from the requested data table where the variable {formal_investigation} is equal to the provided value.",0
+10,1,cases,10,noObjection,bool,cases,no_objection,"When a value is provided for {noObjection}, the API will only return observations from the requested data table where the variable {no_objection} is equal to the provided value.",0
+11,1,cases,11,notAid,bool,cases,not_aid,"When a value is provided for {notAid}, the API will only return observations from the requested data table where the variable {not_aid} is equal to the provided value.",0
+12,1,cases,12,positive,bool,cases,positive,"When a value is provided for {positive}, the API will only return observations from the requested data table where the variable {positive} is equal to the provided value.",0
+13,1,cases,13,negative,bool,cases,negative,"When a value is provided for {negative}, the API will only return observations from the requested data table where the variable {negative} is equal to the provided value.",0
+14,1,cases,14,conditional,bool,cases,conditional,"When a value is provided for {conditional}, the API will only return observations from the requested data table where the variable {conditional} is equal to the provided value.",0
+15,1,cases,15,withdrawal,bool,cases,withdrawal,"When a value is provided for {withdrawal}, the API will only return observations from the requested data table where the variable {withdrawal} is equal to the provided value.",0
+16,1,cases,16,referral,bool,cases,referral,"When a value is provided for {referral}, the API will only return observations from the requested data table where the variable {referral} is equal to the provided value.",0
+17,1,cases,17,recovery,bool,cases,recovery,"When a value is provided for {recovery}, the API will only return observations from the requested data table where the variable {recovery} is equal to the provided value.",0
+18,1,cases,18,limit,integer,cases,NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+19,1,cases,19,offset,integer,cases,NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+20,1,cases,20,download,bool,cases,NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+21,2,cases/TS,1,byCaseType,bool,"cases_TS, cases_TS_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+22,2,cases/TS,2,minYear,integer,"cases_TS, cases_TS_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+23,2,cases/TS,3,maxYear,integer,"cases_TS, cases_TS_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+24,2,cases/TS,4,caseType,integer,"cases_TS, cases_TS_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+25,2,cases/TS,5,limit,integer,"cases_TS, cases_TS_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+26,2,cases/TS,6,offset,integer,"cases_TS, cases_TS_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+27,2,cases/TS,7,download,bool,"cases_TS, cases_TS_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+28,3,cases/CSTS/MS,1,byCaseType,bool,"cases_CSTS_MS, cases_CSTS_MS_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+29,3,cases/CSTS/MS,2,memberState,integer,"cases_CSTS_MS, cases_CSTS_MS_D",member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+30,3,cases/CSTS/MS,3,minYear,integer,"cases_CSTS_MS, cases_CSTS_MS_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+31,3,cases/CSTS/MS,4,maxYear,integer,"cases_CSTS_MS, cases_CSTS_MS_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+32,3,cases/CSTS/MS,5,caseType,integer,"cases_CSTS_MS, cases_CSTS_MS_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+33,3,cases/CSTS/MS,6,limit,integer,"cases_CSTS_MS, cases_CSTS_MS_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+34,3,cases/CSTS/MS,7,offset,integer,"cases_CSTS_MS, cases_CSTS_MS_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+35,3,cases/CSTS/MS,8,download,bool,"cases_CSTS_MS, cases_CSTS_MS_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+36,4,cases/CSTS/DG,1,byCaseType,bool,"cases_CSTS_DG, cases_CSTS_DG_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+37,4,cases/CSTS/DG,2,directorateGeneral,integer,"cases_CSTS_DG, cases_CSTS_DG_D",directorate_general_ID,"When a value is provided for {directorateGeneral}, the API will only return observations from the requested data table where the variable {directorate_general_ID} is equal to the provided value.",1
+38,4,cases/CSTS/DG,3,minYear,integer,"cases_CSTS_DG, cases_CSTS_DG_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+39,4,cases/CSTS/DG,4,maxYear,integer,"cases_CSTS_DG, cases_CSTS_DG_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+40,4,cases/CSTS/DG,5,caseType,integer,"cases_CSTS_DG, cases_CSTS_DG_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+41,4,cases/CSTS/DG,6,limit,integer,"cases_CSTS_DG, cases_CSTS_DG_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+42,4,cases/CSTS/DG,7,offset,integer,"cases_CSTS_DG, cases_CSTS_DG_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+43,4,cases/CSTS/DG,8,download,bool,"cases_CSTS_DG, cases_CSTS_DG_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+44,5,cases/DDY,1,byCaseType,bool,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+45,5,cases/DDY,2,minYear,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+46,5,cases/DDY,3,maxYear,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+47,5,cases/DDY,4,memberState,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+48,5,cases/DDY,5,directorateGeneral,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",directorate_general_ID,"When a value is provided for {directorateGeneral}, the API will only return observations from the requested data table where the variable {directorate_general_ID} is equal to the provided value.",1
+49,5,cases/DDY,6,caseType,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+50,5,cases/DDY,7,network,bool,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",NA,"When {network=1}, the API will return data in a network format instead of a directed dyad-year format.",0
+51,5,cases/DDY,8,limit,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+52,5,cases/DDY,9,offset,integer,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+53,5,cases/DDY,10,download,bool,"cases_DDY, cases_DDY_D, cases_network, cases_network_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+54,6,decisions,1,minYear,integer,decisions,decision_year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {decision_year} is greater than or equal to the provided value.",0
+55,6,decisions,2,maxYear,integer,decisions,decision_year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {decision_year} is less than or equal to the provided value.",0
+56,6,decisions,3,memberState,integer,decisions,member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+57,6,decisions,4,directorateGeneral,integer,decisions,directorate_general_ID,"When a value is provided for {directorateGeneral}, the API will only return observations from the requested data table where the variable {directorate_general_ID} is equal to the provided value.",1
+58,6,decisions,5,caseNumber,string,decisions,case_number,"When a value is provided for {caseNumber}, the API will only return observations from the requested data table where the variable {case_number} is equal to the provided value.",0
+59,6,decisions,6,caseType,integer,decisions,case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+60,6,decisions,7,decisionType,integer,decisions,decision_type_ID,"When a value is provided for {decisionType}, the API will only return observations from the requested data table where the variable {decision_type_ID} is equal to the provided value.",0
+61,6,decisions,8,limit,integer,decisions,NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+62,6,decisions,9,offset,integer,decisions,NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+63,6,decisions,10,download,bool,decisions,NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+64,7,decisions/TS,1,byCaseType,bool,"decisions_TS, decisions_TS_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+65,7,decisions/TS,2,minYear,integer,"decisions_TS, decisions_TS_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+66,7,decisions/TS,3,maxYear,integer,"decisions_TS, decisions_TS_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+67,7,decisions/TS,4,caseType,integer,"decisions_TS, decisions_TS_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+68,7,decisions/TS,5,decisionType,integer,"decisions_TS, decisions_TS_D",decision_type_ID,"When a value is provided for {decisionType}, the API will only return observations from the requested data table where the variable {decision_type_ID} is equal to the provided value.",1
+69,7,decisions/TS,6,limit,integer,"decisions_TS, decisions_TS_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+70,7,decisions/TS,7,offset,integer,"decisions_TS, decisions_TS_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+71,7,decisions/TS,8,download,bool,"decisions_TS, decisions_TS_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+72,8,decisions/CSTS/MS,1,byCaseType,bool,"decisions_CSTS_MS, decisions_CSTS_MS_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+73,8,decisions/CSTS/MS,2,memberState,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+74,8,decisions/CSTS/MS,3,minYear,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+75,8,decisions/CSTS/MS,4,maxYear,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+76,8,decisions/CSTS/MS,5,caseType,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+77,8,decisions/CSTS/MS,6,decisionType,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",decision_type_ID,"When a value is provided for {decisionType}, the API will only return observations from the requested data table where the variable {decision_type_ID} is equal to the provided value.",1
+78,8,decisions/CSTS/MS,7,limit,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+79,8,decisions/CSTS/MS,8,offset,integer,"decisions_CSTS_MS, decisions_CSTS_MS_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+80,8,decisions/CSTS/MS,9,download,bool,"decisions_CSTS_MS, decisions_CSTS_MS_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+81,9,decisions/CSTS/DG,1,byCaseType,bool,"decisions_CSTS_DG, decisions_CSTS_DG_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+82,9,decisions/CSTS/DG,2,directorateGeneral,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",directorate_general_ID,"When a value is provided for {directorateGeneral}, the API will only return observations from the requested data table where the variable {directorate_general_ID} is equal to the provided value.",1
+83,9,decisions/CSTS/DG,3,minYear,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+84,9,decisions/CSTS/DG,4,maxYear,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+85,9,decisions/CSTS/DG,5,caseType,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+86,9,decisions/CSTS/DG,6,decisionType,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",decision_type_ID,"When a value is provided for {decisionType}, the API will only return observations from the requested data table where the variable {decision_type_ID} is equal to the provided value.",1
+87,9,decisions/CSTS/DG,7,limit,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+88,9,decisions/CSTS/DG,8,offset,integer,"decisions_CSTS_DG, decisions_CSTS_DG_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+89,9,decisions/CSTS/DG,9,download,bool,"decisions_CSTS_DG, decisions_CSTS_DG_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+90,10,decisions/DDY,1,byCaseType,bool,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",NA,"When {byCaseType = 1}, the API will disaggregate the requested data by case type. See the {case_type} variable.",0
+91,10,decisions/DDY,2,minYear,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {year} is greater than or equal to the provided value.",0
+92,10,decisions/DDY,3,maxYear,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {year} is less than or equal to the provided value.",0
+93,10,decisions/DDY,4,memberState,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+94,10,decisions/DDY,5,directorateGeneral,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",directorate_general_ID,"When a value is provided for {directorateGeneral}, the API will only return observations from the requested data table where the variable {directorate_general_ID} is equal to the provided value.",1
+95,10,decisions/DDY,6,caseType,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",case_type_ID,"When a value is provided for {caseType}, the API will only return observations from the requested data table where the variable {case_type_ID} is equal to the provided value. This parameter is only applicable when {byCaseType=1}.",1
+96,10,decisions/DDY,7,decisionType,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",decision_type_ID,"When a value is provided for {decisionType}, the API will only return observations from the requested data table where the variable {decision_type_ID} is equal to the provided value.",1
+97,10,decisions/DDY,8,network,bool,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",NA,"When {network=1}, the API will return data in a network format instead of a directed dyad-year format.",0
+98,10,decisions/DDY,9,limit,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+99,10,decisions/DDY,10,offset,integer,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+100,10,decisions/DDY,11,download,bool,"decisions_DDY, decisions_DDY_D, decisions_network, decisions_network_D",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+101,11,awards,1,minYear,integer,awards,notification_year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {notification_year} is greater than or equal to the provided value.",0
+102,11,awards,2,maxYear,integer,awards,notification_year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {notification_year} is less than or equal to the provided value.",0
+103,11,awards,3,caseNumber,string,awards,case_number,"When a value is provided for {caseNumber}, the API will only return observations from the requested data table where the variable {case_number} is equal to the provided value.",0
+104,11,awards,4,memberState,integer,awards,member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+105,11,awards,5,beneficiaryType,integer,awards,beneficiary_type_ID,"When a value is provided for {beneficiaryType}, the API will only return observations from the requested data table where the variable {beneficiary_type_ID} is equal to the provided value.",1
+106,11,awards,6,sector,integer,awards,NACE_sector_ID,"When a value is provided for {sector}, the API will only return observations from the requested data table where the variable {NACE_sector_ID} is equal to the provided value.",1
+107,11,awards,7,aidInstrument,integer,awards,aid_instrument_ID,"When a value is provided for {aidInstrument}, the API will only return observations from the requested data table where the variable {aid_instrument_ID} is equal to the provided value.",1
+108,11,awards,8,limit,integer,awards,NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+109,11,awards,9,offset,integer,awards,NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+110,11,awards,10,download,bool,awards,NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
+111,12,awards/CSTS,1,byAidInstrument,bool,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NA,"When {byAidInstrument = 1}, the API will disaggregate the requested data by aid instrument. See the {aid_instrument} variable.",0
+112,12,awards/CSTS,2,byBeneficiaryType,bool,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NA,"When {byBeneficiaryType = 1}, the API will disaggregate the requested data by beneficiary type. See the {beneficiary_type} variable.",0
+113,12,awards/CSTS,3,bySector,bool,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NA,"When {bySector = 1}, the API will disaggregate the requested data by sector. See the {NACE_sector} variable.",0
+114,12,awards/CSTS,4,minYear,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",notification_year,"When a value is provided for {minYear}, the API will only return observations from the requested data table where the variable {notification_year} is greater than or equal to the provided value.",0
+115,12,awards/CSTS,5,maxYear,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",notification_year,"When a value is provided for {maxYear}, the API will only return observations from the requested data table where the variable {notification_year} is less than or equal to the provided value.",0
+116,12,awards/CSTS,6,memberState,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",member_state_ID,"When a value is provided for {memberState}, the API will only return observations from the requested data table where the variable {member_state_ID} is equal to the provided value.",1
+119,12,awards/CSTS,7,aidInstrument,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",aid_instrument_ID,"When a value is provided for {aidInstrument}, the API will only return observations from the requested data table where the variable {aid_instrument_ID} is equal to the provided value. This parameter is only applicable when {byAidInstrument=1}.",1
+117,12,awards/CSTS,8,beneficiaryType,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",beneficiary_type_ID,"When a value is provided for {beneficiaryType}, the API will only return observations from the requested data table where the variable {beneficiary_type_ID} is equal to the provided value. This parameter is only applicable when {byBeneficiaryType=1}.",1
+118,12,awards/CSTS,9,sector,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NACE_sector_ID,"When a value is provided for {sector}, the API will only return observations from the requested data table where the variable {NACE_sector_ID} is equal to the provided value. This parameter is only applicable when {bySector=1}.",1
+120,12,awards/CSTS,10,limit,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NA,The maximum number of observations to return in a single API call. Defaults to 1000 when a value is not provided. The maximum value is 1000.,0
+121,12,awards/CSTS,11,offset,integer,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NA,"The number of observations to skip before returning observations from the filtered table. The API will return {limit} observations starting at the observation with the index {offset + 1}. Defaults to {0}. If {offset} is larger than the number of rows in the filtered table, the API will return an empty {json} array.",0
+122,12,awards/CSTS,12,download,bool,"awards_CSTS, awards_CSTS_I, awards_CSTS_B, awards_CSTS_S",NA,"When {download=1}, the API will return a {CSV} file instead of a {json} object.",0
