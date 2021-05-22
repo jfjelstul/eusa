@@ -8,3 +8,5 @@ data-raw/cases/
 data-raw/NACE-codes/
 data-raw/working-files/
 _archive/
+server/
+build/
