@@ -1,8 +1,9 @@
 .DS_Store
 .Rproj.user
-euaid.Rproj
 .Rhistory
-extra/
-_codebook/
-_test/
-codebook/source/
+data-raw/codebook/source/
+data-raw/transparency/
+data-raw/exchange-rates/
+data-raw/cases/
+data-raw/NACE-codes/
+data-raw/working-files/
