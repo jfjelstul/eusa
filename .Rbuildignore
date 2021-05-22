@@ -1,2 +1,6 @@
 ^euaid\.Rproj$
 ^\.Rproj\.user$
+^_archive$
+^build$
+^server$
+^data-raw$
