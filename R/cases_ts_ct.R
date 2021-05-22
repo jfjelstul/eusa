@@ -34,7 +34,7 @@
 #' \item{count_cases}{Numeric. A count of the number of cases opened by the
 #' Commission at this level of aggregation.}
 #' }
-"cases_ts_d"
+"cases_ts_ct"
 
 ################################################################################
 # end R script

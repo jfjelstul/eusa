@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This article provides an overview of EU state aid cases to help users understand the `cases`, `decisions`, and `awards` datasets in the `euaid` package.
+This article provides an overview of EU state aid cases to help users understand the `cases`, `decisions`, and `awards` datasets in the `eusa` package.
 
 The `cases` dataset includes all state aid cases that the Commission has opened in response to member states notifying state aid measures under [Article 108(3) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) from 2000 through 2020. The unit of observation is a case. The source of the raw data is the Commission's [state aid cases database](https://ec.europa.eu/competition/elojade/isef/).
 

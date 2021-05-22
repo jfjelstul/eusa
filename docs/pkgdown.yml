@@ -1,0 +1,7 @@
+pandoc: 2.3.1
+pkgdown: 1.5.1
+pkgdown_sha: ~
+articles:
+  EU-state-aid: EU-state-aid.html
+last_built: 2021-05-22T12:03Z
+
