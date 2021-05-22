@@ -1,6 +1,8 @@
-# The euaid R Package
+# eusa
 
-This package provides easy access to data and documentation from the European Union State Aid (EUSA) Database by Joshua C. Fjelstul, Ph.D. The database includes three datasets: `cases`, `decisions`, and `awards`. 
+An `R` package for the European Union State Aid (EUSA) Database. The EUSA database is part of the European Union Compliance Project (EUCP), which also includes the [European Union Infringement Procedure (EUIP) Database](https://github.com/jfjelstul/euip) and the [European Union Technical Regulation (EUTR) Database](https://github.com/jfjelstul/eutr). The EUCP is introduced in the working paper "Legal Compliance in the European Union: Institutional Procedures and Strategic Enforcement Behavior" by Joshua C. Fjelstul. 
+
+The EUSA Database includes 27 datasets on the Commission state aid cases (2000-2020) and state aid awards granted to firms by government agencies in member states (2016-2020), including data on the universe of infringement cases and decisions made by the Commission in state aid cases. The three main datasets are `cases`, `decisions`, and `awards`. The database also includes time-series, cross-sectional, directed dyad-year, and network data on cases and decisions. 
 
 The `cases` dataset includes all state aid cases that the Commission has opened in response to member states notifying state aid measures under [Article 108(3) TFEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12008E108) from 2000 through 2020. The unit of observation is a case. The source of the raw data is the Commission's [state aid cases database](https://ec.europa.eu/competition/elojade/isef/).
 
@@ -10,27 +12,34 @@ The `awards` dataset includs all awards granted by member states as part of auth
 
 ## Installation
 
-You can install the latest development version from GitHub:
+You can install the latest development version of the `eusa` package from GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("jfjelstul/euaid")
+devtools::install_github("jfjelstul/eusa")
 ```
+
+## Documentation
+
+The codebook for the database is included as a `tibble` in the `R` package: `eusa::codebook`. The same information is also available in the `R` documentation for each dataset. For example, you can see the codebook for the `eusa::cases` dataset by running `?eusa::cases`. You can also read the documentation on the [package website](https://jfjelstul.github.io/eusa/).
 
 ## Citation
 
-If you use data from this package in a project or paper, please use the following citation:
+If you use data from the `eusa` package in a project or paper, please cite the `R` package:
 
-> Joshua C. Fjelstul (2020). euaid: The European Union State Aid (EUSA) Database. R package version 1.0.0. https://github.com/jfjelstul/euaid
+> Joshua Fjelstul (2021). eusa: The European Union State Aid (EUSA) Database. R package version 0.1.0.9000.
 
-The bibtex entry for this package is:
+The `BibTeX` entry for the package is:
 
 ```
 @Manual{,
-    title = {euaid: The European Union State Aid (EUSA) Database},
-    author = {Joshua C. Fjelstul},
-    year = {2021},
-    note = {R package version 1.0.0},
-    url = {https://github.com/jfjelstul/euaid},
-  }
+  title = {ecio: The European Union State Aid (EUSA) Database},
+  author = {Joshua Fjelstul},
+  year = {2021},
+  note = {R package version 0.1.0.9000},
+}
 ```
+
+## Problems
+
+If you notice an error in the data or a bug in the `R` package, please report it [here](https://github.com/jfjelstul/eusa/issues).
