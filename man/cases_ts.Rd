@@ -3,15 +3,16 @@
 \docType{data}
 \name{cases_ts}
 \alias{cases_ts}
-\title{TS data on cases}
+\title{Case-level time-series data}
 \format{
 A data frame with 3 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{count_cases}{Numeric. A count of the number of cases opened by the
-Commission at this level of aggregation.}
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{count_cases}{\code{numeric}. A count of the number of cases opened by
+the Commission at this level of aggregation.}
 }
 }
 \usage{

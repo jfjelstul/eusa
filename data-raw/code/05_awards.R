@@ -326,13 +326,16 @@ save(nace_codes, file = "data/nace_codes.RData")
 # arrange
 awards <- dplyr::arrange(awards, notification_date, case_number, member_state_id)
 
+# case ID
+awards$case_id <- awards$case_number
+
 # key ID
 awards$key_id <- 1:nrow(awards)
 
 # organize variables
 awards <- dplyr::select(
   awards,
-  key_id, case_number, reference_number,
+  key_id, case_id, reference_number,
   notification_date, notification_year, notification_month, notification_day,
   publication_date, publication_year, publication_month, publication_day,
   member_state_id, member_state, member_state_code,

@@ -3,22 +3,23 @@
 \docType{data}
 \name{cases_csts_ms}
 \alias{cases_csts_ms}
-\title{CSTS data on cases (by member state)}
+\title{Case-level cross-sectional time-series data by member state}
 \format{
 A data frame with 6 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{member_state_id}{Numeric. An ID number that uniquely identifies each
-member state. This ID number is assigned when member states are sorted by
-accession date and then alphabetically. }
-\item{member_state}{String. The name of the member state that the
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{member_state_id}{\code{numeric}. An ID number that uniquely
+identifies each member state. This ID number is assigned when member states
+are sorted by accession date and then alphabetically. }
+\item{member_state}{\code{string}. The name of the member state that the
 Commission opened the case against. }
-\item{member_state_code}{String. A two letter code assigned by the
+\item{member_state_code}{\code{string}. A two letter code assigned by the
 Commission that uniquely identifies each member state. }
-\item{count_cases}{Numeric. A count of the number of cases opened by the
-Commission at this level of aggregation.}
+\item{count_cases}{\code{numeric}. A count of the number of cases opened by
+the Commission at this level of aggregation.}
 }
 }
 \usage{

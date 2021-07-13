@@ -3,35 +3,30 @@
 \docType{data}
 \name{decisions_net}
 \alias{decisions_net}
-\title{Network data on decisions}
+\title{Decision-level network data}
 \format{
-A data frame with 11 variables:
+A data frame with 9 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{department_id}{Numeric. An ID number that uniquely identifies each
-Directorate-General (DG) of the Commission. There are three DGs that can
-open state aid cases. The DG for Competition (COMP) is coded \code{1}, the
-DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and the
-DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
-\item{department}{String. The name of the Directorate-General (DG) of the
-Commission that opened the state aid case.}
-\item{department_code}{String. A multi-letter code assigned by the
-Commission that uniquely identifies each Directorate-General (DG) of the
-Commission. }
-\item{member_state_id}{Numeric. An ID number that uniquely identifies each
-member state. This ID number is assigned when member states are sorted by
-accession date and then alphabetically. }
-\item{member_state}{String. The name of the member state that the
-Commission opened the case against. }
-\item{member_state_code}{String. A two letter code assigned by the
-Commission that uniquely identifies each member state. }
-\item{decision_type_id}{Numeric. An ID number that uniquely identifies each
-type of decision the Commission can make in a state aid case.}
-\item{decision_type}{String. The type of the decision.}
-\item{count_decisions}{Numeric. A count of the number of decisions issued
-by the Commission at this level of aggregation.}
+\item{year}{\code{numeric}. The year the decision was issued by the
+Commission.}
+\item{layer_id}{\code{numeric}. An ID number that uniquely identifies each
+layer of the network.}
+\item{layer}{\code{string}. The layer of the network, which is the decision
+type.}
+\item{from_node_id}{\code{numeric}. An ID number that uniquely identifies
+each node in the network that creates a link, which is always a Commission
+department.}
+\item{from_node}{\code{string}. The name of the Commission department that
+opened the case.}
+\item{to_node_id}{\code{numeric}. An ID number that uniquely identifies
+each node in the network that receives a link, which is always a member
+state.}
+\item{to_node}{\code{string}. The name of the member state that the
+Commission issued the decision against. }
+\item{edge_weight}{\code{numeric}. The weight of the edge, which is the
+number of decisions opened by the Commission.}
 }
 }
 \usage{

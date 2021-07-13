@@ -3,24 +3,25 @@
 \docType{data}
 \name{awards_csts}
 \alias{awards_csts}
-\title{CSTS data on cases (by member state)}
+\title{Award-level cross-sectional time-series data}
 \format{
 A data frame with 7 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{member_state_id}{Numeric. An ID number that uniquely identifies each
-member state. This ID number is assigned when member states are sorted by
-accession date and then alphabetically. }
-\item{member_state}{String. The name of the member state that the
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{member_state_id}{\code{numeric}. An ID number that uniquely
+identifies each member state. This ID number is assigned when member states
+are sorted by accession date and then alphabetically. }
+\item{member_state}{\code{string}. The name of the member state that the
 Commission opened the case against. }
-\item{member_state_code}{String. A two letter code assigned by the
+\item{member_state_code}{\code{string}. A two letter code assigned by the
 Commission that uniquely identifies each member state. }
-\item{count_awards}{Numeric. A count of the number of state aid awards
-granted by the member state at this level of aggregation.}
-\item{total_amount_awards}{Numeric. The total amount of awards granted at
-this level of aggregation in euros.}
+\item{count_awards}{\code{numeric}. A count of the number of state aid
+awards granted by the member state at this level of aggregation.}
+\item{total_amount_awards}{\code{numeric}. The total amount of awards
+granted at this level of aggregation in euros.}
 }
 }
 \usage{

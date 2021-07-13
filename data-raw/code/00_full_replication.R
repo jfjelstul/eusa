@@ -113,25 +113,68 @@ rm(list = ls())
 # output: data/decisions_net_ct.RData
 
 ##################################################
-# codebook
+# variables
 ##################################################
 
 # read in data
-codebook <- read.csv("data-raw/codebook/codebook.csv", stringsAsFactors = FALSE)
+variables <- read.csv("data-raw/documentation/eusa_variables.csv", stringsAsFactors = FALSE)
 
 # convert to a tibble
-codebook <- dplyr::as_tibble(codebook)
+variables <- dplyr::as_tibble(variables)
 
 # save
-save(codebook, file = "data/codebook.RData")
+save(variables, file = "data/variables.RData")
+
+##################################################
+# datasets
+##################################################
+
+# read in data
+datasets <- read.csv("data-raw/documentation/eusa_datasets.csv", stringsAsFactors = FALSE)
+
+# convert to a tibble
+datasets <- dplyr::as_tibble(datasets)
+
+# save
+save(datasets, file = "data/datasets.RData")
+
+##################################################
+# documentation
+##################################################
 
 # documentation
+load("data/variables.RData")
+load("data/datasets.RData")
+
+# document data
 codebookr::document_data(
-  path = "R/",
-  codebook_file = "data-raw/codebook/codebook.csv",
-  markdown_file = "data-raw/codebook/descriptions.txt",
+  file_path = "R/",
+  variables_input = variables,
+  datasets_input = datasets,
+  include_variable_type = TRUE,
   author = "Joshua C. Fjelstul, Ph.D.",
   package = "eusa"
+)
+
+##################################################
+# codebook
+##################################################
+
+# create a codebook
+codebookr::create_codebook(
+  file_path = "codebook/eusa_codebook.tex",
+  datasets_input = datasets,
+  variables_input = variables,
+  title_text = "The European Union State Aid \\\\ (EUSA) Database",
+  version_text = "1.0",
+  footer_text = "The EUSA Database Codebook \\hspace{5pt} | \\hspace{5pt} Joshua C. Fjelstul, Ph.D.",
+  author_names = "Joshua C. Fjelstul, Ph.D.",
+  theme_color = "#4D9FEB",
+  heading_font_size = 30,
+  subheading_font_size = 10,
+  title_font_size = 16,
+  table_of_contents = TRUE,
+  include_variable_type = TRUE
 )
 
 ##################################################
@@ -171,11 +214,9 @@ load("data/awards_csts_bt.RData")
 load("data/awards_csts_ai.RData")
 load("data/awards_csts_ns.RData")
 
-# NACE codes
-load("data/nace_codes.RData")
-
-# codebook
-load("data/codebook.RData")
+# documentation
+load("data/variables.RData")
+load("data/datasets.RData")
 
 ##################################################
 # check class
@@ -214,11 +255,9 @@ class(awards_csts_bt)
 class(awards_csts_ai)
 class(awards_csts_ns)
 
-# NACE codes
-class(nace_codes)
-
-# codebook
-class(codebook)
+# documentation
+class(variables)
+class(datasets)
 
 ##################################################
 # check missing
@@ -257,12 +296,6 @@ table(is.na(awards_csts_bt))
 table(is.na(awards_csts_ai))
 table(is.na(awards_csts_ns))
 
-# NACE codes
-table(is.na(nace_codes))
-
-# codebook
-table(is.na(codebook))
-
 ##################################################
 # build
 ##################################################
@@ -300,54 +333,9 @@ write.csv(awards_csts_bt, "build/eusa_awards_csts_bt.csv", row.names = FALSE, qu
 write.csv(awards_csts_ai, "build/eusa_awards_csts_ai.csv", row.names = FALSE, quote = TRUE)
 write.csv(awards_csts_ns, "build/eusa_awards_csts_ns.csv", row.names = FALSE, quote = TRUE)
 
-# NACE codes
-write.csv(nace_codes, "build/eusa_nace_codes.csv", row.names = FALSE, quote = TRUE)
-
-# codebook
-write.csv(codebook, "build/eusa_codebook.csv", row.names = FALSE, quote = TRUE)
-
-##################################################
-# server
-##################################################
-
-# cases
-write.csv(cases, "server/eusa_cases.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_ts, "server/eusa_cases_ts.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_ts_ct, "server/eusa_cases_ts_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_csts_ms, "server/eusa_cases_csts_ms.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_csts_ms_ct, "server/eusa_cases_csts_ms_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_csts_dp, "server/eusa_cases_csts_dp.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_csts_dp_ct, "server/eusa_cases_csts_dp_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_ddy, "server/eusa_cases_ddy.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_ddy_ct, "server/eusa_cases_ddy_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_net, "server/eusa_cases_net.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(cases_net_ct, "server/eusa_cases_net_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-
-# decisions
-write.csv(decisions, "server/eusa_decisions.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_ts, "server/eusa_decisions_ts.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_ts_ct, "server/eusa_decisions_ts_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_csts_ms, "server/eusa_decisions_csts_ms.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_csts_ms_ct, "server/eusa_decisions_csts_ms_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_csts_dp, "server/eusa_decisions_csts_dp.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_csts_dp_ct, "server/eusa_decisions_csts_dp_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_ddy, "server/eusa_decisions_ddy.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_ddy_ct, "server/eusa_decisions_ddy_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_net, "server/eusa_decisions_net.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(decisions_net_ct, "server/eusa_decisions_net_ct.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-
-# awards
-write.csv(awards, "server/eusa_awards.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(awards_csts, "server/eusa_awards_csts.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(awards_csts_bt, "server/eusa_awards_csts_bt.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(awards_csts_ai, "server/eusa_awards_csts_ai.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-write.csv(awards_csts_ns, "server/eusa_awards_csts_ns.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-
-# NACE codes
-write.csv(nace_codes, "server/eusa_nace_codes.csv", row.names = FALSE, quote = TRUE, na = "\\N")
-
-# codebook
-write.csv(codebook, "server/eusa_codebook.csv", row.names = FALSE, quote = TRUE, na = "\\N")
+# documentation
+write.csv(variables, "build/eusa_variables.csv", row.names = FALSE, quote = TRUE)
+write.csv(datasets, "build/eusa_datasets.csv", row.names = FALSE, quote = TRUE)
 
 ################################################################################
 # end R script

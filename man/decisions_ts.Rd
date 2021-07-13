@@ -3,18 +3,20 @@
 \docType{data}
 \name{decisions_ts}
 \alias{decisions_ts}
-\title{TS data on decisions}
+\title{Decision-level time-series data}
 \format{
 A data frame with 5 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{decision_type_id}{Numeric. An ID number that uniquely identifies each
-type of decision the Commission can make in a state aid case.}
-\item{decision_type}{String. The type of the decision.}
-\item{count_decisions}{Numeric. A count of the number of decisions issued
-by the Commission at this level of aggregation.}
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{decision_type_id}{\code{numeric}. An ID number that uniquely
+identifies each type of decision the Commission can make in a state aid
+case.}
+\item{decision_type}{\code{string}. The type of the decision.}
+\item{count_decisions}{\code{numeric}. A count of the number of decisions
+issued by the Commission at this level of aggregation.}
 }
 }
 \usage{

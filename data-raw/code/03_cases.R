@@ -13,6 +13,10 @@ cases <- cases_raw
 # member state
 ##################################################
 
+# drop duplicates
+cases$duplicate <- duplicated(cases$case_number)
+cases <- dplyr::filter(cases, !duplicate)
+
 # standardize name
 cases$member_state[cases$member_state == "Czechia"] <- "Czech Republic"
 
@@ -141,77 +145,6 @@ cases$department_id <- 0
 cases$department_id[cases$department == "Directorate-General for Agriculture and Rural Development"] <- 127
 cases$department_id[cases$department == "Directorate-General for Competition"] <- 89
 cases$department_id[cases$department == "Directorate-General for Maritime Affairs and Fisheries"] <- 139
-
-##################################################
-# aid instrument
-##################################################
-
-# # convert to lower case
-# cases$aid_instruments <- stringr::str_to_lower(cases$aid_instruments)
-#
-# # recode missing
-# cases$aid_instruments[cases$aid_instruments == ""] <- NA
-#
-# # function to clean aid instruments
-# clean_aid_instruments <- function(x) {
-#
-#   # split string
-#   x <- stringr::str_split(x, ",")
-#
-#   # convert to a string vector
-#   x <- unlist(x)
-#
-#   # clean white space
-#   x <- stringr::str_squish(x)
-#
-#   # keep non-mising unique values
-#   x <- unique(x)
-#   x <- x[x != ""]
-#
-#   # make corrections
-#   x[x == "direct grant/ interest rate subsidy"] <- "direct grant/interest rate subsidy"
-#   x[x == "loan/ repayable advances"] <- "loan/repayable advances"
-#   x[x == "guarantee (where appropriate with a reference to the commission decision (10))"] <- "guarantee"
-#   x[x == "guarantee (where appropriate with a reference to the commission decision (9))"] <- "guarantee"
-#   x[x == "through parafiscal charges or taxes affected to a beneficiary"] <- NA
-#   x[x == "handling of cases"] <- NA
-#   x[x == "article 107(3)(a)"] <- NA
-#   x[x == "- horizontal"] <- NA
-#   x[x == "other"] <- NA
-#   x[x == "rescue and restructuring"] <- NA
-#
-#   # drop empty strings
-#   x <- x[x != ""]
-#
-#   # order
-#   x <- x[order(x)]
-#
-#   # combine into one string
-#   x <- stringr::str_c(x, collapse = ", ")
-#
-#   # return cleaned text
-#   return(x)
-# }
-#
-# # clean text
-# for(i in 1:nrow(cases)) {
-#   if(!is.na(cases$aid_instruments[i])) {
-#     cases$aid_instruments[i] <- clean_aid_instruments(cases$aid_instruments[i])
-#   } else {
-#     cases$aid_instruments[i] <- NA
-#   }
-# }
-#
-# # number of aid instruments
-# cases$count_aid_instruments <- stringr::str_count(cases$aid_instruments, ",") + 1
-# cases$count_aid_instruments[is.na(cases$aid_instruments)] <- 0
-
-# x <- cases$aid_instruments
-# x <- stringr::str_split(x, ",")
-# x <- unlist(x)
-# x <- stringr::str_squish(x)
-# x <- x[x != ""]
-# table(x)
 
 ##################################################
 # decisions
@@ -399,173 +332,8 @@ cases$outcome[cases$withdrawal == 1] <- "Notification withdrawn"
 # unique(x)
 
 ##################################################
-# NACE codes
-##################################################
-
-# # recode missing
-# cases$NACE_codes[cases$NACE_codes == ""] <- NA
-#
-# # function to clean aid instruments
-# clean_NACE_codes <- function(x) {
-#
-#   # split string
-#   x <- stringr::str_extract_all(x, "[A-Z]+(\\.[0-9]+)* -")
-#
-#   # convert to a string vector
-#   x <- unlist(x)
-#
-#   # clean text
-#   x <- stringr::str_replace(x, "-", "")
-#
-#   # clean white space
-#   x <- stringr::str_squish(x)
-#
-#   # keep non-mising unique values
-#   x <- unique(x)
-#
-#   # order
-#   x <- x[order(x)]
-#
-#   # combine into one string
-#   x <- stringr::str_c(x, collapse = ", ")
-#
-#   # return cleaned text
-#   return(x)
-# }
-#
-# # clean decision text
-# for(i in 1:nrow(cases)) {
-#   if(!is.na(cases$NACE_codes[i])) {
-#     cases$NACE_codes[i] <- clean_NACE_codes(cases$NACE_codes[i])
-#   } else {
-#     cases$NACE_codes[i] <- NA
-#   }
-# }
-#
-# # number of decisions
-# cases$count_NACE_codes <- stringr::str_count(cases$NACE_codes, ",") + 1
-# cases$count_NACE_codes[is.na(cases$NACE_codes)] <- 0
-
-# x <- cases$NACE_codes
-# x <- stringr::str_split(x, ",")
-# x <- unlist(x)
-# x <- stringr::str_squish(x)
-# x <- x[x != ""]
-# table(x)
-
-##################################################
-# related cases
-##################################################
-
-# # recode missing values
-# cases$related_cases[cases$related_cases == ""] <- NA
-#
-# # function to clean aid instruments
-# clean_related_cases <- function(x) {
-#
-#   # split string
-#   x <- stringr::str_split(x, ",")
-#
-#   # convert to a string vector
-#   x <- unlist(x)
-#
-#   # clean white space
-#   x <- stringr::str_squish(x)
-#
-#   # keep non-mising unique values
-#   x <- unique(x)
-#
-#   # order
-#   x <- x[order(x)]
-#
-#   # combine into one string
-#   x <- stringr::str_c(x, collapse = ", ")
-#
-#   # return cleaned text
-#   return(x)
-# }
-#
-# # clean decision text
-# for(i in 1:nrow(cases)) {
-#   if(!is.na(cases$related_cases[i])) {
-#     cases$related_cases[i] <- clean_related_cases(cases$related_cases[i])
-#   } else {
-#     cases$related_cases[i] <- NA
-#   }
-# }
-#
-# # number of related cases
-# cases$count_related_cases <- stringr::str_count(cases$related_cases, ",") + 1
-# cases$count_related_cases[is.na(cases$related_cases)] <- 0
-
-##################################################
-# official journal citations
-##################################################
-
-# # recode missing
-# cases$OJ_citations[is.na(cases$OJ_citations)] <- NA
-# cases$OJ_citations[cases$OJ_citations == ""] <- NA
-#
-# # function to clean aid instruments
-# clean_OJ_citations <- function(x) {
-#
-#   # split string
-#   x <- stringr::str_split(x, ",")
-#
-#   # convert to a string vector
-#   x <- unlist(x)
-#
-#   # clean white space
-#   x <- stringr::str_squish(x)
-#
-#   # keep non-mising unique values
-#   x <- unique(x)
-#
-#   # keep correctly formatted values
-#   x <- x[stringr::str_detect(x, "^JOCE C.[0-9]+.[0-9]{4}$")]
-#
-#   # order
-#   x <- x[order(x)]
-#
-#   # combine into one string
-#   x <- stringr::str_c(x, collapse = ", ")
-#
-#   # handle missing
-#   if(x == "") {
-#     x <- NA
-#   }
-#
-#   # return cleaned text
-#   return(x)
-# }
-#
-# # clean decision text
-# for(i in 1:nrow(cases)) {
-#   if(!is.na(cases$OJ_citations[i])) {
-#     cases$OJ_citations[i] <- clean_OJ_citations(cases$OJ_citations[i])
-#   } else {
-#     cases$OJ_citations[i] <- NA
-#   }
-# }
-#
-# # replace JOCE with OJ
-# cases$OJ_citations <- stringr::str_replace_all(cases$OJ_citations, "JOCE", "OJ")
-#
-# # count citations
-# cases$count_OJ_citations <- stringr::str_count(cases$OJ_citations, ",") + 1
-# cases$count_OJ_citations[is.na(cases$OJ_citations)] <- 0
-
-##################################################
 # dates
 ##################################################
-
-# start date
-# cases$start_date <- lubridate::dmy(cases$start_date)
-# cases$start_date <- lubridate::ymd(cases$start_date)
-
-# end date
-# cases$end_date <- lubridate::dmy(cases$end_date)
-# cases$end_date <- lubridate::ymd(cases$end_date)
 
 # notification date
 cases$notification_date <- lubridate::dmy(cases$notification_date)
@@ -574,16 +342,6 @@ cases$notification_date <- lubridate::ymd(cases$notification_date)
 # outcome date
 cases$outcome_date <- lubridate::dmy(cases$outcome_date)
 cases$outcome_date <- lubridate::ymd(cases$outcome_date)
-
-# state date variables
-# cases$start_year <- lubridate::year(cases$start_date)
-# cases$start_month <- lubridate::month(cases$start_date)
-# cases$start_day <- lubridate::day(cases$start_date)
-
-# end date variables
-# cases$end_year <- lubridate::year(cases$end_date)
-# cases$end_month <- lubridate::month(cases$end_date)
-# cases$end_day <- lubridate::day(cases$end_date)
 
 # notification date variables
 cases$notification_year <- lubridate::year(cases$notification_date)
@@ -596,57 +354,14 @@ cases$outcome_month <- lubridate::month(cases$outcome_date)
 cases$outcome_day <- lubridate::day(cases$outcome_date)
 
 ##################################################
-# case title
-##################################################
-
-# # clean text
-# cases$case_title <- stringr::str_to_lower(cases$case_title)
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[[:punct:]]+", " ")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[€$£+]", " ")
-# cases$case_title <- stringr::str_squish(cases$case_title)
-#
-# # convert to ASCII
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[áàăâåäãąā]", "a")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[æ]", "ae")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ćčç]", "c")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[đ]", "d")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[éèêěëėęē]", "e")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ģ]", "g")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[íìîïįī]", "i")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ķ]", "k")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ľļł]", "l")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ńňñņ]", "n")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[óòôöőõø]", "o")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[œ]", "oe")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ř]", "r")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[śšşș]", "s")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ß]", "ss")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ťţț]", "t")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[úùûůüűųū]", "u")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[ý]", "y")
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[źžż]", "z")
-#
-# # remove non-ASCII characters
-# cases$case_title <- stringr::str_replace_all(cases$case_title, "[^a-z0-9 ]*", "")
-#
-# # fix white space
-# cases$case_title <- stringr::str_squish(cases$case_title)
-#
-# # recode white space
-# cases$case_title[cases$case_title == ""] <- NA
-
-# x <- stringr::str_split(cases$case_title, "")
-# x <- unlist(x)
-# x <- unique(x)
-# x <- x[order(x)]
-# x
-
-##################################################
 # organize
 ##################################################
 
 # sort
 cases <- dplyr::arrange(cases, notification_date, member_state_id, case_number)
+
+# case ID
+cases$case_id <- cases$case_number
 
 # key ID
 cases$key_id <- 1:nrow(cases)
@@ -654,7 +369,7 @@ cases$key_id <- 1:nrow(cases)
 # select variables
 cases <- dplyr::select(
   cases,
-  key_id, case_number,
+  key_id, case_id,
   procedure_numbers,
   member_state_id, member_state, member_state_code,
   department_id, department, department_code,
@@ -668,11 +383,6 @@ cases <- dplyr::select(
   exempt, preliminary_investigation, formal_investigation,
   no_objection, not_aid, positive, negative, conditional, withdrawal,
   referral, recovery
-  # start_date, end_date,
-  # aid_instruments, count_aid_instruments,
-  # NACE_codes, count_NACE_codes,
-  # OJ_citations, count_OJ_citations,
-  # related_cases, count_related_cases
 )
 
 ##################################################

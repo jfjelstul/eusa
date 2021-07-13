@@ -3,28 +3,30 @@
 \docType{data}
 \name{decisions_csts_dp}
 \alias{decisions_csts_dp}
-\title{CSTS data on decisions (by department)}
+\title{Decision-level cross-sectional time-series data by department}
 \format{
 A data frame with 8 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{department_id}{Numeric. An ID number that uniquely identifies each
-Directorate-General (DG) of the Commission. There are three DGs that can
-open state aid cases. The DG for Competition (COMP) is coded \code{1}, the
-DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and the
-DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
-\item{department}{String. The name of the Directorate-General (DG) of the
-Commission that opened the state aid case.}
-\item{department_code}{String. A multi-letter code assigned by the
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{department_id}{\code{numeric}. An ID number that uniquely identifies
+each Directorate-General (DG) of the Commission. There are three DGs that
+can open state aid cases. The DG for Competition (COMP) is coded \code{1},
+the DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and
+the DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
+\item{department}{\code{string}. The name of the Directorate-General (DG)
+of the Commission that opened the state aid case.}
+\item{department_code}{\code{string}. A multi-letter code assigned by the
 Commission that uniquely identifies each Directorate-General (DG) of the
 Commission. }
-\item{decision_type_id}{Numeric. An ID number that uniquely identifies each
-type of decision the Commission can make in a state aid case.}
-\item{decision_type}{String. The type of the decision.}
-\item{count_decisions}{Numeric. A count of the number of decisions issued
-by the Commission at this level of aggregation.}
+\item{decision_type_id}{\code{numeric}. An ID number that uniquely
+identifies each type of decision the Commission can make in a state aid
+case.}
+\item{decision_type}{\code{string}. The type of the decision.}
+\item{count_decisions}{\code{numeric}. A count of the number of decisions
+issued by the Commission at this level of aggregation.}
 }
 }
 \usage{

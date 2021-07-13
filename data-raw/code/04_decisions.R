@@ -67,14 +67,14 @@ decisions <- dplyr::left_join(decisions, decision_types, by = "decision_type")
 ##################################################
 
 # sort
-decisions <- dplyr::arrange(decisions, notification_date, member_state_id, case_number)
+decisions <- dplyr::arrange(decisions, notification_date, member_state_id, case_id)
 
 # key ID
 decisions$key_id <- 1:nrow(decisions)
 
-# decision ID
+# decision number
 decisions <- decisions %>%
-  dplyr::group_by(case_number) %>%
+  dplyr::group_by(case_id) %>%
   dplyr::mutate(
     decision_number = 1:dplyr::n()
   ) %>%
@@ -83,7 +83,7 @@ decisions <- decisions %>%
 # select variables
 decisions <- dplyr::select(
   decisions,
-  key_id, case_number, procedure_numbers,
+  key_id, case_id, procedure_numbers,
   member_state_id, member_state, member_state_code,
   department_id, department, department_code,
   case_type_id, case_type,

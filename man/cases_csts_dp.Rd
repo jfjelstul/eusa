@@ -3,25 +3,26 @@
 \docType{data}
 \name{cases_csts_dp}
 \alias{cases_csts_dp}
-\title{CSTS data on cases (by department)}
+\title{Case-level cross-sectional time-series data by department}
 \format{
 A data frame with 6 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{department_id}{Numeric. An ID number that uniquely identifies each
-Directorate-General (DG) of the Commission. There are three DGs that can
-open state aid cases. The DG for Competition (COMP) is coded \code{1}, the
-DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and the
-DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
-\item{department}{String. The name of the Directorate-General (DG) of the
-Commission that opened the state aid case.}
-\item{department_code}{String. A multi-letter code assigned by the
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{department_id}{\code{numeric}. An ID number that uniquely identifies
+each Directorate-General (DG) of the Commission. There are three DGs that
+can open state aid cases. The DG for Competition (COMP) is coded \code{1},
+the DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and
+the DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
+\item{department}{\code{string}. The name of the Directorate-General (DG)
+of the Commission that opened the state aid case.}
+\item{department_code}{\code{string}. A multi-letter code assigned by the
 Commission that uniquely identifies each Directorate-General (DG) of the
 Commission. }
-\item{count_cases}{Numeric. A count of the number of cases opened by the
-Commission at this level of aggregation.}
+\item{count_cases}{\code{numeric}. A count of the number of cases opened by
+the Commission at this level of aggregation.}
 }
 }
 \usage{

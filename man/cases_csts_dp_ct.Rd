@@ -3,41 +3,42 @@
 \docType{data}
 \name{cases_csts_dp_ct}
 \alias{cases_csts_dp_ct}
-\title{CSTS data on cases (by department and by case type)}
+\title{Case-level cross-sectional time-series data by department and case type}
 \format{
 A data frame with 8 variables:
 \describe{
-\item{key_id}{Numeric. An ID number that uniquely identifies each
+\item{key_id}{\code{numeric}. An ID number that uniquely identifies each
 observation in the dataset. }
-\item{year}{Numeric. The year the case was opened by the Commission.}
-\item{department_id}{Numeric. An ID number that uniquely identifies each
-Directorate-General (DG) of the Commission. There are three DGs that can
-open state aid cases. The DG for Competition (COMP) is coded \code{1}, the
-DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and the
-DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
-\item{department}{String. The name of the Directorate-General (DG) of the
-Commission that opened the state aid case.}
-\item{department_code}{String. A multi-letter code assigned by the
+\item{year}{\code{numeric}. The year the case was opened by the
+Commission.}
+\item{department_id}{\code{numeric}. An ID number that uniquely identifies
+each Directorate-General (DG) of the Commission. There are three DGs that
+can open state aid cases. The DG for Competition (COMP) is coded \code{1},
+the DG for Agriculture and Rural Development (AGRI) is coded \code{2}, and
+the DG for Maritime Affairs and Fisheries (MARE) is coded \code{3}.}
+\item{department}{\code{string}. The name of the Directorate-General (DG)
+of the Commission that opened the state aid case.}
+\item{department_code}{\code{string}. A multi-letter code assigned by the
 Commission that uniquely identifies each Directorate-General (DG) of the
 Commission. }
-\item{case_type_id}{Numeric. An ID number that uniquely identifies each
-type of state aid cases. Coded \code{1} for cases that involve state aid
-measures granted through Commission-approved schemes that is not
+\item{case_type_id}{\code{numeric}. An ID number that uniquely identifies
+each type of state aid cases. Coded \code{1} for cases that involve state
+aid measures granted through Commission-approved schemes that is not
 notifiable, coded \code{2} for cases that involve state aid measures
 granted through Commission-approved schemes where the Commission has
 required that the member state notify any aid granted through the scheme,
 and coded \code{3} for cases that involve ad hoc state aid measures that
 are not granted through a scheme.}
-\item{case_type}{String. The type of the state aid case. There are three
-types of cases. Coded \code{Scheme} for cases that involve state aid
+\item{case_type}{\code{string}. The type of the state aid case. There are
+three types of cases. Coded \code{Scheme} for cases that involve state aid
 measures granted through Commission-approved schemes that is not
 notifiable, coded \code{Individual application} for cases that involve
 state aid measures granted through Commission-approved schemes where the
 Commission has required that the member state notify any aid granted
 through the scheme, and coded \code{Ad hoc} for cases that involve ad hoc
 state aid measures that are not granted through a scheme.}
-\item{count_cases}{Numeric. A count of the number of cases opened by the
-Commission at this level of aggregation.}
+\item{count_cases}{\code{numeric}. A count of the number of cases opened by
+the Commission at this level of aggregation.}
 }
 }
 \usage{
